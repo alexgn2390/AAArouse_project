@@ -1,0 +1,547 @@
+@font-face {
+    src: url("../fonts/Inter-Regular.otf");
+    font-family: "Inter";
+}
+
+@font-face {
+    src: url("../fonts/Montserrat-Regular.ttf");
+    font-family: "Montserrat";
+}
+
+@font-face {
+    src: url("../fonts/Merriweather-Regular.ttf");
+    font-family: "Merriweather";
+}
+
+body {
+    font-family: Inter, sans-serif;
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.img-logo {
+    max-width: 180px;
+}
+
+.img-fluid {
+    max-width: 220px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.img-fluid-recent {
+    max-height: 270px;
+    object-fit: cover;
+}
+
+.header-menu-list {
+    width: 509px;
+}
+
+.img-footer {
+    max-height: 60px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.img-footer:hover {
+    transform: scale(1.1);
+}
+
+.img-main {
+    max-width: 635px;
+}
+
+.menu-item a {
+    color: black;
+    transition: color .3s ease-in-out;
+}
+
+.menu-item a:hover {
+    color: coral;
+}
+
+.img-main-1 {
+    max-width: 609px;
+    bottom: 120%;
+    left: 3%;
+}
+
+.img-main-2 {
+    max-width: 380px;
+    top: 112%;
+}
+
+.main-title {
+    font-family: Inter, sans-serif;
+    color: #FB8607;
+}
+
+.sub-title {
+    font-family: Merriweather, sans-serif;
+    color: #FB8607;
+}
+
+
+.main-sub-title {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+}
+
+.main-description {
+    font-family: Merriweather, sans-serif;
+    font-size: 20px;
+}
+
+.img-hero {
+    max-width: 524px;
+}
+
+.text-center-over-image {
+    position: absolute;
+    top: 24%;
+    left: 7%;
+    /*transform: translate(-54%, -50%);*/
+    background-image: url("images/Rectangle.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80%;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+    transition: transform .3s ease-in-out;
+}
+
+.box-custom-hover:hover img,
+.box-custom-hover:hover .text-center-over-image {
+    transform: scale(1.1); /* Увеличиваем размер до 110% */
+}
+
+.custom-button {
+    background: #FB8607;
+}
+
+.custom-button:hover {
+    background: #a45c03;
+}
+
+.img-mario {
+    max-width: 297px;
+}
+
+.footer-custom {
+    background: #FC9C34;
+}
+
+.footer-hover a {
+    color: black;
+    transition: color .3s ease-in-out;
+}
+
+.footer-hover a:hover {
+    color: #f6ebe9;
+}
+
+.a-custom {
+    color: black !important;
+    transition: color .3s ease-in-out;
+}
+
+.a-custom:hover {
+    color: coral !important;
+}
+
+.input-group {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    background: #87B7E0;
+    padding: 5px 5px 5px 10px;
+}
+
+.input-group input {
+    background: #87B7E0;
+    outline: none;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.input-group input:focus {
+    background: #87B7E0;
+    outline: none;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.input-group-btn {
+    margin-left: -1px;
+}
+
+.input-group-btn button {
+    border: none;
+    padding: 10px;
+}
+
+.hero-custom-frame {
+    border-radius: 15px;
+}
+
+.hero-custom-text {
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 4%, rgba(135, 183, 224, 0.3) 50%, rgba(255, 255, 255, 0.4) 96%);
+}
+
+
+.footer-fixed-custom {
+    color: #FB8607;
+}
+
+
+.hero-custom-img {
+    background: #DBEAF6;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 2px 4px 4px 0px #00000040;
+}
+
+/* Основные стили для контейнера формы */
+.form-wrapper {
+    background: #FC9C34;
+    padding: 30px 60px;
+    max-width: 980px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px 0px #00000040;
+}
+
+/* Стили текста в форме */
+.form-wrapper-custom-text {
+    font-family: Merriweather, sans-serif;
+    color: #FFFFFF;
+    margin-right: 20px; /* Уменьшите или увеличьте в зависимости от необходимого пространства */
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+/* Общие стили для кастомных селектов */
+.custom-select-wrapper {
+    position: relative;
+    width: 100%; /* Селект занимает 100% от родительского контейнера */
+    max-width: 500px; /* Максимальная ширина */
+    flex-grow: 1;
+}
+
+
+
+.select-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    padding: 17px 10px;
+    background-color: #FFFFFF;
+    color: black;
+    border: 2px solid #ccc; /* Добавляем бордер */
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: left;
+    outline: none;
+}
+.select-button-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 17px 10px;
+    background-color: #FFFFFF;
+    color: black;
+    border: 2px solid #ccc; /* Добавляем бордер */
+    border-radius: 10px;
+    text-align: left;
+    outline: none;
+}
+
+.select-options, .select-options-2,
+.select-options-3, .select-options-4 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 2px solid #ccc; /* Добавляем бордер */
+    background-color: white;
+    z-index: 1000;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.select-option, .select-option-2,
+.select-option-3, .select-option-4{
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.select-option:hover, .select-option-2:hover, .select-option-3:hover, .select-option-4:hover {
+    background-color: #fc9c34;
+    color: white;
+}
+
+.arrow-up {
+    transform: rotate(180deg);
+}
+
+.provide-custom {
+    padding-left: 120px;
+
+}
+
+.footer-custom-margin {
+    margin-right: -86px;
+}
+
+.boat-custom-image {
+    background-image: url("images/boat_removal/img_1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 195px;
+    padding-bottom: 161px;
+}
+
+.main-custom-title {
+    font-family: Merriweather, sans-serif;
+}
+
+.main-custom-title2 {
+    font-family: Montserrat, sans-serif;
+}
+
+.span-custom-color {
+    color: #FB8607;
+    text-decoration: none;
+}
+
+.span-custom-color:hover {
+    color: #a45c03;
+}
+
+.custom-list li {
+    text-indent: -22px;
+}
+
+.prices-florida-custom {
+    background: #DBEAF6;
+}
+
+.form-wrapper-label {
+    font-family: Merriweather, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+.custom-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+.custom-checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    position: relative;
+    padding-left: 40px;
+}
+
+
+.custom-checkbox-label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border: 2px solid #FB8607;
+    border-radius: 8px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+
+.custom-checkbox-label::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 16%;
+    transform: translateY(-50%) scale(0);
+    width: 10px;
+    height: 16px;
+    border: solid #FB8607;
+    border-width: 0 3px 3px 0;
+    transform-origin: bottom left;
+    transition: transform 0.3s;
+}
+
+.custom-checkbox:checked + .custom-checkbox-label::after {
+    transform: translateY(-50%) rotate(45deg) scale(1);
+}
+
+.images_select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 144px;
+    border: none;
+    border-radius: 10px;
+    background-color: #FEEBD6;
+    text-align: center;
+    position: relative;
+}
+
+.images_select_label {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.select_files_button {
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #FEEBD6;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.select_files_button:hover {
+    background-color: #e57807;
+}
+
+#fileInput {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.form-textarea {
+    padding: 20px;
+    background: #FEEBD6;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    outline: none;
+    resize: none;
+    box-sizing: border-box;
+}
+
+
+.form-button {
+    padding: 10px 15px;
+    background-color: #FFFFFF;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 2px 4px 4px 0px #00000040;
+transition: background-color .3s ease;
+}
+
+.form-button:hover {
+    background-color: coral;
+}
+
+.form-input-custom {
+    max-width: 200px;
+    height: 60px;
+    background-color: #FEEBD6;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.cities-custom-background {
+    padding: 60px 30px 60px 120px;
+    background: #DBEAF6;
+    border-radius: 15px;
+}
+
+.cities-custom-call-text {
+    color: #333333;
+    transition: color .3s ease;
+}
+.cities-custom-call-text:hover {
+    color: coral;
+}
+
+.locations-custom-image {
+    background-image: url("images/locations/img_1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 195px;
+    padding-bottom: 50px;
+}
+
+.locations-custom-title {
+    font-family: Montserrat,sans-serif;
+    background: #00000066;
+    border-radius: 10px;
+    padding: 18px 103px;
+}
+
+.locations-custom-title2 {
+    font-family: Montserrat,sans-serif;
+    background: #00000066;
+    border-radius: 10px;
+    max-width: 463px;
+    margin-top: 127px;
+    padding: 12px 27px;
+}
+
+.location-link-apartment {
+    width: 100%;
+    padding: 10px;
+    background: #DBEAF6;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
