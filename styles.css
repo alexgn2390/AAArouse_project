@@ -504,6 +504,15 @@ transition: background-color .3s ease;
     border-radius: 15px;
 }
 
+.cities-custom-background a {
+    color: black;
+    transition: color .2s ease-in-out;
+}
+
+.cities-custom-background a:hover {
+    color: #9bcfef;
+}
+
 .cities-custom-call-text {
     color: #333333;
     transition: color .3s ease;
@@ -544,4 +553,18 @@ transition: background-color .3s ease;
     border-radius: 10px;
     margin-bottom: 20px;
     font-size: 20px;
+    cursor: pointer;
+    transition: transform .2s ease-in-out;
+}
+
+.location-link-apartment:hover {
+    transform: scale(1.1);
+}
+
+.recent-blog-custom {
+    color: black;
+    transition: color 0.2s ease;
+}
+.recent-blog-custom:hover {
+    color: coral;
 }
