@@ -13,6 +13,8 @@
     font-family: "Merriweather";
 }
 
+
+
 body {
     font-family: Inter, sans-serif;
 }
@@ -567,4 +569,9 @@ transition: background-color .3s ease;
 }
 .recent-blog-custom:hover {
     color: coral;
+}
+
+
+.custom-button-arrow {
+    cursor: pointer;
 }

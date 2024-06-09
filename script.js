@@ -47,4 +47,11 @@ document.addEventListener('DOMContentLoaded', function() {
     initSelect('select-button-2', 'select-options-2', 'arrow-icon-2', '.select-option-2');
     initSelect('select-button-3', 'select-options-3', 'arrow-icon-3', '.select-option-3');
     initSelect('select-button-4', 'select-options-4', 'arrow-icon-4', '.select-option-4');
+
+
+});
+
+
+$('#topButton').click(function () {
+    $('.main')[0].scrollIntoView({behavior: "smooth"});
 });
