@@ -142,6 +142,8 @@ body {
 
 .footer-custom {
     background: #FC9C34;
+    padding-top: 60px;
+    padding-bottom: 90px;
 }
 
 .footer-hover a {
@@ -205,7 +207,15 @@ body {
 
 
 .footer-fixed-custom {
-    color: #FB8607;
+    color: white;
+}
+
+.footer-fixed-custom-call {
+    transition: transform .3s ease;
+}
+
+.footer-fixed-custom-call:hover {
+    transform: scale(1.1);
 }
 
 
@@ -573,5 +583,31 @@ transition: background-color .3s ease;
 
 
 .custom-button-arrow {
+    position: fixed;
+    bottom: 8%;
+    right: 23%;
+    transform: translate(-23%, -9%);
+    background: #ee992a;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    opacity: 0; /* Скрываем по умолчанию */
+    visibility: hidden; /* Скрываем по умолчанию */
+    transition: opacity 0.4s, visibility 0.4s, box-shadow .3s ease;
+    z-index: 1000;
+}
+
+/* Видимая кнопка */
+.custom-button-arrow.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.custom-button-arrow:hover {
+    box-shadow: 0 0 15px 2px rgb(122, 114, 103);
+}
+
+.footer-fixed {
+    background-color: #343331;
 }

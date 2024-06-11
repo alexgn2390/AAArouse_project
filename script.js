@@ -51,7 +51,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+let scrollToTopButton = document.getElementById('scrollToTop');
 
-$('#topButton').click(function () {
-    $('.main')[0].scrollIntoView({behavior: "smooth"});
+// Показываем или скрываем кнопку в зависимости от прокрутки
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) { // 300 пикселей - это примерное значение
+        scrollToTopButton.classList.add('visible');
+    } else {
+        scrollToTopButton.classList.remove('visible');
+    }
+});
+
+// Прокрутка наверх при нажатии на кнопку
+scrollToTopButton.addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 });
