@@ -1,24 +1,24 @@
 @media (min-width: 992px) {
-    .navbar-toggler {
-        display: none;
-    }
+    /*.navbar-toggler {*/
+    /*    display: none;*/
+    /*}*/
 }
 
 @media (min-width: 991px) {
-    .header-menu {
-        display: block; /* Показываем меню на больших экранах */
-    }
+    /*.header-menu {*/
+    /*    display: block; !* Показываем меню на больших экранах *!*/
+    /*}*/
 
-    .header-menu-list {
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-    }
+    /*.header-menu-list {*/
+    /*    flex-direction: row;*/
+    /*    align-items: center;*/
+    /*    justify-content: flex-end;*/
+    /*}*/
 
-    .menu-item {
-        margin-right: 1rem;
-        margin-bottom: 0;
-    }
+    /*.menu-item {*/
+    /*    margin-right: 1rem;*/
+    /*    margin-bottom: 0;*/
+    /*}*/
 
     .hero-custom-img img {
         display: block;
