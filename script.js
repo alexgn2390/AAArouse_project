@@ -69,3 +69,17 @@ scrollToTopButton.addEventListener('click', function() {
         behavior: 'smooth'
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const menuToggle = document.getElementById("menu-toggle");
+    const menuClose = document.getElementById("menu-close");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuToggle.addEventListener("click", function() {
+        mobileMenu.style.display = "block";
+    });
+
+    menuClose.addEventListener("click", function() {
+        mobileMenu.style.display = "none";
+    });
+});

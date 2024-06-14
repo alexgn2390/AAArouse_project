@@ -1,24 +1,14 @@
-@media (min-width: 992px) {
-    /*.navbar-toggler {*/
-    /*    display: none;*/
-    /*}*/
+@media (min-width: 991px) {
+    .header-menu {
+        display: flex !important;
+    }
+
+    .mobile-menu {
+        display: none !important;
+    }
 }
 
 @media (min-width: 991px) {
-    /*.header-menu {*/
-    /*    display: block; !* Показываем меню на больших экранах *!*/
-    /*}*/
-
-    /*.header-menu-list {*/
-    /*    flex-direction: row;*/
-    /*    align-items: center;*/
-    /*    justify-content: flex-end;*/
-    /*}*/
-
-    /*.menu-item {*/
-    /*    margin-right: 1rem;*/
-    /*    margin-bottom: 0;*/
-    /*}*/
 
     .hero-custom-img img {
         display: block;
@@ -31,10 +21,45 @@
     }
 }
 
+
+@media (max-width: 1055px) {
+    .select-button-3 {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .sub-title-t {
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 966px) {
+    .select-button-3 {
+        font-size: 10px;
+    }
+
+    .img-main-1 {
+        display: none;
+    }
+    .img-main-2 {
+        display: none;
+    }
+
+}
+
+
 @media (max-width: 870px) {
-  .sub-title-center {
-      text-align: center;;
-  }
+    .sub-title-center {
+        text-align: center;;
+    }
+
+    .hero-custom-text {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
 }
 
 @media (max-width: 870px) {
@@ -63,6 +88,22 @@
 
     .select-option {
         font-size: 14px;
+    }
+
+    .cities-custom-background {
+        padding: 50px 30px 60px 70px;
+    }
+
+    .main-title {
+        font-size: 28px;
+    }
+
+    .main-sub-title {
+        font-size: 20px;
+    }
+
+    .main-description {
+        font-size: 16px;
     }
 }
 
@@ -97,14 +138,33 @@
         max-width: 215px;
     }
 
+    .prices-florida-custom-position {
+        text-align: center;
+    }
+
+    .prices-florida-custom-pos {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-custom-text {
+        padding-right: 70px;
+        padding-left: 70px;
+    }
+
+    .main-custom-title {
+        font-size: 22px;
+    }
+
+    .main-custom-title2 {
+        font-size: 16px;
+    }
+
 }
 
 
-@media (max-width: 630px) {
-    .img-main-1 {
-        max-width: 400px;
-    }
 
+@media (max-width: 630px) {
 
     .sub-title {
         font-size: 22px;
@@ -112,6 +172,21 @@
 
     .mario-text {
         font-size: 14px;
+    }
+
+    .form-wrapper-label {
+        font-size: 18px;
+    }
+
+    .select-button-3 {
+        font-size: 10px;
+    }
+    .main-title {
+        font-size: 20px;
+    }
+
+    .main-sub-title {
+        font-size: 16px;
     }
 }
 
@@ -146,10 +221,6 @@
         padding-left: 45px;
     }
 
-    .img-main-1 {
-        max-width: 400px;
-    }
-
     .marion-custom-container {
         display: grid;;
         grid-template-rows: repeat(2, 1fr);;
@@ -169,6 +240,19 @@
         font-size: 14px;
     }
 
+    .custom-checkbox-label {
+        font-size: 12px;
+    }
+
+    .select-button-3 {
+        padding: 9px 7px;
+
+    }
+    .main-description {
+        font-size: 14px;
+    }
+
+
 }
 
 
@@ -177,9 +261,6 @@
         padding: 25px 130px;
     }
 
-    .img-main-1 {
-        max-width: 300px;
-    }
 
     .form-wrapper-custom-text {
         font-size: 8px;
@@ -205,6 +286,21 @@
     .text-center-over-image {
         padding: 15px 93px;
     }
+
+    .hero-custom-text {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .form-input-custom {;
+        height: 40px;
+
+    }
+
+    .span-custom-color {
+
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -226,6 +322,23 @@
 
     .text-center-over-image {
         padding: 6px 98px;
+    }
+
+    .hero-custom-text {
+          padding-right: 20px;
+          padding-left: 20px;
+      }
+
+    .form-wrapper-label {
+        font-size: 14px;
+    }
+
+    .main-custom-title {
+        font-size: 18px;
+    }
+
+    .main-custom-title2 {
+        font-size: 12px;
     }
 }
 
@@ -259,6 +372,8 @@
     .text-center-over-image {
         padding: 6px 56px;
     }
+
+
 }
 
 
