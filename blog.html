@@ -5,58 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="adaptive.css">
     <title>Title</title>
 </head>
 
-<body><header class="shadow sticky-top bg-white z-3 ">
+<body><header class="shadow sticky-top bg-white z-3">
     <div class="container d-flex align-items-center justify-content-between pt-2 pb-2">
         <div>
-            <img class="img-fluid img-logo" src="images/logo.png" alt="Logo">
+            <img class="img-logo" src="images/logo.png" alt="Logo">
         </div>
-        <nav class="header-menu" id="header-menu">
+        <nav class="header-menu d-none d-lg-flex" id="header-menu">
             <ul class="header-menu-list d-flex align-items-center justify-content-between list-unstyled mb-0 mt-0">
-                <li class="menu-item mr-3" id="home">
+                <li class="menu-item me-3" id="home">
                     <a href="index.html" class="text-decoration-none ">Home</a>
                 </li>
-                <li class="menu-item mr-3" id="service">
+                <li class="menu-item me-3" id="service">
                     <a href="junk_recycling.html" class="text-decoration-none ">Services</a>
                 </li>
-                <li class="menu-item mr-3" id="location">
-                    <a href="junk_removal.html" class="text-decoration-none ">Locations</a>
+                <li class="menu-item me-3" id="location">
+                    <a href="locations.html" class="text-decoration-none ">Locations</a>
                 </li>
-                <li class="menu-item mr-3" id="why">
-                    <a href="region_alturas.html" class="text-decoration-none ">Why Us?</a>
+                <li class="menu-item me-3" id="why">
+                    <a href="why_us.html" class="text-decoration-none ">Why Us?</a>
                 </li>
-                <li class="menu-item mr-3" id="blog">
-                    <a href="blog_inside.html" class="text-decoration-none ">Blog</a>
+                <li class="menu-item me-3" id="blog">
+                    <a href="junk_removal.html" class="text-decoration-none ">Blog</a>
                 </li>
-                <li class="menu-item mr-3" id="faq">
-                    <a href="blog.html" class="text-decoration-none ">FAQ</a>
+                <li class="menu-item me-3" id="faq">
+                    <a href="boat_removal.html" class="text-decoration-none ">FAQ</a>
                 </li>
                 <li class="menu-item" id="contact">
-                    <a href="contact_us.html" class="text-decoration-none ">Contact </a>
+                    <a href="#" class="text-decoration-none ">Contact</a>
                 </li>
             </ul>
         </nav>
-        <button class="btn p-2  border-0 btn-warning rounded-lg text-white custom-button">
+        <button class="btn p-2 border-0  rounded-lg text-white custom-button d-none d-lg-inline">
             BOOK ONLINE
         </button>
+        <a class="  " id="menu-toggle">
+            <svg width="42" height="34" viewBox="0 0 42 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_2357_257)">
+                    <rect width="40" height="4" rx="2" fill="#FB8607"/>
+                </g>
+                <g filter="url(#filter1_d_2357_257)">
+                    <rect y="14" width="40" height="4" rx="2" fill="#FB8607"/>
+                </g>
+                <g filter="url(#filter2_d_2357_257)">
+                    <rect y="28" width="40" height="4" rx="2" fill="#FB8607"/>
+                </g>
+                <defs>
+                    <filter id="filter0_d_2357_257" x="0" y="0" width="42" height="6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="1" dy="1"/>
+                        <feGaussianBlur stdDeviation="0.5"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2357_257"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2357_257" result="shape"/>
+                    </filter>
+                    <filter id="filter1_d_2357_257" x="0" y="14" width="42" height="6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="1" dy="1"/>
+                        <feGaussianBlur stdDeviation="0.5"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2357_257"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2357_257" result="shape"/>
+                    </filter>
+                    <filter id="filter2_d_2357_257" x="0" y="28" width="42" height="6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="1" dy="1"/>
+                        <feGaussianBlur stdDeviation="0.5"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2357_257"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2357_257" result="shape"/>
+                    </filter>
+                </defs>
+            </svg>
+        </a>
+    </div>
+    <div class="mobile-menu d-lg-none" id="mobile-menu">
+        <div class="close-back">
+            <button class="btn mb-3" id="menu-close"><img src="images/header/close.svg" alt="close"></button>
+
+        </div>
+
+
+        <ul class="list-unstyled ">
+            <li><a href="index.html" class="text-decoration-none">Home</a></li>
+            <li><a href="junk_recycling.html" class="text-decoration-none">Services</a></li>
+            <li><a href="locations.html" class="text-decoration-none">Locations</a></li>
+            <li><a href="why_us.html" class="text-decoration-none">Why Us?</a></li>
+            <li><a href="junk_removal.html" class="text-decoration-none">Blog</a></li>
+            <li><a href="boat_removal.html" class="text-decoration-none">FAQ</a></li>
+            <li><a href="#" class="text-decoration-none">Contact</a></li>
+
+        </ul>
+        <li><a href="#" class="btn  text-white d-block text-center mt-3 custom-button">BOOK ONLINE</a></li>
     </div>
 </header>
 
-
-<section class=" pb-5 pt-5 ps-0 pe-0">
-    <div class="container pe-0 ps-0">
+<section class=" pb-5 pt-5  ">
+    <div class="container ps-5 ps-5">
         <div class="row">
-            <div class="col-8">
+            <div class="col-lg-8 col-md-12 ">
                 <h2 class="fs-4 mb-3 fw-bold sub-title">
                     How to Clean Out a House Full of Junk
                 </h2>
-                <div class="d-flex justify-content-between align-items-center mb-1">
-                    <div>
-                        <img class="img-hero " src="images/blog_inside/img_101.png" alt="img_101">
+                <div class="row mb-1">
+                    <div class="image-blog-main col-12 col-lg-6 col-md-12  ">
+                        <img class="image-blog-img " src="images/blog_inside/img_101.png" alt="img_101">
                     </div>
-                    <div class="ms-5">
+                    <div class="col-12 col-lg-6 col-md-12 mt-lg-0 mt-3 mt-md-3 mt-sm-3">
 
                         <p class="fs-6 ">
                             PRICING: Our goal is to have a price for you the consumer that meets your budget. We will do
@@ -78,11 +142,11 @@
                 <h2 class="fs-4 mb-3 fw-bold mt-5 sub-title">
                     I found mold in my house or apartment, now what do i do?
                 </h2>
-                <div class="d-flex justify-content-between align-items-center mb-1">
-                    <div>
-                        <img class="img-hero " src="images/blog/img_101.png" alt="img_101">
+                <div class="row  mb-1">
+                    <div class="image-blog-main col-12 col-lg-6 col-md-12">
+                        <img class="image-blog-img " src="images/blog/img_101.png" alt="img_101">
                     </div>
-                    <div class="ms-5">
+                    <div class="col-12 col-lg-6 col-md-12 mt-lg-0 mt-3 mt-md-3 mt-sm-3">
 
                         <p class="fs-6 ">
                             If you find mold in your apartment or house, here's a step-by-step guide to address the
@@ -102,11 +166,11 @@
                 <h2 class="fs-4 mb-3 fw-bold mt-5 sub-title">
                     How best to cut down on holiday waste this thanksgiving:
                 </h2>
-                <div class="d-flex justify-content-between align-items-center mb-1">
-                    <div>
-                        <img class="img-hero " src="images/blog/img_102.png" alt="img_102">
+                <div class="  row  mb-1">
+                    <div class="image-blog-main col-12 col-lg-6 col-md-12 ">
+                        <img class="image-blog-img " src="images/blog/img_102.png" alt="img_102">
                     </div>
-                    <div class="ms-5">
+                    <div class="col-12 col-lg-6 col-md-12 mt-lg-0 mt-3 mt-md-3 mt-sm-3">
 
                         <p class="fs-6 ">
                               How best to cut down on holiday waste this thanksgiving: Reducing holiday waste is crucial
@@ -125,11 +189,11 @@
                 <h2 class="fs-4 mb-3 fw-bold mt-5 sub-title">
                     Florida Fall Fire Pit Safety guide.
                 </h2>
-                <div class="d-flex justify-content-between align-items-center mb-1">
-                    <div>
-                        <img class="img-hero " src="images/blog/img_103.png" alt="img_103">
+                <div class="row mb-1">
+                    <div class="image-blog-main col-12 col-lg-6 col-md-12 ">
+                        <img class="image-blog-img " src="images/blog/img_103.png" alt="img_103">
                     </div>
-                    <div class="ms-5">
+                    <div class="col-12 col-lg-6 col-md-12 mt-lg-0 mt-3 mt-md-3 mt-sm-3">
 
                         <p class="fs-6 ">
                             Florida Fall Fire Pit Safety guide. Fall is in full swing, and it’s getting cooler and
@@ -148,11 +212,11 @@
                 <h2 class="fs-4 mb-3 fw-bold mt-5 sub-title">
                     How did all this junk accumulate in my backyard?
                 </h2>
-                <div class="d-flex justify-content-between align-items-center mb-1">
-                    <div>
-                        <img class="img-hero " src="images/blog/img_104.png" alt="img_104">
+                <div class="  row mb-1">
+                    <div class="image-blog-main col-12 col-lg-6 col-md-12    ">
+                        <img class="image-blog-img " src="images/blog/img_104.png" alt="img_104">
                     </div>
-                    <div class="ms-5">
+                    <div class="col-12 col-lg-6 col-md-12 mt-lg-0 mt-3 mt-md-3 mt-sm-3">
 
                         <p class="fs-6 ">
                             "I'll take care of it later..." Well later, is now! Dealing with accumulated junk in your
@@ -171,11 +235,11 @@
                 <h2 class="fs-4 mb-3 fw-bold mt-5 sub-title">
                     Tips on downsizing your home or business
                 </h2>
-                <div class="d-flex justify-content-between align-items-center mb-1">
-                    <div>
-                        <img class="img-hero " src="images/blog/img_105.png" alt="img_105">
+                <div class="  row mb-1">
+                    <div class="image-blog-main col-12 col-lg-6 col-md-12 ">
+                        <img class="image-blog-img " src="images/blog/img_105.png" alt="img_105">
                     </div>
-                    <div class="ms-5">
+                    <div class="col-12 col-lg-6 col-md-12 mt-lg-0 mt-3 mt-md-3 mt-sm-3">
 
                         <p class="fs-6 ">
                             From too much, to Just Right Downsizing can be a complex process, whether you're doing it
@@ -194,11 +258,11 @@
                 <h2 class="fs-4 mb-3 fw-bold mt-5 sub-title">
                     What do I do with my junk while I am moving?
                 </h2>
-                <div class="d-flex justify-content-between align-items-center mb-1">
-                    <div>
-                        <img class="img-hero " src="images/blog/img_106.png" alt="img_106">
+                <div class="  row mb-1">
+                    <div class="image-blog-main col-12 col-lg-6 col-md-12 ">
+                        <img class="image-blog-img " src="images/blog/img_106.png" alt="img_106">
                     </div>
-                    <div class="ms-5">
+                    <div class="col-12 col-lg-6 col-md-12 mt-lg-0 mt-3 mt-md-3 mt-sm-3">
 
                         <p class="fs-6 ">
                             The first thing to ask yourself is: "Do I really need to bring it all with me?" Moving is an
@@ -217,11 +281,11 @@
                 <h2 class="fs-4 mb-3 fw-bold mt-5 sub-title">
                     How to Get Rid of Your Old Deck
                 </h2>
-                <div class="d-flex justify-content-between align-items-center mb-1">
-                    <div>
-                        <img class="img-hero " src="images/blog/img_107.png" alt="img_107">
+                <div class=" row mb-1">
+                    <div class="image-blog-main col-12 col-lg-6 col-md-12 ">
+                        <img class="image-blog-img  " src="images/blog/img_107.png" alt="img_107">
                     </div>
-                    <div class="ms-5">
+                    <div class="col-12 col-lg-6 col-md-12 mt-lg-0 mt-3 mt-md-3 mt-sm-3">
 
                         <p class="fs-6 ">
                             Many homeowners find themselves in a situation where their once-beloved deck has become
@@ -241,11 +305,11 @@
                 <h2 class="fs-4 mb-3 fw-bold mt-5 sub-title">
                     Make Downsizing Easy with Professional Junk Removal
                 </h2>
-                <div class="d-flex justify-content-between align-items-center mb-1">
-                    <div>
-                        <img class="img-hero " src="images/blog/img_108.png" alt="img_108">
+                <div class="  row mb-1">
+                    <div class="image-blog-main col-12 col-lg-6 col-md-12    ">
+                        <img class="image-blog-img " src="images/blog/img_108.png" alt="img_108">
                     </div>
-                    <div class="ms-5">
+                    <div class="col-12 col-lg-6 col-md-12 mt-lg-0 mt-3 mt-md-3 mt-sm-3">
 
                         <p class="fs-6 ">
                             Downsizing can be a challenging process, whether you're moving to a smaller home,
@@ -265,11 +329,11 @@
                 <h2 class="fs-4 mb-3 fw-bold mt-5 sub-title">
                     Removing and Disposing of Your Old Gazebo
                 </h2>
-                <div class="d-flex justify-content-between align-items-center mb-1">
-                    <div>
-                        <img class="img-hero " src="images/blog/img_109.png" alt="img_109">
+                <div class=" row mb-1">
+                    <div class="image-blog-main col-12 col-lg-6 col-md-12    ">
+                        <img class="image-blog-img " src="images/blog/img_109.png" alt="img_109">
                     </div>
-                    <div class="ms-5">
+                    <div class="col-12 col-lg-6 col-md-12 mt-lg-0 mt-3 mt-md-3 mt-sm-3">
 
                         <p class="fs-6 ">
                             It is not necessarily difficult to remove a gazebo yourself, but it is quite laborious and
@@ -290,15 +354,20 @@
                 <div class="pagination" id="pagination-container">
                     <div class="pagination-arrow" id="first-arrow">
                         <!-- Icon for the first page (double arrow left) -->
-                        <svg style="transform: rotate(180deg)" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.917 15.5834L16.5003 11.0001L11.917 6.41675" stroke="black" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M5.5 15.5834L10.0833 11.0001L5.5 6.41675" stroke="black" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <svg style="transform: rotate(180deg)" width="22" height="22" viewBox="0 0 22 22" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.917 15.5834L16.5003 11.0001L11.917 6.41675" stroke="black" stroke-opacity="0.6"
+                                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.5 15.5834L10.0833 11.0001L5.5 6.41675" stroke="black" stroke-opacity="0.6"
+                                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <div class="pagination-arrow" id="prev-arrow">
                         <!-- Icon for the previous page (single arrow left) -->
-                        <svg style="transform: rotate(180deg)" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.25 12.5L6.75 7L1.25 1.5" stroke="black" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <svg style="transform: rotate(180deg)" width="8" height="14" viewBox="0 0 8 14" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.25 12.5L6.75 7L1.25 1.5" stroke="black" stroke-opacity="0.6" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
                     <div class="pagination-pages" id="pages-container">
@@ -311,15 +380,18 @@
                     <div class="pagination-arrow" id="next-arrow">
                         <!-- Icon for the next page (single arrow right) -->
                         <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.25 12.5L6.75 7L1.25 1.5" stroke="black" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1.25 12.5L6.75 7L1.25 1.5" stroke="black" stroke-opacity="0.6" stroke-width="2"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
 
                     </div>
                     <div class="pagination-arrow" id="last-arrow">
                         <!-- Icon for the last page (double arrow right) -->
                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.917 15.5834L16.5003 11.0001L11.917 6.41675" stroke="black" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M5.5 15.5834L10.0833 11.0001L5.5 6.41675" stroke="black" stroke-opacity="0.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M11.917 15.5834L16.5003 11.0001L11.917 6.41675" stroke="black" stroke-opacity="0.6"
+                                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.5 15.5834L10.0833 11.0001L5.5 6.41675" stroke="black" stroke-opacity="0.6"
+                                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
 
                     </div>
@@ -328,7 +400,7 @@
             </div>
 
 
-            <div class="col-4">
+            <div class="col-lg-4 col-md-0 d-lg-block d-sm-none recent-articles-custom">
 
                 <div class="blog-inside-custom-background-p rounded-3 mb-5">
 
@@ -362,7 +434,9 @@
                         <p class="fs-6 mb-4">SAME DAY SERVICE!!!</p>
 
 
-                        <div class="mb-3"><img src="images/blog_inside/img_201.png" alt="img_201"></div>
+                        <div class="mb-3 image-hero-main">
+                            <img class="image-hero-img" src="images/blog_inside/img_201.png" alt="img_201">
+                        </div>
                         <div class="mb-3">
                             <p class="text-center fs-6">
                             <div> HOURS:</div>
@@ -373,7 +447,10 @@
 
                             </p>
                         </div>
-                        <div><img src="images/blog_inside/img_202.png" alt="img_202" style="max-width: 332px"></div>
+                        <div class="image-hero-main">
+                            <img class="image-hero-img" src="images/blog_inside/img_202.png" alt="img_202"
+                                 style="max-width: 332px">
+                        </div>
 
                     </div>
                 </div>
@@ -428,10 +505,132 @@
                             Remove Services</a>
                     </div>
                 </div>
+            </div>
 
 
+            <div class="col-4 recent-articles-custom-mini p-0" id="recentArticles">
+
+                <div class="blog-inside-custom-background-p rounded-3 ">
+                    <div class="d-flex align-items-center blog-inside-custom-background-h pt-2 pb-2">
+                        <h2 class="text-white text-center ms-5 fs-6 w-100 rounded-top-3 mb-0  ">
+                            RECENT
+                            BLOG ARTICLES </h2>
+                        <button class="btn text-white me-3 " id="recent-close">✕</button>
+                    </div>
+
+                    <div class="ps-4 pe-4 pt-5 pb-4">
+                        <a href="" class="d-block text-decoration-none border-bottom border-black text-black pb-1 mb-2">How
+                            to Clean Out a House Full of Junk</a>
+                        <a href="" class="d-block text-decoration-none border-bottom border-black text-black pb-1 mb-2">
+                            I found mold in my house or apartment, now
+                            what do i do?</a>
+                        <a href=""
+                           class="d-block text-decoration-none border-bottom border-black  text-black pb-1 mb-2">How
+                            best to cut down on holiday waste this
+                            thanksgiving:</a>
+                        <a href="" class="d-block text-decoration-none border-bottom border-black text-black pb-1 mb-2">Florida
+                            Fall Fire Pit Safety guide.</a>
+                    </div>
+                </div>
+
+
+                <div class="blog-inside-custom-background-p rounded-3  text-center">
+
+                    <h2 class="text-white text-center fs-6 w-100 rounded-top-3 pt-2 pb-2 blog-inside-custom-background-h ">
+                        AAA ROUSSE SERVICES</h2>
+
+                    <div class="ps-4 pe-4 pt-5 pb-4">
+
+                        <p class="fs-6 mb-4">SAME DAY SERVICE!!!</p>
+
+                        <div class="d-flex justify-content-center">
+                            <div class="mb-3  image-hero-main-dop">
+                                <img class="image-hero-img" src="images/blog_inside/img_201.png" alt="img_201">
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <p class="text-center fs-6">
+                            <div> HOURS:</div>
+                            <div>MONDAY - FRIDAY 8:30 A.M TO 8:30 P.M</div>
+                            <div>SATURDAY 9:00 A.M - 4:00 P.M</div>
+                            <div>SUNDAY 10:00 A.M - 4:00 P.M</div>
+                            <div> WE ACCEPT:</div>
+
+                            </p>
+                        </div>
+                        <div class="image-hero-main">
+                            <img class="image-hero-img" src="images/blog_inside/img_202.png" alt="img_202"
+                                 style="max-width: 332px">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="blog-inside-custom-background-p rounded-3 ">
+
+                    <h2 class="text-white text-center fs-6 w-100 rounded-top-3 pt-2 pb-2 blog-inside-custom-background-h ">
+                        RECENT
+                        BLOG ARTICLES</h2>
+
+                    <div class="ps-4 pe-4 pt-5 pb-4">
+
+                        <p class="fs-6 mb-4 text-center">SAME DAY SERVICE!!!</p>
+                        <a href="" class="d-block text-decoration-none border-bottom border-black text-black pb-1 mb-2">Property
+                            Cleanouts / Hoarder Clean Up</a>
+                        <a href="" class="d-block text-decoration-none border-bottom border-black text-black pb-1 mb-2">Furniture
+                            Removal</a>
+                        <a href=""
+                           class="d-block text-decoration-none border-bottom border-black  text-black pb-1 mb-2">Commercial
+                            Junk Removal</a>
+                        <a href="" class="d-block text-decoration-none border-bottom border-black text-black pb-1 mb-2">Garage
+                            Cleaning Service</a>
+                        <a href="" class="d-block text-decoration-none border-bottom border-black text-black pb-1 mb-2">Storage
+                            Unit Clean Outs</a>
+                        <a href="" class="d-block text-decoration-none border-bottom border-black text-black pb-1 mb-2">Hot
+                            Tub & Spa Removal</a>
+                        <a href="" class="d-block text-decoration-none border-bottom border-black text-black pb-1 mb-2">Carpet
+                            Removal</a>
+                        <a href="" class="d-block text-decoration-none border-bottom border-black text-black pb-1 mb-2">Property
+                            Clean Up</a>
+                        <a href="" class="d-block text-decoration-none border-bottom border-black text-black pb-1 mb-2">Illegal
+                            Dumping and Clean Up</a>
+                        <a href="" class="d-block text-decoration-none border-bottom border-black text-black pb-1 mb-2">Shed
+                            Removal</a>
+                        <a href="" class="d-block text-decoration-none border-bottom border-black text-black pb-1 mb-2">Fire
+                            Damage Cleanup</a>
+                        <a href="" class="d-block text-decoration-none border-bottom border-black text-black pb-1 mb-2">Flood
+                            Damage Cleanup and Hauling</a>
+                        <a href="" class="d-block text-decoration-none border-bottom border-black text-black pb-1 mb-2">Office
+                            Furniture Removal</a>
+                        <a href="" class="d-block text-decoration-none border-bottom border-black text-black pb-1 mb-2">Business
+                            Merchandise Removal</a>
+                        <a href="" class="d-block text-decoration-none border-bottom border-black text-black pb-1 mb-2">Foreclosure
+                            Clean Out</a>
+                        <a href="" class="d-block text-decoration-none border-bottom border-black text-black pb-1 mb-2">Storm
+                            Debris CleanUp</a>
+                        <a href="" class="d-block text-decoration-none border-bottom border-black text-black pb-1 mb-2">Bed
+                            Bug Infested Furniture Removal</a>
+                        <a href="" class="d-block text-decoration-none border-bottom border-black text-black pb-1 mb-2">Construction
+                            Remodeling Debris Removal</a>
+                        <a href="" class="d-block text-decoration-none border-bottom border-black text-black pb-1 mb-2">Dismantle
+                            Remove Services</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="custom-button-sidebar " id="toggleButton"
+                 title="Open SideBar">
+                <div class="open-custom">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="30" height="30">
+                        <path d="M137.4 164.3l136 136c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L128 233.9 16.5 334.3c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l136-136c9.4-9.4 24.6-9.4 33.9 0z"
+                              fill="#000"/>
+                    </svg>
+                </div>
 
             </div>
+
+
         </div>
 
     </div>
@@ -441,41 +640,9 @@
 <footer class="footer-custom  ps-0 pe-0">
     <div class="container pb-5">
         <div class="row">
-            <div class="col ">
-                <h3 class="text-white fs-5 mb-3">Office Locations</h3>
-                <p class="">
-                    <span class="fw-bold">Fort Lauderdale Office:</span>
-                    110 E Broward Blvd Suite 1700/1739,
-                    Fort Lauderdale, FL 33301
-                    (954) 248-1138
-                </p>
-                <p>
-                    <span class="fw-bold">Tampa and Brandon Office:</span>
-                    2202 N Westshore Blvd Suite 200/221,
-                    Tampa, Florida 33607
-                    9542481138
-                </p>
-                <p>
-                    <span class="fw-bold">Clearwater Office:</span>
-                    5131 95th st N,
-                    St. Petersburg, Florida 33708
-                    (727) 399-1899
-                </p>
-                <p>
-                    <span class="fw-bold">Sarasota, Bradenton, and Fort Myers Office:</span>
-                    1990 Main St Suite 750,
-                    Sarasota, Florida 34236
-                    (941) 302-2399
-                </p>
-                <p>
-                    <span class="fw-bold"> Orlando Office:</span>
-                    618 E South St, Suite 500,
-                    Orlando, FL 32901
-                    dispatch@aaarousse.com
-                </p>
-            </div>
-            <div class="col footer-hover">
-                <h3 class="text-white fs-5 mb-3 ">Our Services</h3>
+
+            <div class="col-12 col-lg-3 col-md-6  footer-hover">
+                <h3 class="text-white fs-5 mb-3 mt-sm-5 mt-3">Our Services</h3>
                 <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Frequently Asked
                     Questions - Reviews - Glossary</a>
                 <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Hot Tub Removal</a>
@@ -489,123 +656,114 @@
                     Outs</a>
                 <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Garbage/Trash
                     Removal</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Carpet Removal</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Shed Removal</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Business
-                    Merchandise Removal</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Office Furniture
+                <a href="" class="d-block  text-decoration-none border-bottom border-dark mb-2 pt-1 pb-1">Carpet
                     Removal</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Property
-                    Management</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Warehouse
-                    Cleanouts</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Hoarder Clean
-                    Up</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark mb-2 pt-1 pb-1">Storm Debris
-                    CleanUp</a>
                 <a href="" class="d-block  text-decoration-none bg-light pt-1 pb-1 ps-3 pe-3 a-custom">View All Services
                     »</a>
             </div>
 
 
-            <div class="col footer-hover ">
-                <h3 class="text-white fs-5 mb-3 ">Our Locations</h3>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Florida</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Tampa FL</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">St. Petersburg
+            <div class="col-12 col-lg-3 col-md-6 footer-hover ">
+                <h3 class="text-white fs-5 mb-3 mt-3 mt-sm-5">Our Locations</h3>
+                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Junk Removal Tampa
                     FL</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Clearwater FL</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Brandon FL</a>
+                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Junk Removal St.
+                    Petersburg FL</a>
+                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Junk Removal
+                    Clearwater FL</a>
+                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Junk Removal
+                    Brandon FL</a>
+                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Junk Removal
+                    Bradenton FL</a>
                 <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Bradenton FL</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Sarasota FL</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark mb-2 pt-1 pb-1">Fort Myers
-                    FL</a>
+                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Junk Removal
+                    Sarasota FL</a>
+                <a href="" class="d-block  text-decoration-none border-bottom border-dark mb-2 pt-1 pb-1">Junk Removal
+                    Fort Myers FL</a>
                 <a href="" class="d-block  text-decoration-none bg-light pt-1 pb-1 ps-3 pe-3 a-custom">View All
                     Locations »</a>
             </div>
 
-
-            <div class="col footer-hover">
-                <h3 class="text-white fs-5 mb-3 ">Our Blog</h3>
-
-                <a href="" class="d-flex align-items-center  text-decoration-none">
-                    <img src="images/img_401.png" alt="img-401" class="img-footer">
-                    <p class="ms-2">How to Stop a Self Storage Lien in LaBelle</p>
-                </a>
-                <a href="" class="d-flex align-items-center  text-decoration-none">
-                    <img src="images/img_402.png" alt="img-401" class="img-footer">
-                    <p class="ms-2">Wood Floor Removal in Venice</p>
-                </a>
-                <a href="" class="d-flex align-items-center  text-decoration-none">
-                    <img src="images/img_403.png" alt="img-401" class="img-footer">
-                    <p class="ms-2">How to Remove Sliding French Doors</p>
-                </a>
-                <a href="" class="d-flex align-items-center  text-decoration-none">
-                    <img src="images/img_404.png" alt="img-401" class="img-footer">
-                    <p class="ms-2">Wakulla Springs Wall Paneling Removal and Replacement Guide</p>
-                </a>
-                <a href="" class="d-flex align-items-center text-decoration-none">
-                    <img src="images/img_405.png" alt="img-401" class="img-footer">
-                    <p class="ms-2">Furniture Disposal in Palm Harbor</p>
-                </a>
-                <a href="" class="d-flex align-items-center  text-decoration-none">
-                    <img src="images/img_406.png" alt="img-401" class="img-footer">
-                    <p class="ms-2">Garage-Apartment Conversion DIY</p>
-                </a>
+            <div class="col-12 col-lg-3 col-md-6 footer-hover ">
+                <h3 class="text-white fs-5 mb-3 mt-3 mt-sm-5">Our Locations</h3>
+                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Broward County
+                    (954) 248-1138</a>
+                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Ft. Myers/Naples
+                    Area (239) 580-6717</a>
+                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Hillsborough County
+                    (813) 447-5466</a>
+                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Miami/Dade County
+                    (305) 203-4142</a>
+                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Orlando/Central FL
+                    (321) 406-2069</a>
+                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Palm Beach County
+                    (561) 225-2062</a>
+                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Pinellas County
+                    (727) 399-1099</a>
+                <a href="" class="d-block  text-decoration-none border-bottom border-dark mb-2 pt-1 pb-1">Sarasota/Manatee
+                    (941) 302-2399</a>
             </div>
+
+            <div class="col-12 col-lg-3 col-md-6 mt-3 text-center footer-custom-margin">
+                <div class="mt-sm-5">
+                    <img src="images/junk_removal/img_201.png" class="img-fluid" alt="img_201">
+                </div>
+                <div>
+                    <img src="images/junk_removal/img_202.png" class="img-fluid" alt="img_202">
+                </div>
+                <div>
+                    <img src="images/junk_removal/img_203.png" class="img-fluid" alt="img_203">
+                </div>
+            </div>
+
+
         </div>
-        <div class="text-center mt-5 ">Copyright ©2024 ·<a href="" class="text-black">aaarousse.com</a> <a href=""
-                                                                                                           class="text-black">Privacy
+        <div class="text-center ">Copyright ©2024 ·<a href="" class="text-black">aaarousse.com</a> <a href=""
+                                                                                                          class="text-black">Privacy
             Policy</a></div>
     </div>
 
 </footer>
 
-<section class="footer-fixed fixed-bottom pt-3 pb-4 p-0 z-3">
-    <div class="container d-flex align-items-center justify-content-between position-relative">
-        <div>
-            <a href="" class="text-decoration-none text-black">
-                <p class="fs-5 m-0 footer-fixed-custom">Call to Book</p>
+
+<section class="footer-fixed fixed-bottom pt-2 pt-lg-3 pt-md-3 pt-sm-2 pb-2 pb-lg-4 pb-md-4 pb-sm-2 p-0 z-3">
+    <div class="container row position-relative d-flex align-items-center justify-content-center">
+        <div class="col-12 col-lg-3 col-md-3 col-sm-12">
+            <a href="" class="text-decoration-none text-start text-black">
+                <p class=" m-0 footer-fixed-custom">Call to Book</p>
                 <div class="footer-fixed-custom-call">
                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M21.0001 15.92V18.92C21.0012 19.1985 20.9441 19.4741 20.8326 19.7293C20.721 19.9845 20.5574 20.2136 20.3521 20.4018C20.1469 20.5901 19.9046 20.7335 19.6408 20.8227C19.377 20.9119 19.0974 20.945 18.8201 20.92C15.7429 20.5856 12.7871 19.5341 10.1901 17.85C7.77388 16.3146 5.72539 14.2661 4.19006 11.85C2.50003 9.24118 1.4483 6.27097 1.12006 3.17997C1.09507 2.90344 1.12793 2.62474 1.21656 2.3616C1.30518 2.09846 1.44763 1.85666 1.63482 1.6516C1.82202 1.44653 2.04986 1.28268 2.30385 1.1705C2.55783 1.05831 2.8324 1.00024 3.11006 0.999975H6.11006C6.59536 0.995198 7.06585 1.16705 7.43382 1.48351C7.80179 1.79996 8.04213 2.23942 8.11005 2.71997C8.23668 3.68004 8.47151 4.6227 8.81006 5.52997C8.9446 5.8879 8.97372 6.27689 8.89396 6.65086C8.81421 7.02482 8.62892 7.36809 8.36005 7.63998L7.09006 8.90997C8.51361 11.4135 10.5865 13.4864 13.0901 14.91L14.3601 13.64C14.6319 13.3711 14.9752 13.1858 15.3492 13.1061C15.7231 13.0263 16.1121 13.0554 16.4701 13.19C17.3773 13.5285 18.32 13.7634 19.2801 13.89C19.7658 13.9585 20.2095 14.2032 20.5266 14.5775C20.8437 14.9518 21.0122 15.4296 21.0001 15.92Z"
                               stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                    <span class="fs-5 text-white">800-433-1094</span>
+                    <span class=" text-white">800-433-1094</span>
                 </div>
             </a>
 
         </div>
-        <div class="d-flex align-items-center justify-content-center ">
-            <div class="input-group pb-2" style="max-width: 400px;">
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 d-flex align-items-center justify-content-center mt-2 mt-lg-0 mt-md-0 mt-sm-2 ">
+            <div class="input-group input-group-fixed">
                 <input type="text" class="form-control p-2 " placeholder="Enter Your ZIP Code"
                        aria-label="Recipient's username"
                        aria-describedby="button-addon2">
                 <div class="input-group-btn ">
-                    <button class="btn text-white ps-5 pe-5 custom-button" type="button" id="">CHECK</button>
+                    <button class="btn text-white ps-2 ps-lg-5 ps-md-5 ps-sm-2 pe-2 pe-lg-5 pe-md-5 pe-sm-2 glow-custom-button" type="button" id="">CHECK</button>
                 </div>
             </div>
         </div>
-        <div class="d-flex ">
-            <button class="btn p-2  border-0 btn-warning rounded-lg text-white ps-4 pe-4 pt-2 pb-2 me-2 custom-button ">
+        <div class="col-12 col-lg-3 col-md-3 col-sm-12 d-flex align-items-center justify-content-end mt-2 mt-lg-0 mt-md-2 mt-sm-2 ">
+            <button class="btn  border-0  rounded-lg text-white ps-4 pe-4  custom-button custom-button-width">
                 BOOK ONLINE
             </button>
         </div>
-
-        <div class="custom-button-arrow" id="scrollToTop" title="Go to top">
-
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="30" height="30">
-                <path d="M137.4 164.3l136 136c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L128 233.9 16.5 334.3c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l136-136c9.4-9.4 24.6-9.4 33.9 0z"
-                      fill="#000"/>
-            </svg>
-        </div>
     </div>
-    <!--        <div class="custom-button-arrow"  id="scrollToTop" title="Go to top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">-->
+    <div class="custom-button-arrow" id="scrollToTop" title="Go to top">
 
-    <!--            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="30" height="30">-->
-    <!--                <path d="M137.4 164.3l136 136c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L128 233.9 16.5 334.3c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l136-136c9.4-9.4 24.6-9.4 33.9 0z" fill="#000"/>-->
-    <!--            </svg>-->
-    <!--        </div>-->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="30" height="30">
+            <path d="M137.4 164.3l136 136c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L128 233.9 16.5 334.3c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l136-136c9.4-9.4 24.6-9.4 33.9 0z"
+                  fill="#000"/>
+        </svg>
+    </div>
 </section>
 
 

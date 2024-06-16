@@ -12,55 +12,116 @@
 </head>
 
 <body>
-
-<header class="shadow sticky-top bg-white z-3 ">
+<header class="shadow sticky-top bg-white z-3">
     <div class="container d-flex align-items-center justify-content-between pt-2 pb-2">
         <div>
-            <img class="img-fluid img-logo" src="images/logo.png" alt="Logo">
+            <img class="img-logo" src="images/logo.png" alt="Logo">
         </div>
-        <nav class="header-menu" id="header-menu">
+        <nav class="header-menu d-none d-lg-flex" id="header-menu">
             <ul class="header-menu-list d-flex align-items-center justify-content-between list-unstyled mb-0 mt-0">
-                <li class="menu-item mr-3" id="home">
+                <li class="menu-item me-3" id="home">
                     <a href="index.html" class="text-decoration-none ">Home</a>
                 </li>
-                <li class="menu-item mr-3" id="service">
+                <li class="menu-item me-3" id="service">
                     <a href="junk_recycling.html" class="text-decoration-none ">Services</a>
                 </li>
-                <li class="menu-item mr-3" id="location">
-                    <a href="junk_removal.html" class="text-decoration-none ">Locations</a>
+                <li class="menu-item me-3" id="location">
+                    <a href="locations.html" class="text-decoration-none ">Locations</a>
                 </li>
-                <li class="menu-item mr-3" id="why">
-                    <a href="region_alturas.html" class="text-decoration-none ">Why Us?</a>
+                <li class="menu-item me-3" id="why">
+                    <a href="why_us.html" class="text-decoration-none ">Why Us?</a>
                 </li>
-                <li class="menu-item mr-3" id="blog">
-                    <a href="blog_inside.html" class="text-decoration-none ">Blog</a>
+                <li class="menu-item me-3" id="blog">
+                    <a href="junk_removal.html" class="text-decoration-none ">Blog</a>
                 </li>
-                <li class="menu-item mr-3" id="faq">
-                    <a href="blog.html" class="text-decoration-none ">FAQ</a>
+                <li class="menu-item me-3" id="faq">
+                    <a href="boat_removal.html" class="text-decoration-none ">FAQ</a>
                 </li>
                 <li class="menu-item" id="contact">
-                    <a href="contact_us.html" class="text-decoration-none ">Contact </a>
+                    <a href="#" class="text-decoration-none ">Contact</a>
                 </li>
             </ul>
         </nav>
-        <button class="btn p-2  border-0 btn-warning rounded-lg text-white custom-button">
+        <button class="btn p-2 border-0  rounded-lg text-white custom-button d-none d-lg-inline">
             BOOK ONLINE
         </button>
+        <a class="  " id="menu-toggle">
+            <svg width="42" height="34" viewBox="0 0 42 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_2357_257)">
+                    <rect width="40" height="4" rx="2" fill="#FB8607"/>
+                </g>
+                <g filter="url(#filter1_d_2357_257)">
+                    <rect y="14" width="40" height="4" rx="2" fill="#FB8607"/>
+                </g>
+                <g filter="url(#filter2_d_2357_257)">
+                    <rect y="28" width="40" height="4" rx="2" fill="#FB8607"/>
+                </g>
+                <defs>
+                    <filter id="filter0_d_2357_257" x="0" y="0" width="42" height="6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="1" dy="1"/>
+                        <feGaussianBlur stdDeviation="0.5"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2357_257"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2357_257" result="shape"/>
+                    </filter>
+                    <filter id="filter1_d_2357_257" x="0" y="14" width="42" height="6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="1" dy="1"/>
+                        <feGaussianBlur stdDeviation="0.5"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2357_257"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2357_257" result="shape"/>
+                    </filter>
+                    <filter id="filter2_d_2357_257" x="0" y="28" width="42" height="6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dx="1" dy="1"/>
+                        <feGaussianBlur stdDeviation="0.5"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2357_257"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2357_257" result="shape"/>
+                    </filter>
+                </defs>
+            </svg>
+        </a>
+    </div>
+    <div class="mobile-menu d-lg-none" id="mobile-menu">
+        <div class="close-back">
+            <button class="btn mb-3" id="menu-close"><img src="images/header/close.svg" alt="close"></button>
+
+        </div>
+
+
+        <ul class="list-unstyled ">
+            <li><a href="index.html" class="text-decoration-none">Home</a></li>
+            <li><a href="junk_recycling.html" class="text-decoration-none">Services</a></li>
+            <li><a href="locations.html" class="text-decoration-none">Locations</a></li>
+            <li><a href="why_us.html" class="text-decoration-none">Why Us?</a></li>
+            <li><a href="junk_removal.html" class="text-decoration-none">Blog</a></li>
+            <li><a href="boat_removal.html" class="text-decoration-none">FAQ</a></li>
+            <li><a href="#" class="text-decoration-none">Contact</a></li>
+
+        </ul>
+        <li><a href="#" class="btn  text-white d-block text-center mt-3 custom-button">BOOK ONLINE</a></li>
     </div>
 </header>
 
-
-<section class="main pt-5 pb-5" id="main">
-    <div class="container pt-5 pb-5 ps-0 pe-0">
-        <h1 class="fs-1 text-center mb-5">
+<section class="removal  " id="main">
+    <div class="container pt-5 pb-5 ps-0 pe-0 container-removal">
+        <h1 class=" text-center container-removal-title ">
             Junk Removal Services
         </h1>
-        <h2 class="text-center main-description">
+        <h2 class="text-center  main-description">
             Where do you want your junk removed?
         </h2>
     </div>
 </section>
-
 
 
 
@@ -70,7 +131,7 @@
             <div class=" col-12 col-lg-6 col-md-12 image-hero-main">
                 <img class=" image-hero-img " src="images/junk_removal/img_1.png" alt="img_1">
             </div>
-            <div class="col-12 col-lg-6 col-md-12">
+            <div class="col-12 col-lg-6 col-md-12 mt-lg-0 mt-md-3 mt-sm-3">
                 <h1 class="fs-4 mb-3 mt-4  fw-bold sub-title sub-title-center">
                     Affordable Florida Junk Removal
                 </h1>
@@ -84,7 +145,7 @@
             </div>
         </div>
         <div class=" row  mb-5 d-flex justify-content-center">
-            <div class="col-12 col-lg-6 col-md-12">
+            <div class="col-12 col-lg-6 col-md-12 order-2 order-lg-1 mt-3 mt-lg-0 mt-md-3 mt-sm-3">
                 <p class="fs-4 mb-3 fw-bold sub-title sub-title-center">
                     Additional Junk Hauling Solutions
                 </p>
@@ -99,12 +160,12 @@
                 </p>
             </div>
 
-            <div class="col-12 col-lg-6 col-md-12 d-flex justify-content-center image-hero-main ">
+            <div class="col-12 col-lg-6 col-md-12 order-1 order-lg-2  d-flex justify-content-center image-hero-main ">
                     <img class=" image-hero-img" src="images/junk_removal/img_2.png" alt="img_2">
             </div>
         </div>
 
-        <div class="text-center fs-6 pe-5 ps-5 pt-3 pb-3 mt-3 hero-custom-text ">
+        <div class="text-center fs-6 pe-5 ps-5 pt-3 pb-3  hero-custom-text ">
             These are just some of the services we provide. Ask us about any odd job. We are available 7 days a week.
             You can call us in the evening hours. We are not a 9 to 5 junk hauling service.
         </div>
@@ -384,39 +445,46 @@
 </section>
 
 
-<section class="form   pt-4 pb-5 ">
+<section class="form   pt-3 pb-5 ">
     <div class="container d-flex justify-content-center align-items-center">
         <div class="form-wrapper">
-            <div class="d-flex align-items-center justify-content-between form-wrapper-custom mb-4">
-                <p class="mb-0 form-wrapper-custom-text  me-5">CHOOSE COUNTY </p>
-                <div class="custom-select-wrapper">
-                    <button class="select-button" id="select-button">Alachua
-                        <svg id="arrow-icon" width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.5 1.75L10 10.25L18.5 1.75" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                    <div class="select-options" id="select-options">
-                        <div class="select-option" data-value="option1">Alachua</div>
-                        <div class="select-option" data-value="option2">Option 2</div>
-                        <div class="select-option" data-value="option3">Option 3</div>
+            <div class="row mb-4">
+                <div class=" col-12 col-lg-6 col-md-6 col-sm-12 pe-3 mb-3 mb-lg-0 mb-md-0 mb-sm-3">
+                    <label for="" class="text-white fw-normal form-wrapper-label mb-2">CHOOSE COUNTY</label>
+                    <div class="custom-select-wrapper">
+                        <button class="select-button" id="select-button">Alachua
+                            <svg id="arrow-icon" width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 1.75L10 10.25L18.5 1.75" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="select-options" id="select-options">
+                            <div class="select-option" data-value="option1">Alachua</div>
+                            <div class="select-option" data-value="option2">Option 2</div>
+                            <div class="select-option" data-value="option3">Option 3</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-lg-6 col-md-6 col-sm-12 ps-3">
+                    <label for="" class="text-white  fw-normal form-wrapper-label mb-2">CHOOSE CITY </label>
+                    <div class="custom-select-wrapper">
+                        <button class="select-button" id="select-button-2">PLEASE CHOOSE A COUNTY FIRST
+                            <svg id="arrow-icon-2" width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 1.75L10 10.25L18.5 1.75" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="select-options-2" id="select-options-2">
+                            <div class="select-option-2" data-value="option4">PLEASE CHOOSE A COUNTY FIRST</div>
+                            <div class="select-option-2" data-value="option5">Option 2</div>
+                            <div class="select-option-2" data-value="option6">Option 3</div>
+                        </div>
                     </div>
                 </div>
+
             </div>
-            <div class="d-flex align-items-center justify-content-between form-wrapper-custom">
-                <p class="mb-0 form-wrapper-custom-text me-5" >CHOOSE CITY </p>
-                <div class="custom-select-wrapper">
-                    <button class="select-button" id="select-button-2">PLEASE CHOOSE A COUNTY FIRST
-                        <svg id="arrow-icon-2" width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.5 1.75L10 10.25L18.5 1.75" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </button>
-                    <div class="select-options-2" id="select-options-2">
-                        <div class="select-option-2" data-value="option4">PLEASE CHOOSE A COUNTY FIRST</div>
-                        <div class="select-option-2" data-value="option5">Option 2</div>
-                        <div class="select-option-2" data-value="option6">Option 3</div>
-                    </div>
-                </div>
-            </div>
+
+
         </div>
     </div>
 </section>
@@ -489,7 +557,7 @@
                     several large trucks (with tools) to accommodate any type of job.
                 </p>
             </div>
-            <div>
+            <div class="">
                 <img class="img-mario img-fluid" src="images/junk_removal/img_100.png" alt="img_100">
             </div>
         </div>
@@ -562,46 +630,45 @@
 
 </footer>
 
-<section class="footer-fixed fixed-bottom  pt-3 pb-4 p-0 z-3">
-    <div class="container  d-flex align-items-center justify-content-between position-relative">
-        <div>
-            <a href="" class="text-decoration-none text-black">
-                <p class="fs-5 m-0 footer-fixed-custom">Call to Book</p>
+
+<section class="footer-fixed fixed-bottom pt-2 pt-lg-3 pt-md-3 pt-sm-2 pb-2 pb-lg-4 pb-md-4 pb-sm-2 p-0 z-3">
+    <div class="container row position-relative d-flex align-items-center justify-content-center">
+        <div class="col-12 col-lg-3 col-md-3 col-sm-12">
+            <a href="" class="text-decoration-none text-start text-black">
+                <p class=" m-0 footer-fixed-custom">Call to Book</p>
                 <div class="footer-fixed-custom-call">
                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M21.0001 15.92V18.92C21.0012 19.1985 20.9441 19.4741 20.8326 19.7293C20.721 19.9845 20.5574 20.2136 20.3521 20.4018C20.1469 20.5901 19.9046 20.7335 19.6408 20.8227C19.377 20.9119 19.0974 20.945 18.8201 20.92C15.7429 20.5856 12.7871 19.5341 10.1901 17.85C7.77388 16.3146 5.72539 14.2661 4.19006 11.85C2.50003 9.24118 1.4483 6.27097 1.12006 3.17997C1.09507 2.90344 1.12793 2.62474 1.21656 2.3616C1.30518 2.09846 1.44763 1.85666 1.63482 1.6516C1.82202 1.44653 2.04986 1.28268 2.30385 1.1705C2.55783 1.05831 2.8324 1.00024 3.11006 0.999975H6.11006C6.59536 0.995198 7.06585 1.16705 7.43382 1.48351C7.80179 1.79996 8.04213 2.23942 8.11005 2.71997C8.23668 3.68004 8.47151 4.6227 8.81006 5.52997C8.9446 5.8879 8.97372 6.27689 8.89396 6.65086C8.81421 7.02482 8.62892 7.36809 8.36005 7.63998L7.09006 8.90997C8.51361 11.4135 10.5865 13.4864 13.0901 14.91L14.3601 13.64C14.6319 13.3711 14.9752 13.1858 15.3492 13.1061C15.7231 13.0263 16.1121 13.0554 16.4701 13.19C17.3773 13.5285 18.32 13.7634 19.2801 13.89C19.7658 13.9585 20.2095 14.2032 20.5266 14.5775C20.8437 14.9518 21.0122 15.4296 21.0001 15.92Z"
                               stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                    <span class="fs-5 text-white">800-433-1094</span>
+                    <span class=" text-white">800-433-1094</span>
                 </div>
             </a>
 
         </div>
-        <div class="d-flex align-items-center justify-content-center ">
-            <div class="input-group pb-2" style="max-width: 400px;">
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 d-flex align-items-center justify-content-center mt-2 mt-lg-0 mt-md-0 mt-sm-2 ">
+            <div class="input-group input-group-fixed">
                 <input type="text" class="form-control p-2 " placeholder="Enter Your ZIP Code"
                        aria-label="Recipient's username"
                        aria-describedby="button-addon2">
                 <div class="input-group-btn ">
-                    <button class="btn text-white ps-5 pe-5 custom-button" type="button" id="">CHECK</button>
+                    <button class="btn text-white ps-2 ps-lg-5 ps-md-5 ps-sm-2 pe-2 pe-lg-5 pe-md-5 pe-sm-2 glow-custom-button" type="button" id="">CHECK</button>
                 </div>
             </div>
         </div>
-        <div class="d-flex ">
-            <button class="btn p-2  border-0 btn-warning rounded-lg text-white ps-4 pe-4 pt-2 pb-2 me-2 custom-button ">
+        <div class="col-12 col-lg-3 col-md-3 col-sm-12 d-flex align-items-center justify-content-end mt-2 mt-lg-0 mt-md-2 mt-sm-2 ">
+            <button class="btn  border-0  rounded-lg text-white ps-4 pe-4  custom-button custom-button-width">
                 BOOK ONLINE
             </button>
         </div>
-
-        <div class="custom-button-arrow" id="scrollToTop" title="Go to top">
-
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="30" height="30">
-                <path d="M137.4 164.3l136 136c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L128 233.9 16.5 334.3c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l136-136c9.4-9.4 24.6-9.4 33.9 0z"
-                      fill="#000"/>
-            </svg>
-        </div>
     </div>
+    <div class="custom-button-arrow" id="scrollToTop" title="Go to top">
 
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="30" height="30">
+            <path d="M137.4 164.3l136 136c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L128 233.9 16.5 334.3c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l136-136c9.4-9.4 24.6-9.4 33.9 0z"
+                  fill="#000"/>
+        </svg>
+    </div>
 </section>
 
 
