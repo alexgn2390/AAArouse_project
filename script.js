@@ -99,9 +99,118 @@ document.addEventListener("DOMContentLoaded", function () {
         recentArticles.style.display = 'none'
     });
 
+
 });
 
 
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const officeLocation = document.getElementById('officeLocation');
+    const officeHeader = document.querySelector('.office');
+    const ourServices = document.getElementById('ourServices');
+    const ourService = document.querySelector('.our_service');
+    const ourLocations = document.getElementById('ourLocations');
+    const ourLocation = document.querySelector('.our_location');
+    const ourBlog = document.getElementById('ourBlog');
+    const blog = document.querySelector('.blog');
 
+
+    // Функция для проверки размера экрана и управления видимостью блока
+    function checkScreenWidth() {
+        if (window.innerWidth < 430) {
+            officeLocation.classList.add('hidden');
+            ourServices.classList.add('hidden');
+            ourLocations.classList.add('hidden');
+            ourBlog.classList.add('hidden');
+
+
+        } else {
+            officeLocation.classList.remove('hidden');
+            ourServices.classList.remove('hidden');
+            ourLocations.classList.remove('hidden');
+            ourBlog.classList.remove('hidden');
+
+
+        }
+    }
+
+    // Добавляем обработчик клика на заголовок
+    officeHeader.addEventListener('click', function() {
+        if (window.innerWidth < 430) {
+            officeLocation.classList.toggle('hidden');
+        }
+    });
+
+    ourService.addEventListener('click', function() {
+        if (window.innerWidth < 430) {
+            ourServices.classList.toggle('hidden');
+        }
+    });
+    ourLocation.addEventListener('click', function() {
+        if (window.innerWidth < 430) {
+            ourLocations.classList.toggle('hidden');
+        }
+    });
+
+    blog.addEventListener('click', function() {
+        if (window.innerWidth < 430) {
+            ourBlog.classList.toggle('hidden');
+        }
+    });
+
+
+
+    // Добавляем обработчик изменения размера окна
+    window.addEventListener('resize', checkScreenWidth);
+
+    // Проверяем начальную ширину экрана
+    checkScreenWidth();
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const ourServices = document.getElementById('ourServices2');
+    const ourLocations = document.getElementById('ourLocations');
+    const ourBlog = document.getElementById('ourBlog');
+
+    const serviceHeader = document.querySelector('.our_service-2');
+    const locationHeader = document.querySelector('.our_location');
+    const blogHeader = document.querySelector('.blog');
+
+    // Функция для проверки размера экрана и управления видимостью блоков
+    function checkScreenWidth() {
+        if (window.innerWidth < 430) {
+            ourServices.classList.add('hidden');
+            ourLocations.classList.add('hidden');
+            ourBlog.classList.add('hidden');
+        } else {
+            ourServices.classList.remove('hidden');
+            ourLocations.classList.remove('hidden');
+            ourBlog.classList.remove('hidden');
+        }
+    }
+
+    // Добавляем обработчики кликов на заголовки
+    serviceHeader.addEventListener('click', function() {
+        if (window.innerWidth < 430) {
+            ourServices.classList.toggle('hidden');
+        }
+    });
+
+    locationHeader.addEventListener('click', function() {
+        if (window.innerWidth < 430) {
+            ourLocations.classList.toggle('hidden');
+        }
+    });
+
+    blogHeader.addEventListener('click', function() {
+        if (window.innerWidth < 430) {
+            ourBlog.classList.toggle('hidden');
+        }
+    });
+
+    // Добавляем обработчик изменения размера окна
+    window.addEventListener('resize', checkScreenWidth);
+
+    // Проверяем начальную ширину экрана
+    checkScreenWidth();
+});

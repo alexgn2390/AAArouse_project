@@ -300,13 +300,9 @@ padding-top: 120px;
     }
 }
 
-/* Применение анимации при наведении */
 .glow-custom-button:hover {
     background: #a45c03;
 }
-
-
-
 .custom-button:hover {
     background: #a45c03;
 }
@@ -321,6 +317,8 @@ padding-top: 120px;
     padding-bottom: 160px;
 }
 
+
+
 .footer-hover a {
     color: black;
     transition: color .3s ease-in-out;
@@ -329,6 +327,14 @@ padding-top: 120px;
 .footer-hover a:hover {
     color: #f6ebe9;
 }
+.office-location {
+    display: block;
+}
+
+.office-span {
+    display: none;
+}
+
 
 .a-custom {
     color: black !important;
@@ -365,6 +371,15 @@ padding-top: 120px;
 
 .input-group-btn {
     margin-left: -1px;
+}
+.input-main-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-main-mobile {
+    display: none;
 }
 
 .input-group-fixed {
@@ -1015,3 +1030,9 @@ font-family: Montserrat, sans-serif;
 }
 
 
+.hidden {
+    display: none !important;
+}
+.hyden {
+    display: none !important;
+}
