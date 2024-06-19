@@ -12,7 +12,7 @@
 
 <body>
 
-<header class="shadow sticky-top bg-white z-3">
+<header class="shadow sticky-top  z-3" id="header" >
     <div class="container d-flex align-items-center justify-content-between pt-2 pb-2">
         <div>
             <img class="img-logo" src="images/logo.png" alt="Logo">
@@ -57,9 +57,11 @@
                     <rect y="28" width="40" height="4" rx="2" fill="#FB8607"/>
                 </g>
                 <defs>
-                    <filter id="filter0_d_2357_257" x="0" y="0" width="42" height="6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <filter id="filter0_d_2357_257" x="0" y="0" width="42" height="6" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
                         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                       result="hardAlpha"/>
                         <feOffset dx="1" dy="1"/>
                         <feGaussianBlur stdDeviation="0.5"/>
                         <feComposite in2="hardAlpha" operator="out"/>
@@ -67,9 +69,11 @@
                         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2357_257"/>
                         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2357_257" result="shape"/>
                     </filter>
-                    <filter id="filter1_d_2357_257" x="0" y="14" width="42" height="6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <filter id="filter1_d_2357_257" x="0" y="14" width="42" height="6" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
                         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                       result="hardAlpha"/>
                         <feOffset dx="1" dy="1"/>
                         <feGaussianBlur stdDeviation="0.5"/>
                         <feComposite in2="hardAlpha" operator="out"/>
@@ -77,9 +81,11 @@
                         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2357_257"/>
                         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2357_257" result="shape"/>
                     </filter>
-                    <filter id="filter2_d_2357_257" x="0" y="28" width="42" height="6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <filter id="filter2_d_2357_257" x="0" y="28" width="42" height="6" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
                         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                       result="hardAlpha"/>
                         <feOffset dx="1" dy="1"/>
                         <feGaussianBlur stdDeviation="0.5"/>
                         <feComposite in2="hardAlpha" operator="out"/>
@@ -94,10 +100,7 @@
     <div class="mobile-menu d-lg-none" id="mobile-menu">
         <div class="close-back">
             <button class="btn mb-3" id="menu-close"><img src="images/header/close.svg" alt="close"></button>
-
         </div>
-
-
         <ul class="list-unstyled ">
             <li><a href="index.html" class="text-decoration-none">Home</a></li>
             <li><a href="junk_recycling.html" class="text-decoration-none">Services</a></li>
@@ -106,24 +109,29 @@
             <li><a href="blog.html" class="text-decoration-none">Blog</a></li>
             <li><a href="reviews.html" class="text-decoration-none">FAQ</a></li>
             <li><a href="contact_us.html" class="text-decoration-none">Contact</a></li>
-
         </ul>
         <!--        <li><a href="#" class="btn  text-white d-block text-center mt-3 custom-button">BOOK ONLINE</a></li>-->
     </div>
 </header>
 
 
+
 <section class="main locations locations-custom-image">
-    <div class="container d-flex justify-content-center container-removal">
+    <div class="container container-removal">
+        <div class="breadcrumbs-container">
+            <ul class="breadcrumbs" id="breadcrumbs">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
         <div>
             <h1 class=" text-center   container-removal-title">
                 Junk Removal Service Areas
             </h1>
-            <div class="d-flex justify-content-center">
-                <h2 class=" text-center  main-description">
-                    Where do you want your junk removed?
-                </h2>
-            </div>
+<!--            <div class="d-flex justify-content-center">-->
+<!--                <h2 class=" text-center  main-description">-->
+<!--                    Where do you want your junk removed?-->
+<!--                </h2>-->
+<!--            </div>-->
 
         </div>
     </div>

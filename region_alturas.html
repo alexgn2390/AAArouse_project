@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="slick.css">
+    <link rel="stylesheet" href="slick-theme.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="adaptive.css">
     <title>Title</title>
@@ -11,7 +15,8 @@
 
 <body>
 
-<header class="shadow sticky-top bg-white z-3">
+
+<header class="shadow sticky-top  z-3" id="header" >
     <div class="container d-flex align-items-center justify-content-between pt-2 pb-2">
         <div>
             <img class="img-logo" src="images/logo.png" alt="Logo">
@@ -56,9 +61,11 @@
                     <rect y="28" width="40" height="4" rx="2" fill="#FB8607"/>
                 </g>
                 <defs>
-                    <filter id="filter0_d_2357_257" x="0" y="0" width="42" height="6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <filter id="filter0_d_2357_257" x="0" y="0" width="42" height="6" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
                         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                       result="hardAlpha"/>
                         <feOffset dx="1" dy="1"/>
                         <feGaussianBlur stdDeviation="0.5"/>
                         <feComposite in2="hardAlpha" operator="out"/>
@@ -66,9 +73,11 @@
                         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2357_257"/>
                         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2357_257" result="shape"/>
                     </filter>
-                    <filter id="filter1_d_2357_257" x="0" y="14" width="42" height="6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <filter id="filter1_d_2357_257" x="0" y="14" width="42" height="6" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
                         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                       result="hardAlpha"/>
                         <feOffset dx="1" dy="1"/>
                         <feGaussianBlur stdDeviation="0.5"/>
                         <feComposite in2="hardAlpha" operator="out"/>
@@ -76,9 +85,11 @@
                         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2357_257"/>
                         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2357_257" result="shape"/>
                     </filter>
-                    <filter id="filter2_d_2357_257" x="0" y="28" width="42" height="6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <filter id="filter2_d_2357_257" x="0" y="28" width="42" height="6" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
                         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                       result="hardAlpha"/>
                         <feOffset dx="1" dy="1"/>
                         <feGaussianBlur stdDeviation="0.5"/>
                         <feComposite in2="hardAlpha" operator="out"/>
@@ -93,10 +104,7 @@
     <div class="mobile-menu d-lg-none" id="mobile-menu">
         <div class="close-back">
             <button class="btn mb-3" id="menu-close"><img src="images/header/close.svg" alt="close"></button>
-
         </div>
-
-
         <ul class="list-unstyled ">
             <li><a href="index.html" class="text-decoration-none">Home</a></li>
             <li><a href="junk_recycling.html" class="text-decoration-none">Services</a></li>
@@ -105,15 +113,34 @@
             <li><a href="blog.html" class="text-decoration-none">Blog</a></li>
             <li><a href="reviews.html" class="text-decoration-none">FAQ</a></li>
             <li><a href="contact_us.html" class="text-decoration-none">Contact</a></li>
-
         </ul>
         <!--        <li><a href="#" class="btn  text-white d-block text-center mt-3 custom-button">BOOK ONLINE</a></li>-->
     </div>
 </header>
 
+<div class="breadcrumbs" id="breadcrumbs">
+    <!-- Здесь будут динамически добавляться элементы крошек -->
+</div>
+
+<section class="main  region-custom-image">
+    <div class="container d-flex justify-content-center container-removal">
+        <div>
+            <h1 class=" text-center   container-removal-title">
+                Junk Removal in Alturas Florida
+            </h1>
+            <!--            <div class="d-flex justify-content-center">-->
+            <!--                <h2 class=" text-center  main-description">-->
+            <!--                    Where do you want your junk removed?-->
+            <!--                </h2>-->
+            <!--            </div>-->
+
+        </div>
+    </div>
+
+</section>
 
 
-<section class="hero pb-3 pt-3 ps-0 pe-0">
+<section class="hero pb-3 pt-3 pt-lg-5 ps-0 pe-0">
     <div class="container">
         <div class="">
             <div class="row mb-3 d-flex justify-content-center">
@@ -836,7 +863,7 @@
             Storage Unit Cleanouts and More
         </h2>
 
-        <div class="row mb-5 pt-5">
+        <div class="row d-flex align-items-center mb-5 pt-5">
             <div class="col-12 col-lg-6 col-md-12   mt-3 mt-lg-0 mt-md-3 ">
                 <p class="">
                     At AAA Rousse, we can help clean out any storage unit of any size . We don't limit ourselves to
@@ -876,7 +903,7 @@
             </div>
         </div>
 
-        <div class="row ">
+        <div class="row d-flex align-items-center">
             <div class="col-12 col-lg-6 col-md-12 order-2 order-lg-1 image-hero-main text-center">
                 <img class="image-hero-img" src="images/region_alturas/img_202.png" alt="img_202">
             </div>
@@ -897,7 +924,7 @@
 
 
 <section class="pt-0 pt-lg-5 pt-md-3 pt-sm-0  pb-5">
-    <div class="container">
+    <div class="container pe-0">
         <h2 class="fs-3  fw-bold text-center sub-title">
             A 100% Florida Grown, family owned business.
         </h2>
@@ -920,66 +947,384 @@
             </div>
         </div>
 
-        <p class="text-center mt-4 fw-bold">Junk Removal FAQ’s</p>
+        <p class="text-center mt-5 fw-bold fs-4">Junk Removal FAQ’s</p>
 
-        <p class="text-warning mb-2">Can you describe the process of junk in Alturasand how it works?</p>
-        <p class="mb-4">
-            When you book an appointment with AAA Rousse in Alturas, our team will come to your location, examine the
-            items to be removed, give you an upfront price, and then handle their safe and eco-friendly disposal or
-            recycling with your ok..
-        </p>
+        <div class="container mt-5">
+            <div class="accordion" id="faqAccordion">
+                <!-- 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading1">
+                        <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                            1. What is junk removal?
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1"
+                         data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Junk removal is a service that involves the removal and disposal of unwanted items or debris
+                            from homes, businesses, or other properties.
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading2">
+                        <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            2. How does junk removal service work?
+                        </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                         data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            A AAA Rousse appointment typically involves professionals coming to your location, assessing
+                            the items to be removed, and then safely and responsibly hauling them away for disposal or
+                            recycling.
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading3">
+                        <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                            3. What items can be removed by AAA Rousse?
+                        </button>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                         data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            AAA Rousse can typically remove a wide range of items, including furniture, appliances,
+                            electronics, yard waste, construction debris, and more.
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading4">
+                        <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                            4. Does AAA Rousse handle both residential and commercial properties?
+                        </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                         data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, AAA Rousse often handles both residential and commercial properties, providing their
+                            services to homeowners, renters, businesses, and organizations.
+                        </div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading5">
+                        <button class="accordion-button  fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                            5. How much does junk removal service cost?
+                        </button>
+                    </h2>
+                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                         data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            At AAA Rousse, our pricing can vary depending on factors such as the volume of items, the
+                            weight of items, the location, and any additional services required. Click here or call for
+                            an estimate.
+                        </div>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading6">
+                        <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                            6. Are there any items that AAA Rousse doesn't accept?
+                        </button>
+                    </h2>
+                    <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                         data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            AAA Rousse will accept most service requests; feel free to give us a call at or Click here
+                            for an estimate.
+                        </div>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading7">
+                        <button class="accordion-button  fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                            7. Can I schedule a specific date and time for junk removal?
+                        </button>
+                    </h2>
+                    <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
+                         data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, at AAA Rousse, we allow you to schedule a specific date and time that is convenient for
+                            you. We will work with you to find a suitable appointment that fits your schedule.
+                        </div>
+                    </div>
+                </div>
+                <!-- 8 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading8">
+                        <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                            8. Do I need to be present during the junk removal process?
+                        </button>
+                    </h2>
+                    <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8"
+                         data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            It is not always necessary for you to be present during the junk removal process. You can
+                            make arrangements with the service provider to access the items and provide instructions
+                            even if you're not available.
+                        </div>
+                    </div>
+                </div>
+                <!-- 9 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading9">
+                        <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                            9. How long does a typical junk removal appointment take?
+                        </button>
+                    </h2>
+                    <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9"
+                         data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            The duration of a junk removal appointment can vary depending on the amount and complexity
+                            of the items to be removed. It can range from a few minutes for a small load to several
+                            hours for a larger or more complex project.
+                        </div>
+                    </div>
+                </div>
+                <!-- 10 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading10">
+                        <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                            10. Is there a weight limit for items that can be removed?
+                        </button>
+                    </h2>
+                    <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10"
+                         data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            There may be weight limits for individual items or total loads. Our AAA Rousseer will
+                            discuss this with you when scheduling the appointment.
+                        </div>
+                    </div>
+                </div>
+                <!-- 11 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading11">
+                        <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                            11. What happens to the items after they are removed?
+                        </button>
+                    </h2>
+                    <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11"
+                         data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            After removal, AAA Rousse typically takes the items to appropriate facilities for recycling,
+                            donation, or proper disposal. We strive to minimize environmental impact and follow local
+                            regulations.
+                        </div>
+                    </div>
+                </div>
+                <!-- 12 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading12">
+                        <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                            12. Can AAA Rousse handle large or heavy items?
+                        </button>
+                    </h2>
+                    <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12"
+                         data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, AAA Rousse is equipped to handle large or heavy items such as furniture, appliances,
+                            machinery, and more. They have the necessary tools and equipment to safely remove and
+                            transport such items.
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <p class="text-warning mb-2">Does AAA Rouse handle residential commercial and industrial properties in
-            Alturas?</p>
-        <p class="mb-4">
-            Yes, in Alturas, AAA Rousse provides extensive services to homeowners, businesses, and industrial
-            properties, accommodating all property types and sizes.
-        </p>
+
+            <div class="text-black fs-4 mt-5 mb-4">Our Customers Love Us!</div>
+            <div class="reviews__cards">
+                <div class="review__card-1">
+                    <div class="cust_name">Ryan Hountz</div>
+                    <div class="reviews_star">
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                    </div>
+                    <div class="location_info"><span>2 months ago</span></div>
+                    <div class="testimonial_text">
+                        <p>Great experience dealing with Justin and Stephanie from AAA Rousse Boat Removal. Justin
+                            removed a derilic boat from my canal that I acquired when I purchased the property. The boat
+                            was deep under silt and sludge and had oysters encrusting the entire boat - he made quick
+                            work of the boat dislodging it and then cutting it up and was very careful not to damage any
+                            of my landscaping or lawn in the process. Excellent job overall & was very professional -
+                            super impressed with Justin as he's a great guy to work with. Stephanie provided great
+                            communication managing the schedule and details of the job.</p>
+                    </div>
+                </div>
+                <div class="review__card-1">
+                    <div class="cust_name">Leah R.</div>
+                    <div class="reviews_star">
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                    </div>
+                    <div class="location_info"><span>2 months ago</span></div>
+                    <div class="testimonial_text">
+                        <p>Very pleased with service from the Crystal River based folks who came out
+                            and spent the whole day removing some junk. Mom and I appreciate you ...
+                        </p>
+                    </div>
+                </div>
+                <div class="review__card-1">
+                    <div class="cust_name">Mark Bobek</div>
+                    <div class="reviews_star">
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                    </div>
+                    <div class="location_info"><span>2 months ago</span></div>
+                    <div class="testimonial_text">
+                        <p>Great service Had a bunch of junk needed to be removed pronto. I live on
+                            the lower keys and services such as junk removal are not available. These
+                            guys had to drive two hours to get to my place. They came when they said
+                            they would they removed everything and I am so grateful.</p>
+                    </div>
+                </div>
+                <div class="review__card-1">
+                    <div class="cust_name">Aaron Van Dora</div>
+                    <div class="reviews_star">
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                    </div>
+                    <div class="location_info"><span>3 years ago</span></div>
+                    <div class="testimonial_text">
+                        <p>Positive Responsiveness, Punctuality, Professionalism, Value Services House
+                            &amp; garage cleanouts, Junk removal, Furniture removal</p>
+                    </div>
+                </div>
+                <div class="review__card-1">
+                    <div class="cust_name">D Hans</div>
+                    <div class="reviews_star">
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                    </div>
+                    <div class="location_info"><span>a month ago</span></div>
+                    <div class="testimonial_text">
+                        <p>Great Service</p>
+                    </div>
+                </div>
+                <div class="review__card-1">
+                    <div class="cust_name">Mike Altieri</div>
+                    <div class="reviews_star">
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                    </div>
+                    <div class="location_info"><span>4 years ago</span></div>
+                    <div class="testimonial_text">
+                        <p>Stephanie and her team are awesome! Very quick response and fast at what
+                            they do. They removed some old wood fencing I was replacing - good pricing
+                            and excellent service all around. Highly recommend!</p>
+                    </div>
+                </div>
+                <div class="review__card-1">
+                    <div class="cust_name">Marlene Desiree</div>
+                    <div class="reviews_star">
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                    </div>
+                    <div class="location_info"><span>5 years ago</span></div>
+                    <div class="testimonial_text">
+                        <p>Brittany did a great job.</p>
+                    </div>
+                </div>
+                <div class="review__card-1">
+                    <div class="cust_name">Rhonda Abramson</div>
+                    <div class="reviews_star">
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                    </div>
+                    <div class="location_info"><span>6 years ago</span></div>
+                    <div class="testimonial_text">
+                        <p>AAA Rousse Junk Removal was very quick to book and even quicker to get to
+                            work at my property. Reasonably priced and polite workers. Good
+                            experience!</p>
+                    </div>
+                </div>
+                <div class="review__card-1">
+                    <div class="cust_name">David Bailey</div>
+                    <div class="reviews_star">
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                    </div>
+                    <div class="location_info"><span>7 years ago</span></div>
+                    <div class="testimonial_text">
+                        <p>Needed same day service and they came through. I was quite impressed.
+                            Stephanie was very polite and helpful. Same day service is a huge
+                            selling point. It made the company stand out. Thank you for the good
+                            service.</p>
+                    </div>
+                </div>
+                <div class="review__card-1">
+                    <div class="cust_name">Concert Junkie</div>
+                    <div class="reviews_star">
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                        <i class="fa fa-star star"></i>
+                    </div>
+                    <div class="location_info"><span>8 years ago</span></div>
+                    <div class="testimonial_text">
+                        <p>Thanks, for your prompt service. We needed a new couch hauled away
+                            quickly.</p>
+                    </div>
+                </div>
+            </div>
 
 
-        <p class="text-warning mb-2">What are the rates for junk removal services in Alturas?</p>
-        <p class="mb-4">
-            The cost of junk removal services in Alturas at AAA Rousse is competitive and can vary, depending on factors
-            such as the volume and weight of items, location, and any additional services required. For an upfront
-            estimate, click here or call 863-547-0263.
-        </p>
-        <p class="text-warning mb-2">How muchtime does a typical junk removal appointment take in Alturas?</p>
-        <p class="mb-4">
-            The average duration of a junk removal appointment in Alturas varies depending on the size and intricacy of
-            the task. It may take only a few minutes for simpler jobs, while more complicated projects could require
-            several hours or more. After all, we do some pretty big jobs.
-        </p>
-        <p class="text-warning mb-2">Is AAA Rousse capable of handling large or heavy items in Alturas and are there any
-            rescrictions on the amount of items can be removed? </p>
-        <p class="mb-4">
-            AAA Rousse is fully capable of handling large or heavy items, including boats, RV's furniture, appliances,
-            machinery, and more, in Alturas. Ask about any unique task like dismantling and removing structures like
-            decking, sheds, pergolas and more. We do it all.
-        </p>
-        <p class="text-warning mb-2">Must the items be prepared before removal?</p>
-        <p class="mb-4">
-            Usually, there is no need to ready the items for removal. AAA Rousse manages the sorting, lifting, and
-            removal tasks in Alturas. Nonetheless, providing specific instructions, such as disassembling furniture, in
-            advance can be beneficial.
-        </p>
-        <p class="text-warning mb-2">Can AAA Rousse provide same-day service in Alturas?</p>
-        <p class="mb-4">
-            Yes, AAA Rousse offers same-day or next-day service in Alturas. Contact us to confirm scheduling options.
-        </p>
-        <p class="text-warning mb-2">Can AAA Rousse remove items from multiple locations in Alturas?</p>
-        <p class="mb-5">
-            Yes, AAA Rousse can accommodate our customers from multiple locations within Alturas and beyond. We have the
-            capability to handle our services from residential, commercial and industrial properties, coordinating
-            logistics as required.
-        </p>
+            <div class="text-center fs-6 pt-4 pe-5 ps-5 pt-3 pb-3 mb-5 mt-5 hero-custom-text ">
+                Call <a href="" class="a-custom">863-547-0263</a> Today to Schedule an Appointment.
+            </div>
 
-        <div class="text-center fs-6 pt-4 pe-5 ps-5 pt-3 pb-3 mb-5 hero-custom-text ">
-            Call <a href="" class="a-custom">863-547-0263</a> Today to Schedule an Appointment.
+            <p>Areas of Service Zip Codes:</p>
+            <p>33859, 33841, 33830, 33820</p>
         </div>
-
-        <p>Areas of Service Zip Codes:</p>
-        <p>33859, 33841, 33830, 33820</p>
-    </div>
+        </div>
 </section>
 
 
@@ -1253,7 +1598,8 @@
             </div>
             <div class="col-12 col-lg-3 col-md-6  mb-md-4 footer-hover ">
 
-                <h3 class="text-white fs-5 mb-2 mt-3 our_location">Our Locations <span class="office-span"> »</span></h3>
+                <h3 class="text-white fs-5 mb-2 mt-3 our_location">Our Locations <span class="office-span"> »</span>
+                </h3>
                 <div class="our_locations" id="ourLocations">
                     <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Florida</a>
                     <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Tampa FL</a>
@@ -1332,7 +1678,9 @@
                        aria-label="Recipient's username"
                        aria-describedby="button-addon2">
                 <div class="input-group-btn ">
-                    <button class="btn text-white ps-2 ps-lg-5 ps-md-5 ps-sm-2 pe-2 pe-lg-5 pe-md-5 pe-sm-2 glow-custom-button" type="button" id="">CHECK</button>
+                    <button class="btn text-white ps-2 ps-lg-5 ps-md-5 ps-sm-2 pe-2 pe-lg-5 pe-md-5 pe-sm-2 glow-custom-button"
+                            type="button" id="">CHECK
+                    </button>
                 </div>
             </div>
         </div>
@@ -1352,11 +1700,14 @@
 </section>
 
 
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>-->
+<script src="jquery-3.6.3.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="slick.min.js"></script>
+<script src="script.js"></script>
+
+
 
 </body>
 </html>
-
-
-<script src="jquery-3.6.3.min.js"></script>
-<script src="bootstrap.min.js"></script>
-<script src="script.js"></script>

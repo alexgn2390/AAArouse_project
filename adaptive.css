@@ -369,18 +369,6 @@
         font-size: 12px;
     }
 
-    /*.form-wrapper {*/
-    /*    padding: 10px 20px;*/
-    /*    max-width: 400px;*/
-
-    /*}*/
-
-    /*.select-button {*/
-    /*    padding: 10px 5px;*/
-    /*    font-size: 8px;*/
-    /*    max-width: 150px;*/
-
-    /*}*/
 
     .select-option {
         font-size: 8px;
@@ -409,6 +397,9 @@
 
     }
 
+    .slick-next:before, .slick-prev:before {
+        display: none;
+    }
 
 
 
@@ -446,6 +437,8 @@
     /*.office-location {*/
     /*    display: none;*/
     /*}*/
+
+
 }
 
 

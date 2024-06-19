@@ -12,7 +12,7 @@
 <body>
 
 
-<header class="shadow sticky-top bg-white z-3">
+<header class="shadow sticky-top  z-3" id="header" >
     <div class="container d-flex align-items-center justify-content-between pt-2 pb-2">
         <div>
             <img class="img-logo" src="images/logo.png" alt="Logo">
@@ -57,9 +57,11 @@
                     <rect y="28" width="40" height="4" rx="2" fill="#FB8607"/>
                 </g>
                 <defs>
-                    <filter id="filter0_d_2357_257" x="0" y="0" width="42" height="6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <filter id="filter0_d_2357_257" x="0" y="0" width="42" height="6" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
                         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                       result="hardAlpha"/>
                         <feOffset dx="1" dy="1"/>
                         <feGaussianBlur stdDeviation="0.5"/>
                         <feComposite in2="hardAlpha" operator="out"/>
@@ -67,9 +69,11 @@
                         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2357_257"/>
                         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2357_257" result="shape"/>
                     </filter>
-                    <filter id="filter1_d_2357_257" x="0" y="14" width="42" height="6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <filter id="filter1_d_2357_257" x="0" y="14" width="42" height="6" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
                         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                       result="hardAlpha"/>
                         <feOffset dx="1" dy="1"/>
                         <feGaussianBlur stdDeviation="0.5"/>
                         <feComposite in2="hardAlpha" operator="out"/>
@@ -77,9 +81,11 @@
                         <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2357_257"/>
                         <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2357_257" result="shape"/>
                     </filter>
-                    <filter id="filter2_d_2357_257" x="0" y="28" width="42" height="6" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <filter id="filter2_d_2357_257" x="0" y="28" width="42" height="6" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
                         <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                       result="hardAlpha"/>
                         <feOffset dx="1" dy="1"/>
                         <feGaussianBlur stdDeviation="0.5"/>
                         <feComposite in2="hardAlpha" operator="out"/>
@@ -94,10 +100,7 @@
     <div class="mobile-menu d-lg-none" id="mobile-menu">
         <div class="close-back">
             <button class="btn mb-3" id="menu-close"><img src="images/header/close.svg" alt="close"></button>
-
         </div>
-
-
         <ul class="list-unstyled ">
             <li><a href="index.html" class="text-decoration-none">Home</a></li>
             <li><a href="junk_recycling.html" class="text-decoration-none">Services</a></li>
@@ -106,7 +109,6 @@
             <li><a href="blog.html" class="text-decoration-none">Blog</a></li>
             <li><a href="reviews.html" class="text-decoration-none">FAQ</a></li>
             <li><a href="contact_us.html" class="text-decoration-none">Contact</a></li>
-
         </ul>
         <!--        <li><a href="#" class="btn  text-white d-block text-center mt-3 custom-button">BOOK ONLINE</a></li>-->
     </div>
@@ -114,7 +116,12 @@
 
 
 <section class=" reviews-custom-image">
-    <div class="container d-flex justify-content-center container-removal">
+    <div class="container   container-removal">
+        <div class="breadcrumbs-container">
+            <ul class="breadcrumbs" id="breadcrumbs">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
         <div>
             <div class=" pt-3">
                 <h1 class=" text-center locations-custom-title ">
@@ -124,11 +131,11 @@
                     Glossary</p>
             </div>
 
-            <div class="d-flex justify-content-center">
-                <h2 class=" text-center  locations-custom-title2 ">
-                    Where do you want your junk removed?
-                </h2>
-            </div>
+<!--            <div class="d-flex justify-content-center">-->
+<!--                <h2 class=" text-center  locations-custom-title2 ">-->
+<!--                    Where do you want your junk removed?-->
+<!--                </h2>-->
+<!--            </div>-->
 
         </div>
     </div>
@@ -172,113 +179,442 @@
     <div class="container">
         <h2 class="fs-4 mb-4 fw-bold sub-title">FREQUENTLY ASKED QUESTIONS - (FAQ)</h2>
 
-        <h3 class="fs-4 mb-2">1. What is junk removal?</h3>
-        <p class="mb-4"> - Junk removal is a service that involves the removal and disposal of unwanted items or debris
-            from homes,
-            businesses, or other properties.</p>
+        <div class="accordion" id="faqAccordion">
+            <!-- 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading1">
+                    <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                        1. What is junk removal?
+                    </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Junk removal is a service that involves the removal and disposal of unwanted items or debris from homes, businesses, or other properties.
+                    </div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading2">
+                    <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        2. How does junk removal service work?
+                    </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        A AAA Rousse appointments typically involves professionals coming to your location, assessing the items to be removed, and then safely and responsibly hauling them away for disposal or recycling.
+                    </div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading3">
+                    <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        3. What items can be removed by AAA Rousse?
+                    </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        AAA Rousse can typically remove a wide range of items, including furniture, appliances, electronics, yard waste, construction debris, and more.
+                    </div>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading4">
+                    <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                        4. Does AAA Rousse handle both residential and commercial properties?
+                    </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, AAA Rousse often handles both residential and commercial properties, providing their services to homeowners, renters, businesses, and organisations.
+                    </div>
+                </div>
+            </div>
+            <!-- 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading5">
+                    <button class="accordion-button  fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                        5. How much does junk removal service cost?
+                    </button>
+                </h2>
+                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        At AAA Rousse, our pricing can vary depending on factors such as the volume of items, the weight of items, the location, and any additional services required. Click here or call for an estimate.
+                    </div>
+                </div>
+            </div>
+            <!-- 6 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading6">
+                    <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                        6. Are there any items that AAA Rousse doesn't accept?
+                    </button>
+                </h2>
+                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        AAA Rousse will accept most service requests, feel free to give us a call at or Click here for an estimate.
+                    </div>
+                </div>
+            </div>
+            <!-- 7 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading7">
+                    <button class="accordion-button  fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                        7. Can I schedule a specific date and time for junk removal?
+                    </button>
+                </h2>
+                <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, at AAA Rousse, we allow you to schedule a specific date and time that is convenient for you. We will work with you to find a suitable appointment that fits your schedule.
+                    </div>
+                </div>
+            </div>
+            <!-- 8 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading8">
+                    <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                        8. Do I need to be present during the junk removal process?
+                    </button>
+                </h2>
+                <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        It is not always necessary for you to be present during the junk removal process. You can make arrangements with the service provider to access the items and provide instructions even if you're not available.
+                    </div>
+                </div>
+            </div>
+            <!-- 9 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading9">
+                    <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                        9. How long does a typical junk removal appointment take?
+                    </button>
+                </h2>
+                <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        The duration of a junk removal appointment can vary depending on the amount and complexity of the items to be removed. It can range from a few minutes for a small load to several hours for a larger or more complex project.
+                    </div>
+                </div>
+            </div>
+            <!-- 10 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading10">
+                    <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                        10. Is there a weight limit for items that can be removed?
+                    </button>
+                </h2>
+                <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        There may be weight limits for individual items or total loads. Our AAA Rousseer will discuss this with you when scheduling the appointment.
+                    </div>
+                </div>
+            </div>
+            <!-- 11 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading11">
+                    <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                        11. What happens to the items after they are removed?
+                    </button>
+                </h2>
+                <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        After removal, AAA Rousse typically takes the items to appropriate facilities for recycling, donation, or proper disposal. We strive to minimise environmental impact and follow local regulations.
+                    </div>
+                </div>
+            </div>
+            <!-- 12 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading12">
+                    <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                        12. Can AAA Rousse handle large or heavy items?
+                    </button>
+                </h2>
+                <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, AAA Rousse is equipped to handle large or heavy items such as furniture, appliances, machinery, and more. They have the necessary tools and equipment to safely remove and transport such items.
+                    </div>
+                </div>
+            </div>
+            <!-- 13 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading13">
+                    <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                        13. Do I need to prepare the items for removal?
+                    </button>
+                </h2>
+                <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        In most cases, you don't need to prepare the items for removal. AAA Rousse will handle the sorting, lifting, and removal process. However, if there are specific instructions, such as disassembling furniture, it's helpful to communicate that beforehand.
+                    </div>
+                </div>
+            </div>
+            <!-- 14 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading14">
+                    <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                        14. Is there a limit to the volume of items that can be removed?
+                    </button>
+                </h2>
+                <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        AAA Rousse can handle removals of various sizes, ranging from small loads to large-scale cleanouts. We can accommodate different volumes of items, depending on the capacity of their vehicles and equipment.
+                    </div>
+                </div>
+            </div>
+            <!-- 15 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading15">
+                    <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                        15. Can AAA Rousse handle hazardous materials?
+                    </button>
+                </h2>
+                <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="heading15" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        AAA Rousse is not always equipped to handle hazardous materials due to safety and legal regulations. Our AAA Rousseer can discuss this with you when scheduling the appointment.
+                    </div>
+                </div>
+            </div>
+            <!-- 16 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading16">
+                    <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                        16. Are there any geographical limitations for AAA Rousse?
+                    </button>
+                </h2>
+                <div id="collapse16" class="accordion-collapse collapse" aria-labelledby="heading16" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        AAA Rousse’s network covers the entire united states and it’s territories, including Hawaii, Alaska, Guam and Puerto Rico.
+                    </div>
+                </div>
+            </div>
+            <!-- 17 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading17">
+                    <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+                        17. Can AAA Rousse provide same-day service?
+                    </button>
+                </h2>
+                <div id="collapse17" class="accordion-collapse collapse" aria-labelledby="heading17" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, AAA Rousse can offer same-day or next-day service, depending on availability. Give us a call to confirm scheduling options.
+                    </div>
+                </div>
+            </div>
+            <!-- 18 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading18">
+                    <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+                        18. Do I need to sort or separate the items before junk removal?
+                    </button>
+                </h2>
+                <div id="collapse18" class="accordion-collapse collapse" aria-labelledby="heading18" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Sorting or separating items is not typically required before junk removal. Junk removal professionals are experienced in handling mixed loads and will take care of the sorting and disposal process.
+                    </div>
+                </div>
+            </div>
+            <!-- 19 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading19">
+                    <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
+                        19. Can AAA Rousse donate items on my behalf?
+                    </button>
+                </h2>
+                <div id="collapse19" class="accordion-collapse collapse" aria-labelledby="heading19" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        AAA Rousse has partnerships with local charities and donation centers, and we may be able to donate usable items on your behalf, reducing waste and benefiting those in need.
+                    </div>
+                </div>
+            </div>
+            <!-- 20 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading20">
+                    <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+                        20. How can I schedule a junk removal appointment?
+                    </button>
+                </h2>
+                <div id="collapse20" class="accordion-collapse collapse" aria-labelledby="heading20" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        You can schedule a junk removal appointment by clicking here or giving us a call at
+                    </div>
+                </div>
+            </div>
+            <!-- 21 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading21">
+                    <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
+                        21. What kinds of areas does AAA Rousse typically serve?
+                    </button>
+                </h2>
+                <div id="collapse21" class="accordion-collapse collapse" aria-labelledby="heading21" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        AAA Rousse can serve various areas, including cities, towns, and surrounding regions. The specific service area can vary among providers, so it's advisable to check their coverage.
+                    </div>
+                </div>
+            </div>
+            <!-- 22 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading22">
+                    <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
+                        22. Can AAA Rousse remove items from multiple locations?
+                    </button>
+                </h2>
+                <div id="collapse22" class="accordion-collapse collapse" aria-labelledby="heading22" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, AAA Rousse can often accommodate removals from multiple locations. Whether it's a residential or commercial property, they can coordinate the logistics to meet your needs.
+                    </div>
+                </div>
+            </div>
+            <!-- 23 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading23">
+                    <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse23" aria-expanded="false" aria-controls="collapse23">
+                        23. Does AAA Rousse provide clean-up after removing items?
+                    </button>
+                </h2>
+                <div id="collapse23" class="accordion-collapse collapse" aria-labelledby="heading23" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        AAA Rousse strives to leave the premises clean and tidy after removing items. we will ensure that any debris or residual mess is properly cleaned up before leaving.
+                    </div>
+                </div>
+            </div>
+            <!-- 24 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading24">
+                    <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse24" aria-expanded="false" aria-controls="collapse24">
+                        24. Can AAA Rousse help with hoarding situations?
+                    </button>
+                </h2>
+                <div id="collapse24" class="accordion-collapse collapse" aria-labelledby="heading24" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, AAA Rousse has experience and expertise in dealing with hoarding situations. We can assist in decluttering and removing items from hoarded spaces sensitively and professionally.
+                    </div>
+                </div>
+            </div>
+            <!-- 25 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading25">
+                    <button class="accordion-button fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse25" aria-expanded="false" aria-controls="collapse25">
+                        25. What payment methods are accepted by AAA Rousse?
+                    </button>
+                </h2>
+                <div id="collapse25" class="accordion-collapse collapse" aria-labelledby="heading25" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        AAA Rousse typically accepts various payment methods, including cash, credit cards, and sometimes checks. It's recommended to check with the service provider regarding their accepted payment methods.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--        <h3 class="fs-4 mb-2">1. What is junk removal?</h3>-->
+<!--        <p class="mb-4"> - Junk removal is a service that involves the removal and disposal of unwanted items or debris-->
+<!--            from homes,-->
+<!--            businesses, or other properties.</p>-->
 
 
-        <h3 class="fs-4 mb-2">2. How does junk removal service work?</h3>
-        <p class="mb-4"> - A AAA Rousse appointments typically involves professionals coming to your location, assessing
-            the items to be removed, and then safely and responsibly hauling them away for disposal or recycling.</p>
+<!--        <h3 class="fs-4 mb-2">2. How does junk removal service work?</h3>-->
+<!--        <p class="mb-4"> - A AAA Rousse appointments typically involves professionals coming to your location, assessing-->
+<!--            the items to be removed, and then safely and responsibly hauling them away for disposal or recycling.</p>-->
 
-        <h3 class="fs-4 mb-2">3. What items can be removed by AAA Rousse?</h3>
-        <p class="mb-4">- AAA Rousse can typically remove a wide range of items, including furniture, appliances,
-            electronics, yard waste, construction debris, and more.</p>
+<!--        <h3 class="fs-4 mb-2">3. What items can be removed by AAA Rousse?</h3>-->
+<!--        <p class="mb-4">- AAA Rousse can typically remove a wide range of items, including furniture, appliances,-->
+<!--            electronics, yard waste, construction debris, and more.</p>-->
 
-        <h3 class="fs-4 mb-2">4. Does AAA Rousse handle both residential and commercial properties?</h3>
-        <p class="mb-4"> - Yes, AAA Rousse often handles both residential and commercial properties, providing their
-            services to homeowners, renters, businesses, and organisations.</p>
+<!--        <h3 class="fs-4 mb-2">4. Does AAA Rousse handle both residential and commercial properties?</h3>-->
+<!--        <p class="mb-4"> - Yes, AAA Rousse often handles both residential and commercial properties, providing their-->
+<!--            services to homeowners, renters, businesses, and organisations.</p>-->
 
-        <h3 class="fs-4 mb-2">5. How much does junk removal service cost?</h3>
-        <p class="mb-4"> - At AAA Rousse, our pricing can vary depending on factors such as the volume of items, the
-            weight of items, the location, and any additional services required. Click here or call for an estimate.</p>
+<!--        <h3 class="fs-4 mb-2">5. How much does junk removal service cost?</h3>-->
+<!--        <p class="mb-4"> - At AAA Rousse, our pricing can vary depending on factors such as the volume of items, the-->
+<!--            weight of items, the location, and any additional services required. Click here or call for an estimate.</p>-->
 
-        <h3 class="fs-4 mb-2">6. Are there any items that AAA Rousse doesn't accept?</h3>
-        <p class="mb-4"> - AAA Rousse will accept most service requests, feel free to give us a call at or Click
-            here for an estimate.</p>
+<!--        <h3 class="fs-4 mb-2">6. Are there any items that AAA Rousse doesn't accept?</h3>-->
+<!--        <p class="mb-4"> - AAA Rousse will accept most service requests, feel free to give us a call at or Click-->
+<!--            here for an estimate.</p>-->
 
-        <h3 class="fs-4 mb-2">7. Can I schedule a specific date and time for junk removal?</h3>
-        <p class="mb-4">- Yes, at AAA Rousse, we allow you to schedule a specific date and time that is convenient for
-            you. We will work with you to find a suitable appointment that fits your schedule.</p>
+<!--        <h3 class="fs-4 mb-2">7. Can I schedule a specific date and time for junk removal?</h3>-->
+<!--        <p class="mb-4">- Yes, at AAA Rousse, we allow you to schedule a specific date and time that is convenient for-->
+<!--            you. We will work with you to find a suitable appointment that fits your schedule.</p>-->
 
-        <h3 class="fs-4 mb-2">8. Do I need to be present during the junk removal process?</h3>
-        <p class="mb-4"> - It is not always necessary for you to be present during the junk removal process. You can
-            make arrangements with the service provider to access the items and provide instructions even if you're not
-            available.</p>
+<!--        <h3 class="fs-4 mb-2">8. Do I need to be present during the junk removal process?</h3>-->
+<!--        <p class="mb-4"> - It is not always necessary for you to be present during the junk removal process. You can-->
+<!--            make arrangements with the service provider to access the items and provide instructions even if you're not-->
+<!--            available.</p>-->
 
-        <h3 class="fs-4 mb-2">9. How long does a typical junk removal appointment take?</h3>
-        <p class="mb-4">- The duration of a junk removal appointment can vary depending on the amount and complexity
-            of the items to be removed. It can range from a few minutes for a small load to several hours for a larger
-            or more complex project.</p>
+<!--        <h3 class="fs-4 mb-2">9. How long does a typical junk removal appointment take?</h3>-->
+<!--        <p class="mb-4">- The duration of a junk removal appointment can vary depending on the amount and complexity-->
+<!--            of the items to be removed. It can range from a few minutes for a small load to several hours for a larger-->
+<!--            or more complex project.</p>-->
 
-        <h3 class="fs-4 mb-2">10. Is there a weight limit for items that can be removed?</h3>
-        <p class="mb-4">- There may be weight limits for individual items or total loads. Our AAA Rousseer will
-            discuss this with you when scheduling the appointment.</p>
+<!--        <h3 class="fs-4 mb-2">10. Is there a weight limit for items that can be removed?</h3>-->
+<!--        <p class="mb-4">- There may be weight limits for individual items or total loads. Our AAA Rousseer will-->
+<!--            discuss this with you when scheduling the appointment.</p>-->
 
-        <h3 class="fs-4 mb-2">11. What happens to the items after they are removed?</h3>
-        <p class="mb-4"> - After removal, AAA Rousse typically takes the items to appropriate facilities for recycling,
-            donation, or proper disposal. We strive to minimise environmental impact and follow local regulations.</p>
+<!--        <h3 class="fs-4 mb-2">11. What happens to the items after they are removed?</h3>-->
+<!--        <p class="mb-4"> - After removal, AAA Rousse typically takes the items to appropriate facilities for recycling,-->
+<!--            donation, or proper disposal. We strive to minimise environmental impact and follow local regulations.</p>-->
 
-        <h3 class="fs-4 mb-2">12. Can AAA Rousse handle large or heavy items?</h3>
-        <p class="mb-4"> - Yes, AAA Rousse is equipped to handle large or heavy items such as furniture, appliances,
-            machinery, and more. They have the necessary tools and equipment to safely remove and transport such
-            items.</p>
+<!--        <h3 class="fs-4 mb-2">12. Can AAA Rousse handle large or heavy items?</h3>-->
+<!--        <p class="mb-4"> - Yes, AAA Rousse is equipped to handle large or heavy items such as furniture, appliances,-->
+<!--            machinery, and more. They have the necessary tools and equipment to safely remove and transport such-->
+<!--            items.</p>-->
 
-        <h3 class="fs-4 mb-2">13. Do I need to prepare the items for removal?</h3>
-        <p class="mb-4"> - In most cases, you don't need to prepare the items for removal. AAA Rousse will handle the
-            sorting, lifting, and removal process. However, if there are specific instructions, such as disassembling
-            furniture, it's helpful to communicate that beforehand.</p>
+<!--        <h3 class="fs-4 mb-2">13. Do I need to prepare the items for removal?</h3>-->
+<!--        <p class="mb-4"> - In most cases, you don't need to prepare the items for removal. AAA Rousse will handle the-->
+<!--            sorting, lifting, and removal process. However, if there are specific instructions, such as disassembling-->
+<!--            furniture, it's helpful to communicate that beforehand.</p>-->
 
-        <h3 class="fs-4 mb-2">14. Is there a limit to the volume of items that can be removed?</h3>
-        <p class="mb-4"> - AAA Rousse can handle removals of various sizes, ranging from small loads to large-scale
-            cleanouts. We can accommodate different volumes of items, depending on the capacity of their vehicles and
-            equipment.</p>
+<!--        <h3 class="fs-4 mb-2">14. Is there a limit to the volume of items that can be removed?</h3>-->
+<!--        <p class="mb-4"> - AAA Rousse can handle removals of various sizes, ranging from small loads to large-scale-->
+<!--            cleanouts. We can accommodate different volumes of items, depending on the capacity of their vehicles and-->
+<!--            equipment.</p>-->
 
-        <h3 class="fs-4 mb-2">15. Can AAA Rousse handle hazardous materials?</h3>
-        <p class="mb-4"> - AAA Rousse is not always equipped to handle hazardous materials due to safety and legal
-            regulations. Our AAA Rousseer can discuss this with you when scheduling the appointment.</p>
+<!--        <h3 class="fs-4 mb-2">15. Can AAA Rousse handle hazardous materials?</h3>-->
+<!--        <p class="mb-4"> - AAA Rousse is not always equipped to handle hazardous materials due to safety and legal-->
+<!--            regulations. Our AAA Rousseer can discuss this with you when scheduling the appointment.</p>-->
 
-        <h3 class="fs-4 mb-2">16. Are there any geographical limitations for AAA Rousse?</h3>
-        <p class="mb-4"> - AAA Rousse’s network covers the entire united states and it’s territories, including Hawaii,
-            Alaska, Guam and Puerto Rico.</p>
+<!--        <h3 class="fs-4 mb-2">16. Are there any geographical limitations for AAA Rousse?</h3>-->
+<!--        <p class="mb-4"> - AAA Rousse’s network covers the entire united states and it’s territories, including Hawaii,-->
+<!--            Alaska, Guam and Puerto Rico.</p>-->
 
-        <h3 class="fs-4 mb-2">17. Can AAA Rousse provide same-day service?</h3>
-        <p class="mb-4"> - Yes, AAA Rousse can offer same-day or next-day service, depending on availability. Give us a
-            call to confirm scheduling options.</p>
+<!--        <h3 class="fs-4 mb-2">17. Can AAA Rousse provide same-day service?</h3>-->
+<!--        <p class="mb-4"> - Yes, AAA Rousse can offer same-day or next-day service, depending on availability. Give us a-->
+<!--            call to confirm scheduling options.</p>-->
 
-        <h3 class="fs-4 mb-2">18. Do I need to sort or separate the items before junk removal?</h3>
-        <p class="mb-4"> - Sorting or separating items is not typically required before junk removal. Junk removal
-            professionals are experienced in handling mixed loads and will take care of the sorting and disposal
-            process.</p>
+<!--        <h3 class="fs-4 mb-2">18. Do I need to sort or separate the items before junk removal?</h3>-->
+<!--        <p class="mb-4"> - Sorting or separating items is not typically required before junk removal. Junk removal-->
+<!--            professionals are experienced in handling mixed loads and will take care of the sorting and disposal-->
+<!--            process.</p>-->
 
-        <h3 class="fs-4 mb-2">19. Can AAA Rousse donate items on my behalf?</h3>
-        <p class="mb-4"> - AAA Rousse has partnerships with local charities and donation centers, and we may be able to
-            donate usable items on your behalf, reducing waste and benefiting those in need.</p>
+<!--        <h3 class="fs-4 mb-2">19. Can AAA Rousse donate items on my behalf?</h3>-->
+<!--        <p class="mb-4"> - AAA Rousse has partnerships with local charities and donation centers, and we may be able to-->
+<!--            donate usable items on your behalf, reducing waste and benefiting those in need.</p>-->
 
-        <h3 class="fs-4 mb-2">20. How can I schedule a junk removal appointment?</h3>
-        <p class="mb-4"> - You can schedule a junk removal appointment by clicking here or giving us a call at</p>
+<!--        <h3 class="fs-4 mb-2">20. How can I schedule a junk removal appointment?</h3>-->
+<!--        <p class="mb-4"> - You can schedule a junk removal appointment by clicking here or giving us a call at</p>-->
 
-        <h3 class="fs-4 mb-2">21. What kinds of areas does AAA Rousse typically serve?</h3>
-        <p class="mb-4"> - AAA Rousse can serve various areas, including cities, towns, and surrounding regions. The
-            specific service area can vary among providers, so it's advisable to check their coverage.</p>
+<!--        <h3 class="fs-4 mb-2">21. What kinds of areas does AAA Rousse typically serve?</h3>-->
+<!--        <p class="mb-4"> - AAA Rousse can serve various areas, including cities, towns, and surrounding regions. The-->
+<!--            specific service area can vary among providers, so it's advisable to check their coverage.</p>-->
 
-        <h3 class="fs-4 mb-2">22. Can AAA Rousse remove items from multiple locations?</h3>
-        <p class="mb-4"> - Yes, AAA Rousse can often accommodate removals from multiple locations. Whether it's a
-            residential or commercial property, they can coordinate the logistics to meet your needs.</p>
+<!--        <h3 class="fs-4 mb-2">22. Can AAA Rousse remove items from multiple locations?</h3>-->
+<!--        <p class="mb-4"> - Yes, AAA Rousse can often accommodate removals from multiple locations. Whether it's a-->
+<!--            residential or commercial property, they can coordinate the logistics to meet your needs.</p>-->
 
-        <h3 class="fs-4 mb-2">23. Does AAA Rousse provide clean-up after removing items?</h3>
-        <p class="mb-4"> - AAA Rousse strives to leave the premises clean and tidy after removing items. we will ensure
-            that any debris or residual mess is properly cleaned up before leaving.</p>
+<!--        <h3 class="fs-4 mb-2">23. Does AAA Rousse provide clean-up after removing items?</h3>-->
+<!--        <p class="mb-4"> - AAA Rousse strives to leave the premises clean and tidy after removing items. we will ensure-->
+<!--            that any debris or residual mess is properly cleaned up before leaving.</p>-->
 
-        <h3 class="fs-4 mb-2">24. Can AAA Rousse help with hoarding situations?</h3>
-        <p class="mb-4"> - Yes, AAA Rousse has experience and expertise in dealing with hoarding situations. We can
-            assist in decluttering and removing items from hoarded spaces sensitively and professionally.</p>
+<!--        <h3 class="fs-4 mb-2">24. Can AAA Rousse help with hoarding situations?</h3>-->
+<!--        <p class="mb-4"> - Yes, AAA Rousse has experience and expertise in dealing with hoarding situations. We can-->
+<!--            assist in decluttering and removing items from hoarded spaces sensitively and professionally.</p>-->
 
-        <h3 class="fs-4 mb-2">25. What payment methods are accepted by AAA Rousse?</h3>
-        <p class="mb-4"> - AAA Rousse typically accepts various payment methods, including cash, credit cards, and
-            sometimes checks. It's recommended to check with the service provider regarding their accepted payment
-            methods.</p>
+<!--        <h3 class="fs-4 mb-2">25. What payment methods are accepted by AAA Rousse?</h3>-->
+<!--        <p class="mb-4"> - AAA Rousse typically accepts various payment methods, including cash, credit cards, and-->
+<!--            sometimes checks. It's recommended to check with the service provider regarding their accepted payment-->
+<!--            methods.</p>-->
 
 
     </div>

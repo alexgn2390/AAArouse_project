@@ -55,7 +55,7 @@ body {
 
 /* Основные стили */
 .img-logo {
-    width: 150px;
+    width: 165px;
 }
 
 
@@ -127,14 +127,14 @@ body {
 }
 
 .img-home-main {
-    max-width: 708px;
+    max-width: 980px;
     margin: auto
 }
 .img-home-img {
-    width: 100%; /* Ширина изображения относительно контейнера */
+    width: 107%; /* Ширина изображения относительно контейнера */
     height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
     max-height: 100vh; /* Максимальная высота относительно высоты окна браузера */
-    max-width: 708px;
+    max-width: 942px;
     object-fit: cover;
 }
 
@@ -181,7 +181,7 @@ body {
     font-family: Merriweather, sans-serif;
     font-size: 24px;
     text-shadow: -3px 2px 4px rgba(0, 0, 0, 1.5);
-    color: #ffc107;
+    color: #fff;
     filter: contrast(93%);
 
 }
@@ -200,8 +200,16 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-padding-top: 120px;
-    padding-bottom: 96px;
+padding-top: 40px;
+    padding-bottom: 40px;
+}
+.region-custom-image {
+    background-image: url("images/region_alturas/img_main.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .contact_us {
@@ -529,8 +537,8 @@ padding-top: 120px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 120px;
-    padding-bottom: 96px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .main-custom-title {
@@ -708,6 +716,10 @@ padding-top: 120px;
     background-color: coral;
 }
 
+.form-button-btn{
+    padding: 20px 15px;
+}
+
 .form-input-custom {
     width: 100%;
     height: 60px;
@@ -746,13 +758,13 @@ padding-top: 120px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 120px;
-    padding-bottom: 96px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .locations-custom-title {
     filter: contrast(93%);
-    font-size: 48px;
+    font-size: 36px;
     text-shadow: -3px 2px 4px rgba(0, 0, 0, 1.5);
     color: #fff;
     font-weight: bold;
@@ -861,8 +873,8 @@ font-family: Montserrat, sans-serif;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 120px;
-    padding-bottom: 96px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .blog-inside-custom-background-p {
@@ -954,13 +966,31 @@ font-family: Montserrat, sans-serif;
 
 .container-removal-title {
     font-family: Montserrat, sans-serif;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     filter: contrast(93%);
-    font-size: 48px;
+    font-size: 36px;
     text-shadow: -3px 2px 4px rgba(0, 0, 0, 1.5);
     color: #fff;
     margin-top: 100px;
     font-weight: bold;
+    /*padding-left: 200px;*/
+    /*padding-right: 200px;*/
+}
+
+.container-book-title {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 100px;
+    filter: contrast(93%);
+    font-size: 36px;
+    text-shadow: -3px 2px 4px rgba(0, 0, 0, 1.5);
+    color: #fff;
+    margin-top: 100px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*padding-left: 200px;*/
+    /*padding-right: 200px;*/
+    background: rgba(0, 0, 0, .71);
 }
 
 #recentArticles {
@@ -1014,4 +1044,171 @@ font-family: Montserrat, sans-serif;
 }
 .hyden {
     display: none !important;
+}
+
+
+.reviews__cards {
+    margin-bottom: 30px;
+}
+
+
+
+.review__card-1 {
+    border: 1px solid darkgray;
+    border-radius: 20px;
+    height: 280px;
+    padding: 10px 5px 20px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 14%);
+
+}
+
+.testimonial_text {
+    max-height: 160px;
+    overflow-y: auto;
+}
+
+.location_info {
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+.cust_name {
+    font-weight: bold;
+}
+.star {
+    color: #FFA500;
+    margin-bottom: 5px;
+}
+
+ .slick-next:before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 29px;
+    z-index: 100;
+}
+  .slick-prev:before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 29px;
+    z-index: 100;
+}
+
+  .slick-next {
+      top: -20%;
+      right: 4%;
+  }
+  .slick-prev {
+      top: -20%;
+      left: 80%;
+  }
+
+
+
+.slick-next:before {
+    background-image: url(images/next.png);
+
+}
+
+ .slick-prev:before {
+    background-image: url(images/previous.png);
+
+}
+
+
+
+.breadcrumb {
+    display: flex;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.breadcrumb li {
+    margin: 0;
+    padding: 0 8px;
+}
+
+.breadcrumb li + li::before {
+    content: '>';
+    padding: 0 8px;
+    color: #333;
+}
+
+.breadcrumb a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb li:last-child {
+    color: #6c757d;
+    pointer-events: none;
+    text-decoration: none;
+}
+
+.form-button-estimate {
+    margin-top: 30px;
+    width: 22vh;
+}
+
+
+
+.breadcrumbs {
+    list-style-type: none;
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.breadcrumbs li {
+    display: inline;
+    margin-right: 6px;
+    background: #f3d7b2;
+    padding: 7px 15px;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+.breadcrumbs li:hover {
+
+    background: #fdd09b;
+}
+
+
+
+.breadcrumbs li:last-child::after {
+    content: none; /* Не добавлять разделитель после последнего элемента */
+}
+
+.breadcrumbs li a {
+    color: #333333;
+   text-decoration: none;
+}
+
+.breadcrumbs li a::after {
+    content: "";
+    display: inline-block;
+    width: 1rem; /* Ширина иконки */
+    height: 13px; /* Высота иконки */
+    background-image: url('images/caret-right-fill.svg'); /* Иконка стрелки Bootstrap в виде SVG */
+    cursor: pointer;
+    background-repeat: no-repeat; /* Запрет на повторение */
+    margin-left: 10px; /* Отступ от иконки */
+}
+
+.breadcrumbs li:last-child:after {
+    content: none;
+}
+
+.breadcrumbs-container {
+    position: fixed;
+    top: 114px;
 }
