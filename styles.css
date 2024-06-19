@@ -58,6 +58,10 @@ body {
     width: 165px;
 }
 
+.header {
+    background: #FFFFFF;
+}
+
 
 /* Мобильное меню */
 .mobile-menu {
