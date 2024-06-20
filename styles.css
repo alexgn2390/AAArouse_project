@@ -135,8 +135,16 @@ body {
     max-width: 980px;
     margin: auto
 }
+
+.img-resident-main {
+    max-width: 220px;
+}
+
+.img-resident-img {
+    width: 100%;
+}
 .img-home-img {
-    width: 107%; /* Ширина изображения относительно контейнера */
+    /*width: 107%; */
     height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
     max-height: 100vh; /* Максимальная высота относительно высоты окна браузера */
     max-width: 942px;
@@ -192,7 +200,7 @@ body {
 }
 
 .recycling {
-    background-image: url("images/junk_recycling/recycling.jpg");
+    background-image: url("images/junk_recycling/background1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -265,7 +273,7 @@ padding-top: 90px;
     text-align: center;
     font-size: 16px;
     letter-spacing: 1px;
-    padding: 25px 25px;
+    padding: 25px 0;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
     filter: contrast(93%);
     transition: transform .3s ease-in-out;
@@ -968,7 +976,7 @@ font-family: Montserrat, sans-serif;
 
 
 .removal {
-    background-image: url("images/junk_recycling/removal.jpg");
+    background-image: url("images/junk_recycling/background1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1322,4 +1330,22 @@ border-radius: 5px;
 .breadcrumb {
     background-color: #f8f9fa;
     justify-content: center;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.breadcrumb li + li::before {
+    content: '>';
+     padding: 0 ;
+    color: #333;
+}
+
+.breadcrumb li {
+    margin: 0;
+    padding: 0 ;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    padding-right: 0;
+
 }

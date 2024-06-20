@@ -159,9 +159,9 @@
 
 
 @media (max-width: 767px) {
-    .text-center-over-image {
-        padding: 25px 45px;
-    }
+    /*.text-center-over-image {*/
+    /*    padding: 25px 45px;*/
+    /*}*/
 
     /*.custom-button-arrow {*/
     /*    right: 0.5rem;*/
@@ -334,9 +334,9 @@
 
 
 @media (max-width: 575px) {
-    .text-center-over-image {
-        padding: 25px 130px;
-    }
+    /*.text-center-over-image {*/
+    /*    padding: 25px 130px;*/
+    /*}*/
 
 
     .form-wrapper-custom-text {
@@ -376,10 +376,16 @@
 
 }
 
-@media (max-width: 430px) {
-    .text-center-over-image {
-        padding: 25px 90px;
+@media (max-width: 475px) {
+    .img-fluid {
+        max-width: 184px;
     }
+}
+
+@media (max-width: 430px) {
+    /*.text-center-over-image {*/
+    /*    padding: 25px 90px;*/
+    /*}*/
     .input-main-desc {
         display: none;
     }
@@ -424,10 +430,10 @@
         max-width: 291px;
     }
 
-    .text-center-over-image {
-        padding: 6px 69px;
-        top: 60px;
-    }
+    /*.text-center-over-image {*/
+    /*    padding: 6px 69px;*/
+    /*    top: 60px;*/
+    /*}*/
 
     .hero-custom-text {
         padding-right: 20px;
@@ -464,6 +470,10 @@
     .img-fluid {
         max-width: 195px;
     }
+
+    .text-center-over-image {
+        top: 14%;
+    }
 }
 
 
@@ -487,11 +497,13 @@
 
 
 
+    /*.text-center-over-image {*/
+    /*    padding: 6px 56px;*/
+    /*}*/
+
     .text-center-over-image {
-        padding: 6px 56px;
+        top: 8%;
     }
-
-
 }
 
 
