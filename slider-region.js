@@ -1,6 +1,7 @@
 
 $(document).ready(function () {
     $('.reviews__cards').slick({
+
         infinite: true,
         autoplay:true,
         slidesToShow: 3,
@@ -37,3 +38,5 @@ $(document).ready(function () {
         ]
     });
 })
+
+

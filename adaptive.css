@@ -28,9 +28,9 @@
 
 
 @media (max-width: 1055px) {
-    .select-button-3 {
-        font-size: 14px;
-    }
+    /*.select-button-3 {*/
+    /*    font-size: 14px;*/
+    /*}*/
 }
 
 
@@ -84,9 +84,9 @@
 
 
 @media (max-width: 966px) {
-    .select-button-3 {
-        font-size: 10px;
-    }
+    /*.select-button-3 {*/
+    /*    font-size: 10px;*/
+    /*}*/
 
     .img-main-1 {
         display: none;
@@ -129,10 +129,6 @@
 
     .select-button {
         padding: 10px 5px;
-        font-size: 14px;
-    }
-
-    .select-option {
         font-size: 14px;
     }
 
@@ -180,9 +176,6 @@
         font-size: 14px;
     }
 
-    .select-option {
-        font-size: 14px;
-    }
 
     .provide-custom {
         padding-left: 65px;
@@ -268,13 +261,11 @@
         font-size: 18px;
     }
 
-    .select-button-3 {
-        font-size: 10px;
-    }
+    /*.select-button-3 {*/
+    /*    font-size: 10px;*/
+    /*}*/
 
-    .main-title {
-        font-size: 20px;
-    }
+
 
     .main-sub-title {
         font-size: 16px;
@@ -283,30 +274,13 @@
 
 @media (max-width: 600px) {
 
-    /*.custom-select-wrapper {*/
-    /*    max-width: 160px;*/
-    /*}*/
+
 
     .form-wrapper-custom-text {
         font-size: 12px;
     }
 
-    /*.form-wrapper {*/
-    /*    padding: 10px 20px;*/
-    /*    max-width: 420px;*/
 
-    /*}*/
-
-    /*.select-button {*/
-    /*    padding: 10px 5px;*/
-    /*    font-size: 8px;*/
-    /*    max-width: 200px;*/
-
-    /*}*/
-
-    .select-option {
-        font-size: 8px;
-    }
 
     .provide-custom {
         padding-left: 45px;
@@ -370,9 +344,6 @@
     }
 
 
-    .select-option {
-        font-size: 8px;
-    }
 
 
 
@@ -514,13 +485,7 @@
 
     }
 
-    .select-option {
-        font-size: 8px;
-    }
 
-    /*.custom-select-wrapper {*/
-    /*    max-width: 111px;*/
-    /*}*/
 
     .text-center-over-image {
         padding: 6px 56px;

@@ -11,7 +11,7 @@
 
 <body>
 
-<header class="shadow sticky-top  z-3" id="header" >
+<header class="shadow sticky-top bg-light z-3" id="header" >
     <div class="container d-flex align-items-center justify-content-between pt-2 pb-2">
         <div>
             <img class="img-logo" src="images/logo.png" alt="Logo">
@@ -21,8 +21,14 @@
                 <li class="menu-item me-3" id="home">
                     <a href="index.html" class="text-decoration-none ">Home</a>
                 </li>
-                <li class="menu-item me-3" id="service">
-                    <a href="junk_recycling.html" class="text-decoration-none ">Services</a>
+                <li class="menu-item services-header me-3" id="service">
+                    <a href="#" class="text-decoration-none ">Services</a>
+                    <div class="dropdown-content" id="dropdown-content">
+                        <a href="junk_removal.html">Junk Removal</a>
+                        <a href="junk_recycling.html">Junk Recycling</a>
+                        <a href="boat_removal.html">Boat Removal</a>
+                    </div>
+
                 </li>
                 <li class="menu-item me-3" id="location">
                     <a href="locations.html" class="text-decoration-none ">Locations</a>
@@ -113,29 +119,31 @@
     </div>
 </header>
 
-<section class="main recycling pt-5 pb-5" id="main">
-    <div class="container   ps-0 pe-0 container-removal">
-        <div class="breadcrumbs-container">
-            <ul class="breadcrumbs" id="breadcrumbs">
-                <li><a href="index.html">Home</a></li>
-            </ul>
-        </div>
-        <h1 class="text-center container-removal-title">
-            Junk Recycling
-        </h1>
-<!--        <h2 class="text-center main-description">-->
-<!--            Where do you want your junk removed?-->
-<!--        </h2>-->
+
+<section class="main recycling " id="main">
+
+    <h1 class="text-center container-removal-title removal-title">
+        Junk Recycling
+    </h1>
+    <div class="container d-flex justify-content-center  ps-3 pe-3 container-removal">
+
+        <nav aria-label="breadcrumb" class="bread-block">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="">Services </a></li>
+                <li class="breadcrumb-item active" aria-current="page">Junk Recycling</li>
+
+            </ol>
+        </nav>
     </div>
 </section>
 
 
-<section class="hero pb-5 pt-5 ps-0 pe-0">
+<section class="hero pb-2 pb-lg-5 pt-2 pt-lg-5  ps-0 pe-0">
     <div class="container">
         <div class=" row mb-5 d-flex justify-content-center align-items-center mb-5">
 
                 <div class=" col-12 col-lg-6 col-md-12 order-2 order-lg-1 mb-0 mb-lg-0 mb-sm-4 image-hero-main text-center">
-                    <img class="image-hero-img " src="images/junk_recycling/img_1.png" alt="img_1">
+                    <img class="image-hero-img " src="images/junk_recycling/img_1.svg" alt="img_1">
                 </div>
 
 
@@ -184,17 +192,21 @@
             </div>
 
             <div class="col-12 col-lg-6 col-md-12 d-flex justify-content-center">
-                <div class="img-hero-start">
-                    <img class=" img-hero-img  " src="images/junk_recycling/img_2.png" alt="img_2">
-                </div>
+                <img src="images/junk_recycling/img_2.svg" alt="">
+<!--                <div class="">-->
+
+<!--                    <img class="img-hero-img" src="images/junk_recycling/img_2.png" alt="img_2">-->
+<!--                </div>-->
             </div>
         </div>
 
         <div class="row d-flex justify-content-between align-items-center mb-5">
             <div class="col-12 col-lg-6 col-md-12 order-2 order-lg-1 d-flex justify-content-center">
-                <div class="img-hero-start">
-                    <img class="img-hero-img " src="images/junk_recycling/img_3.png" alt="img_3">
-                </div>
+                <img src="images/junk_recycling/img_3.svg" alt="">
+
+<!--                <div class="">-->
+<!--                    <img class="img-hero-img " src="images/junk_recycling/img_3.png" alt="img_3">-->
+<!--                </div>-->
             </div>
 
             <div class="col-12 col-lg-6 col-md-12 order-1 order-lg-2">

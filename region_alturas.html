@@ -16,7 +16,7 @@
 <body>
 
 
-<header class="shadow sticky-top  z-3" id="header" >
+<header class="shadow sticky-top bg-light z-3" id="header" >
     <div class="container d-flex align-items-center justify-content-between pt-2 pb-2">
         <div>
             <img class="img-logo" src="images/logo.png" alt="Logo">
@@ -26,8 +26,14 @@
                 <li class="menu-item me-3" id="home">
                     <a href="index.html" class="text-decoration-none ">Home</a>
                 </li>
-                <li class="menu-item me-3" id="service">
-                    <a href="junk_recycling.html" class="text-decoration-none ">Services</a>
+                <li class="menu-item services-header me-3" id="service">
+                    <a href="#" class="text-decoration-none ">Services</a>
+                        <div class="dropdown-content" id="dropdown-content">
+                            <a href="junk_removal.html">Junk Removal</a>
+                            <a href="junk_recycling.html">Junk Recycling</a>
+                            <a href="boat_removal.html">Boat Removal</a>
+                        </div>
+
                 </li>
                 <li class="menu-item me-3" id="location">
                     <a href="locations.html" class="text-decoration-none ">Locations</a>
@@ -121,23 +127,18 @@
 
 
 <section class="main  region-custom-image">
-    <div class="container   container-removal">
-        <div class="breadcrumbs-container">
-            <ul class="breadcrumbs" id="breadcrumbs">
-                <li><a href="index.html">Home</a></li>
-            </ul>
-        </div>
-        <div>
-            <h1 class=" text-center   container-removal-title">
-                Junk Removal in Alturas Florida
-            </h1>
-            <!--            <div class="d-flex justify-content-center">-->
-            <!--                <h2 class=" text-center  main-description">-->
-            <!--                    Where do you want your junk removed?-->
-            <!--                </h2>-->
-            <!--            </div>-->
 
-        </div>
+    <h1 class=" text-center  container-removal-title removal-title">
+        Junk Removal in Alturas Florida
+    </h1>
+    <div class="container d-flex justify-content-center  container-removal">
+
+        <nav aria-label="breadcrumb" class="bread-block">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="locations.html">Locations</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Alturas</li>
+            </ol>
+        </nav>
     </div>
 
 </section>
@@ -794,7 +795,7 @@
         </div>
 
         <div class="reviews-custom-book-online mt-4">
-            <p class="mb-0">Book online or Give us a call or </p>
+            <p class="mb-0 me-3" >Book online or Give us a call or </p>
             <button class="btn p-2 border-0 btn-warning rounded-lg text-white custom-button">
                 BOOK ONLINE
             </button>
@@ -809,7 +810,7 @@
         <h2 class="fs-3  fw-bold sub-title">
             Trash Removal and Dismantle Services
         </h2>
-        <div class="row mb-5 pt-5">
+        <div class="row mb-5 pt-2">
             <div class="col-12 col-lg-6 col-md-12">
                 <p class="">
                     AAA Rousse is the perfect junk removal company for you if you are in the market for quality trash
@@ -866,7 +867,7 @@
             Storage Unit Cleanouts and More
         </h2>
 
-        <div class="row d-flex align-items-center mb-5 pt-5">
+        <div class="row d-flex align-items-center mb-5 pt-2">
             <div class="col-12 col-lg-6 col-md-12   mt-3 mt-lg-0 mt-md-3 ">
                 <p class="">
                     At AAA Rousse, we can help clean out any storage unit of any size . We don't limit ourselves to

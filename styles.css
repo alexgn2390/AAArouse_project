@@ -60,6 +60,7 @@ body {
 
 .header {
     background: #FFFFFF;
+
 }
 
 
@@ -71,7 +72,7 @@ body {
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 9999;
     animation: fade 0.5s ease-in 1 forwards;
     height: calc(100vh - var(--navbar-height));
 }
@@ -191,33 +192,33 @@ body {
 }
 
 .recycling {
-    background-image: url("images/junk_recycling/img_main.jpg");
+    background-image: url("images/junk_recycling/recycling.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 90px;
 }
 
 .why_us {
-    background-image: url("images/why_us/img_main.png");
+    background-image: url("images/junk_recycling/whyus.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 90px;
 }
 .region-custom-image {
-    background-image: url("images/region_alturas/img_main.webp");
+    background-image: url("https://cdn-jcmkb.nitrocdn.com/wfCoLNSiDTjCVqzljNEFgvNUYXsOcuHc/assets/images/optimized/rev-b3a6719/www.aaarousse.com/assets/post_uploads/meta_images/35-150.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-padding-top: 40px;
-    padding-bottom: 40px;
+padding-top: 90px;
+    padding-bottom: 10px;
 }
 
 .contact_us {
-    background-image: url("images/contact_us/img_main.png");
+    background-image: url("images/junk_recycling/contacts.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -387,16 +388,20 @@ padding-top: 40px;
 
 }
 
-.marion-custom-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+/*.marion-custom-container {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*}*/
 
 .hero-custom-text {
     background: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 4%, rgba(135, 183, 224, 0.3) 50%, rgba(255, 255, 255, 0.4) 96%);
     padding-right: 150px;
     padding-left: 150px;
+}
+
+.slick-list {
+    height: 292px;
 }
 
 
@@ -542,7 +547,7 @@ padding-top: 40px;
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 }
 
 .main-custom-title {
@@ -758,12 +763,12 @@ padding-top: 40px;
 }
 
 .locations-custom-image {
-    background-image: url("images/locations/img_main.jpeg");
+    background-image: url("images/junk_recycling/locations.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 .locations-custom-title {
@@ -776,6 +781,11 @@ font-family: Montserrat, sans-serif;
 
 }
 
+.locations-custom {
+    /*padding-top: 10px;*/
+    /*padding-bottom: 10px;*/
+    /*background: rgba(0, 0, 0, .71);*/
+}
 
 .locations-custom-title2 {
     font-family: Merriweather, sans-serif;
@@ -873,12 +883,12 @@ font-family: Montserrat, sans-serif;
 
 
 .book-custom-image {
-    background-image: url("images/book_online/img_1.png");
+    background-image: url("https://cdn-jcmkb.nitrocdn.com/wfCoLNSiDTjCVqzljNEFgvNUYXsOcuHc/assets/images/optimized/rev-b3a6719/www.aaarousse.com/assets/post_uploads/meta_images/1642067529_acd611a4caeb2a54a348.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .blog-inside-custom-background-p {
@@ -949,18 +959,21 @@ font-family: Montserrat, sans-serif;
 }
 
 .img-hero-start {
-    max-width: 450px;
+    max-width: 560px;
+}
+
+.img-hero-img {
+    width: 100%;
 }
 
 
 .removal {
-    background-image: url("images/image_removal.png");
+    background-image: url("images/junk_recycling/removal.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     padding-top: 120px;
-    padding-bottom: 96px;
+    padding-bottom: 90px;
 }
 
 /*.container-removal {*/
@@ -970,7 +983,7 @@ font-family: Montserrat, sans-serif;
 
 .container-removal-title {
     font-family: Montserrat, sans-serif;
-    margin-bottom: 100px;
+    margin-bottom: 25px;
     filter: contrast(93%);
     font-size: 36px;
     text-shadow: -3px 2px 4px rgba(0, 0, 0, 1.5);
@@ -979,6 +992,19 @@ font-family: Montserrat, sans-serif;
     font-weight: bold;
     /*padding-left: 200px;*/
     /*padding-right: 200px;*/
+    /*padding-top: 10px;*/
+    /*padding-bottom: 10px;*/
+    /*background: rgba(0, 0, 0, .71);*/
+}
+
+.boat-removal-title {
+    font-family: Montserrat, sans-serif;
+    filter: contrast(93%);
+    font-size: 36px;
+    text-shadow: -3px 2px 4px rgba(0, 0, 0, 1.5);
+    color: #fff;
+
+    font-weight: bold;
 }
 
 .container-book-title {
@@ -1058,13 +1084,13 @@ font-family: Montserrat, sans-serif;
 
 
 .review__card-1 {
-    border: 1px solid darkgray;
-    border-radius: 20px;
+    /*border: 1px solid darkgray;*/
+    border-radius: 10px;
     height: 280px;
     padding: 10px 5px 20px 10px;
     margin-left: 10px;
     margin-right: 10px;
-    box-shadow: 1px 3px 5px rgba(0, 0, 0, 14%);
+    box-shadow: 1px 3px 11px rgba(0, 0, 0, 14%);
 
 }
 
@@ -1084,42 +1110,60 @@ font-family: Montserrat, sans-serif;
     color: #FFA500;
     margin-bottom: 5px;
 }
-
- .slick-next:before {
-    content: '';
-    position: absolute;
-    width: 16px;
-    height: 29px;
-    z-index: 100;
+/* Основные стили для стрелок */
+.slick-prev, .slick-next {
+    max-width: 30px; /* Ширина контейнера для стрелки */
+    height: 30px; /* Высота контейнера для стрелки */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Курсор в виде указателя */
+    z-index: 2; /* Чтобы стрелки были на переднем плане */
+    background: none; /* Убираем фон */
+    border: none; /* Убираем границу */
+    position: absolute; /* Абсолютное позиционирование */
+    top: -17%;
+    /* Центрируем стрелки по вертикали */
+    transform: translateY(-50%); /* Центрируем стрелки по вертикали */
 }
-  .slick-prev:before {
-    content: '';
-    position: absolute;
-    width: 16px;
-    height: 29px;
-    z-index: 100;
+
+.slick-prev {
+    left: 90%; /* Положение левой стрелки относительно контейнера */
 }
 
-  .slick-next {
-      top: -20%;
-      right: 4%;
-  }
-  .slick-prev {
-      top: -20%;
-      left: 80%;
-  }
+.slick-next {
+    left: 95%; /* Положение правой стрелки относительно контейнера */
+}
+
+/* Стили для псевдоэлементов стрелок */
 
 
+
+.slick-next:before, .slick-prev:before {
+    content: "";
+    display: block;
+    width: 20px; /* Ширина стрелки */
+    height: 20px; /* Высота стрелки */
+    border: 3px solid #ea542a; /* Цвет и толщина границы */
+    transform: rotate(45deg); /* Поворот элемента */
+    box-sizing: border-box; /* Учитываем границы в размерах */
+}
+
+
+
+.slick-prev:before {
+    border-top: 0; /* Убираем верхнюю часть */
+    border-right: 0; /* Убираем правую часть */
+    /*transform: rotate(-45deg); !* Поворачиваем в другую сторону *!*/
+}
 
 .slick-next:before {
-    background-image: url(images/next.png);
-
+    border-bottom: 0; /* Убираем нижнюю часть */
+    border-left: 0; /* Убираем левую часть */
+    /*transform: rotate(135deg); !* Поворачиваем в другую сторону *!*/
 }
 
- .slick-prev:before {
-    background-image: url(images/previous.png);
 
-}
 
 
 
@@ -1215,4 +1259,67 @@ font-family: Montserrat, sans-serif;
 .breadcrumbs-container {
     position: fixed;
     top: 114px;
+    z-index: 1;
+}
+
+
+/* Стили для всплывающего блока */
+.dropdown-content {
+    display: none; /* Скрываем всплывающее меню по умолчанию */
+    position: absolute;
+    background-color: #fff; /* Цвет фона */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Тень */
+    z-index: 1; /* Положение над остальным контентом */
+    min-width: 160px; /* Минимальная ширина меню */
+border-radius: 5px;
+    list-style-type: none; /* Убираем маркеры списка */
+}
+
+/* Показываем всплывающее меню при наведении на .dropdown-menu */
+.services-header:hover .dropdown-content {
+    display: block;
+}
+
+/* Стили для ссылок внутри всплывающего блока */
+.dropdown-content a {
+    color: #333; /* Цвет текста */
+    display: block; /* Размещаем ссылки блоками */
+    padding: 10px 16px; /* Отступы внутри ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: background-color 0.3s; /* Плавное изменение цвета фона */
+}
+
+/* Изменение стиля ссылок при наведении */
+.dropdown-content a:hover {
+    background-color: #f0f0f0; /* Цвет фона при наведении */
+}
+
+
+.bread-block {
+
+    box-sizing: border-box; /* Учитываем padding в общей ширине */
+    margin: 0 auto; /* Центрируем блок по горизонтали */
+    white-space: nowrap; /* Запрещаем перенос строк внутри блока */
+    overflow-x: auto;
+    margin-bottom: 50px;
+
+}
+
+
+.removal-title {
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.boat-removal-back {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*background: rgba(0, 0, 0, .71);*/
+    margin-bottom: 60px;
+    margin-top: 100px;
+}
+
+.breadcrumb {
+    background-color: #f8f9fa;
+    justify-content: center;
 }
