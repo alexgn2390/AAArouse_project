@@ -211,6 +211,13 @@
 }
 
 
+@media (max-width: 655px) {
+    .image-hero-woman-img {
+        max-width: 127%;
+
+    }
+}
+
 @media (max-width: 630px) {
 
     .sub-title {

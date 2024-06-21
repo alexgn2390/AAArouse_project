@@ -467,17 +467,16 @@ padding-top: 90px;
 }
 
 .image-hero-woman {
-    max-width: 524px;
-    margin: auto
+    max-width: 640px;
+    /*margin: auto*/
     /*margin-right: 263px;*/
 }
 
 .image-hero-woman-img {
-    /*width: 107%; */
-    height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
-    max-height: 100vh; /* Максимальная высота относительно высоты окна браузера */
-    max-width: 942px;
-    object-fit: cover;
+    width: 100%;
+
+    /*margin-left: -129px;*/
+    /*margin-right: -74px;*/
 }
 
 .form-wrapper {
