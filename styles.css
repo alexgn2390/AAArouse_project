@@ -142,7 +142,22 @@ body {
 
 .img-resident-img {
     width: 100%;
+    transition: transform 0.3s ease-in-out;
 }
+
+
+/* Эффект при наведении */
+.img-resident-main a:hover {
+    transform: scale(1.1); /* Увеличение контейнера */
+}
+
+/* Эффект для изображения и текста */
+.img-resident-main a:hover .img-resident-img,
+.img-resident-main a:hover .text-center-over-image {
+    transform: scale(1.1); /* Увеличение элементов */
+}
+
+
 .img-home-img {
     /*width: 107%; */
     height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
@@ -200,7 +215,7 @@ body {
 }
 
 .recycling {
-    background-image: url("images/junk_recycling/background1.jpg");
+    background-image: url("images/junk_recycling/recycling.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -451,6 +466,20 @@ padding-top: 90px;
     width: 100%;
 }
 
+.image-hero-woman {
+    max-width: 524px;
+    margin: auto
+    /*margin-right: 263px;*/
+}
+
+.image-hero-woman-img {
+    /*width: 107%; */
+    height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
+    max-height: 100vh; /* Максимальная высота относительно высоты окна браузера */
+    max-width: 942px;
+    object-fit: cover;
+}
+
 .form-wrapper {
     background: #FC9C34;
     padding: 30px 60px;
@@ -478,22 +507,8 @@ padding-top: 90px;
 }
 
 
-/*.select-button {*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    align-items: center;*/
-/*    width: 500px;*/
-/*    padding: 17px 10px;*/
-/*    background-color: #FFFFFF;*/
-/*    color: black;*/
-/*    border: 2px solid #ccc;*/
-/*    border-radius: 10px;*/
-/*    cursor: pointer;*/
-/*    text-align: left;*/
-/*    outline: none;*/
-/*}*/
 
-.select-button,.select-button-2,.select-button-3 {
+.select-button,.select-button-2,.select-button-3, .select-button-5 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -508,7 +523,7 @@ padding-top: 90px;
 }
 
 .select-options, .select-options-2,
-.select-options-3, .select-options-4 {
+.select-options-3, .select-options-4, .select-options-5 {
     display: none;
     position: absolute;
     top: 100%;
@@ -522,8 +537,8 @@ padding-top: 90px;
 }
 
 .select-option, .select-option-2,
-.select-option-3, .select-option-4 {
-    padding: 10px;
+.select-option-3, .select-option-4, .select-option-5 {
+    padding: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
     white-space: nowrap;
@@ -531,7 +546,7 @@ padding-top: 90px;
     text-overflow: ellipsis;
 }
 
-.select-option:hover, .select-option-2:hover, .select-option-3:hover, .select-option-4:hover {
+.select-option:hover, .select-option-2:hover, .select-option-3:hover, .select-option-4:hover, .select-option-5:hover {
     background-color: #fc9c34;
     color: white;
 }
@@ -896,7 +911,7 @@ font-family: Montserrat, sans-serif;
     background-position: center;
     background-size: cover;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
 }
 
 .blog-inside-custom-background-p {
@@ -976,7 +991,7 @@ font-family: Montserrat, sans-serif;
 
 
 .removal {
-    background-image: url("images/junk_recycling/background1.jpg");
+    background-image: url("images/junk_recycling/removal.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1078,11 +1093,9 @@ font-family: Montserrat, sans-serif;
 
 
 .hidden {
-    display: none !important;
+    display: none
 }
-.hyden {
-    display: none !important;
-}
+
 
 
 .reviews__cards {

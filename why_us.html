@@ -24,7 +24,7 @@
                     <a href="index.html" class="text-decoration-none ">Home</a>
                 </li>
                 <li class="menu-item services-header me-3" id="service">
-                    <a href="#" class="text-decoration-none ">Services</a>
+                    <a href="#" onclick="return false;"  class="text-decoration-none ">Services</a>
                     <div class="dropdown-content" id="dropdown-content">
                         <a href="junk_removal.html">Junk Removal</a>
                         <a href="junk_recycling.html">Junk Recycling</a>
@@ -110,7 +110,14 @@
         </div>
         <ul class="list-unstyled ">
             <li><a href="index.html" class="text-decoration-none">Home</a></li>
-            <li><a href="junk_recycling.html" class="text-decoration-none">Services</a></li>
+            <li class="services-header">
+                <a href="" onclick="return false;" class="text-decoration-none">Services</a>
+                <div class="dropdown-content" >
+                    <a href="junk_removal.html">Junk Removal</a>
+                    <a href="junk_recycling.html">Junk Recycling</a>
+                    <a href="boat_removal.html">Boat Removal</a>
+                </div>
+            </li>
             <li><a href="locations.html" class="text-decoration-none">Locations</a></li>
             <li><a href="why_us.html" class="text-decoration-none">Why Us?</a></li>
             <li><a href="blog.html" class="text-decoration-none">Blog</a></li>
@@ -120,7 +127,6 @@
         <!--        <li><a href="#" class="btn  text-white d-block text-center mt-3 custom-button">BOOK ONLINE</a></li>-->
     </div>
 </header>
-
 
 
 <section class=" why_us  " id="main">
@@ -170,10 +176,12 @@
                 </p>
             </div>
 
-            <div class="col-12 col-lg-6 col-md-12 d-flex justify-content-center  ">
-                <div class=" image-hero-main ">
-                    <img class="image-hero-img " src="images/junk_removal/img_2.png" alt="img_2">
-                </div>
+            <div class="col-12 col-lg-6 col-md-12 text-center  justify-content-center ">
+
+    <div class="image-hero-woman text-center " >
+        <img class="image-hero-woman-img" src="images/junk_removal/img_2.svg" alt="img_2">
+    </div>
+
             </div>
         </div>
 
@@ -341,7 +349,7 @@
     </div>
 </section>
 
-<section class="pb-lg-5 pb-sm-4 pb-md-3 pt-lg-5 pt-sm-4 pt-md-3 ps-0 pe-0">
+<section class="pb-2   pt-lg-5 pt-sm-4 pt-md-3 ps-0 pe-0">
     <div class="container text-center">
         <h3 class="text-center  fw-bold mb-4 sub-title ">Services for All</h3>
         <p class="text-center fs-6 mb-5">
@@ -452,25 +460,28 @@
 
 <section class="mario pb-5 pt-2 ps-0 pe-0">
     <div class="container">
-        <div class=" marion-custom-container">
-            <div>
-                <h3 class=" fw-bold mb-4 sub-title">
-                    We will Remove, Dispose or Haul Just About Anything!
-                </h3>
-                <p class=" ">
-                    Remember we do the work, so sit back and relax. Our reliable junk removal service crew will come
-                    inside your Florida home or business, go in the garage, in the backyard, go in the attic or
-                    underneath steps or crawl spaces or anywhere to remove anything.
-                    <br>
-                    <br>
-                    We will go up and down stairs or whatever it takes. We also dismantle and remove anything and
-                    everything. We are a family owned and operated junk removal and hauling service. We are an exclusive
-                    Florida business. We are not a franchise. We offer Residential and Commercial Junk removal. We have
-                    several large trucks (with tools) to accommodate any type of job.
-                </p>
+        <div class=" row ">
+            <div class="col-12 col-lg-8 col-md-8 d-flex align-items-center">
+                <div>
+                    <h3 class=" fw-bold sub-title">
+                        We will Remove, Dispose or Haul Just About Anything!
+                    </h3>
+                    <p class=" ">
+                        Remember we do the work, so sit back and relax. Our reliable junk removal service crew will come
+                        inside your Florida home or business, go in the garage, in the backyard, go in the attic or
+                        underneath steps or crawl spaces or anywhere to remove anything.
+                        <br>
+                        <br>
+                        We will go up and down stairs or whatever it takes. We also dismantle and remove anything and
+                        everything. We are a family owned and operated junk removal and hauling service. We are an exclusive
+                        Florida business. We are not a franchise. We offer Residential and Commercial Junk removal. We have
+                        several large trucks (with tools) to accommodate any type of job.
+                    </p>
+                </div>
+
             </div>
-            <div class="text-center">
-                <img class="img-mario img-fluid" src="images/junk_removal/img_100.png" alt="img_100">
+            <div class="col-12 col-lg-4 col-md-4 text-center ">
+                <img class="img-mario img-fluid" src="images/junk_removal/img_100.svg" alt="img_100">
             </div>
         </div>
     </div>
@@ -586,7 +597,6 @@
                     <span class=" text-white">800-433-1094</span>
                 </div>
             </a>
-
         </div>
         <div class="col-12 col-lg-6 col-md-6 col-sm-12 d-flex align-items-center justify-content-center mt-2 mt-lg-0 mt-md-0 mt-sm-2 ">
             <div class="input-group input-group-fixed">
@@ -594,7 +604,9 @@
                        aria-label="Recipient's username"
                        aria-describedby="button-addon2">
                 <div class="input-group-btn ">
-                    <button class="btn text-white ps-2 ps-lg-5 ps-md-5 ps-sm-2 pe-2 pe-lg-5 pe-md-5 pe-sm-2 glow-custom-button" type="button" id="">CHECK</button>
+                    <button class="btn text-white ps-2 ps-lg-5 ps-md-5 ps-sm-2 pe-2 pe-lg-5 pe-md-5 pe-sm-2 glow-custom-button"
+                            type="button" id="check">CHECK
+                    </button>
                 </div>
             </div>
         </div>
@@ -605,7 +617,6 @@
         </div>
     </div>
     <div class="custom-button-arrow" id="scrollToTop" title="Go to top">
-
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="30" height="30">
             <path d="M137.4 164.3l136 136c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L128 233.9 16.5 334.3c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l136-136c9.4-9.4 24.6-9.4 33.9 0z"
                   fill="#000"/>

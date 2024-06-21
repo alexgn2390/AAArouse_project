@@ -23,7 +23,7 @@
                     <a href="index.html" class="text-decoration-none ">Home</a>
                 </li>
                 <li class="menu-item services-header me-3" id="service">
-                    <a href="#" class="text-decoration-none ">Services</a>
+                    <a href="#" onclick="return false;"  class="text-decoration-none ">Services</a>
                     <div class="dropdown-content" id="dropdown-content">
                         <a href="junk_removal.html">Junk Removal</a>
                         <a href="junk_recycling.html">Junk Recycling</a>
@@ -109,7 +109,14 @@
         </div>
         <ul class="list-unstyled ">
             <li><a href="index.html" class="text-decoration-none">Home</a></li>
-            <li><a href="junk_recycling.html" class="text-decoration-none">Services</a></li>
+            <li class="services-header">
+                <a href="" onclick="return false;" class="text-decoration-none">Services</a>
+                <div class="dropdown-content" >
+                    <a href="junk_removal.html">Junk Removal</a>
+                    <a href="junk_recycling.html">Junk Recycling</a>
+                    <a href="boat_removal.html">Boat Removal</a>
+                </div>
+            </li>
             <li><a href="locations.html" class="text-decoration-none">Locations</a></li>
             <li><a href="why_us.html" class="text-decoration-none">Why Us?</a></li>
             <li><a href="blog.html" class="text-decoration-none">Blog</a></li>
@@ -197,11 +204,11 @@
 </section>
 
 
-<section class="pb-3 pb-lg-5 pt-3 pt-lg-5  ps-0 pe-0">
+<section class="pb-3 pb-lg-5 pt-2 pt-lg-5 pt-md-4 ps-0 pe-0">
     <div class="container ">
         <h1 class="text-center fs-2 fw-bold mb-4 sub-title">Recent Blog Articles</h1>
         <div class="row  ">
-            <div class="col-12 col-md-6 col-lg-4 col-sm-12 d-flex justify-content-center  pe-0">
+            <div class="col-12 col-md-6 col-lg-4 col-sm-12 pb-4 d-flex justify-content-center  pe-0">
                 <div>
                     <img src="images/locations/img_101.png" class="img-fluid-recent" alt="img_101">
                     <div class=" ">
@@ -214,7 +221,7 @@
                 </div>
 
             </div>
-            <div class="col-md-6 col-lg-4 col-sm-12 d-flex justify-content-center pt-lg-0 pt-md-0 pt-sm-5 ">
+            <div class="col-md-6 col-lg-4 col-sm-12 pb-4 d-flex justify-content-center pt-lg-0 pt-md-0 pt-sm-5 ">
                 <div>
                     <img src="images/locations/img_102.png" class="img-fluid-recent" alt="img_102">
                     <div class=" ">
@@ -241,7 +248,7 @@
 </section>
 
 
-<section class="pb-lg-5 pb-sm-4 pb-md-3 pt-lg-5 pt-sm-4 pt-md-3 ps-0 pe-0 box-custom">
+<section class="pb-3 pb-lg-5 pb-sm-4 pb-md-3 pt-3 pt-lg-5 pt-sm-4 pt-md-3 ps-0 pe-0 box-custom">
     <div class="container text-center">
         <h3 class="text-center  fw-bold mb-4 sub-title ">Home and Residential Services</h3>
         <p class="text-center fs-6 mb-5">
@@ -312,7 +319,7 @@
 </section>
 
 
-<section class="pb-lg-5 pb-sm-4 pb-md-3 pt-lg-5 pt-sm-4 pt-md-3 ps-0 pe-0">
+<section class="pb-3 pb-lg-5 pb-sm-4 pb-md-3 pt-4 pt-lg-5 pt-sm-4 pt-md-3 ps-0 pe-0">
     <div class="container text-center">
         <h3 class="text-center  fw-bold mb-4 sub-title ">Business & Commercial Services</h3>
         <p class="text-center fs-6 mb-5">
@@ -502,24 +509,24 @@
         <div class="form-wrapper">
             <div class="row mb-4">
                 <div class=" col-12 col-lg-6 col-md-6 col-sm-12 pe-3 mb-3 mb-lg-0 mb-md-0 mb-sm-3">
-                    <label for="" class="text-white fw-normal form-wrapper-label mb-2">CHOOSE COUNTY</label>
+                    <label for="select-button-5" class="text-white fw-normal form-wrapper-label mb-2">CHOOSE COUNTY</label>
                     <div class="custom-select-wrapper">
-                        <button class="select-button" id="select-button">Alachua
-                            <svg id="arrow-icon" width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <button class="select-button" id="select-button-5">Alachua
+                            <svg id="arrow-icon-5" width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1.5 1.75L10 10.25L18.5 1.75" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </button>
-                        <div class="select-options" id="select-options">
-                            <div class="select-option" data-value="option1">Alachua</div>
-                            <div class="select-option" data-value="option2">Option 2</div>
-                            <div class="select-option" data-value="option3">Option 3</div>
+                        <div class="select-options" id="select-options-5">
+                            <div class="select-option-5" data-value="option1">Alachua</div>
+                            <div class="select-option-5" data-value="option2">Option 2</div>
+                            <div class="select-option-5" data-value="option3">Option 3</div>
                         </div>
                     </div>
 
                 </div>
 
                 <div class="col-12 col-lg-6 col-md-6 col-sm-12 ps-3">
-                    <label for="" class="text-white  fw-normal form-wrapper-label mb-2">CHOOSE CITY </label>
+                    <label for="select-button-2" class="text-white  fw-normal form-wrapper-label mb-2">CHOOSE CITY </label>
                     <div class="custom-select-wrapper">
                         <button class="select-button" id="select-button-2">PLEASE CHOOSE A COUNTY FIRST
                             <svg id="arrow-icon-2" width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -650,7 +657,6 @@
                     <span class=" text-white">800-433-1094</span>
                 </div>
             </a>
-
         </div>
         <div class="col-12 col-lg-6 col-md-6 col-sm-12 d-flex align-items-center justify-content-center mt-2 mt-lg-0 mt-md-0 mt-sm-2 ">
             <div class="input-group input-group-fixed">
@@ -658,7 +664,9 @@
                        aria-label="Recipient's username"
                        aria-describedby="button-addon2">
                 <div class="input-group-btn ">
-                    <button class="btn text-white ps-2 ps-lg-5 ps-md-5 ps-sm-2 pe-2 pe-lg-5 pe-md-5 pe-sm-2 glow-custom-button" type="button" id="">CHECK</button>
+                    <button class="btn text-white ps-2 ps-lg-5 ps-md-5 ps-sm-2 pe-2 pe-lg-5 pe-md-5 pe-sm-2 glow-custom-button"
+                            type="button" id="check">CHECK
+                    </button>
                 </div>
             </div>
         </div>
@@ -669,7 +677,6 @@
         </div>
     </div>
     <div class="custom-button-arrow" id="scrollToTop" title="Go to top">
-
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="30" height="30">
             <path d="M137.4 164.3l136 136c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L128 233.9 16.5 334.3c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l136-136c9.4-9.4 24.6-9.4 33.9 0z"
                   fill="#000"/>

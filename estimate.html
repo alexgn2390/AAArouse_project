@@ -37,7 +37,8 @@
     </script>
 </head>
 <body>
-<header class="shadow sticky-top bg-light z-3" id="header" >
+
+<header class="shadow sticky-top bg-white z-3" id="header" >
     <div class="container d-flex align-items-center justify-content-between pt-2 pb-2">
         <div>
             <img class="img-logo" src="images/logo.png" alt="Logo">
@@ -48,7 +49,7 @@
                     <a href="index.html" class="text-decoration-none ">Home</a>
                 </li>
                 <li class="menu-item services-header me-3" id="service">
-                    <a href="#" class="text-decoration-none ">Services</a>
+                    <a href="#" onclick="return false;"  class="text-decoration-none ">Services</a>
                     <div class="dropdown-content" id="dropdown-content">
                         <a href="junk_removal.html">Junk Removal</a>
                         <a href="junk_recycling.html">Junk Recycling</a>
@@ -134,7 +135,14 @@
         </div>
         <ul class="list-unstyled ">
             <li><a href="index.html" class="text-decoration-none">Home</a></li>
-            <li><a href="junk_recycling.html" class="text-decoration-none">Services</a></li>
+            <li class="services-header">
+                <a href="" onclick="return false;" class="text-decoration-none">Services</a>
+                <div class="dropdown-content" >
+                    <a href="junk_removal.html">Junk Removal</a>
+                    <a href="junk_recycling.html">Junk Recycling</a>
+                    <a href="boat_removal.html">Boat Removal</a>
+                </div>
+            </li>
             <li><a href="locations.html" class="text-decoration-none">Locations</a></li>
             <li><a href="why_us.html" class="text-decoration-none">Why Us?</a></li>
             <li><a href="blog.html" class="text-decoration-none">Blog</a></li>
@@ -144,7 +152,6 @@
         <!--        <li><a href="#" class="btn  text-white d-block text-center mt-3 custom-button">BOOK ONLINE</a></li>-->
     </div>
 </header>
-
 
 
 
@@ -375,6 +382,7 @@
             Policy</a></div>
     </div>
 </footer>
+
 
 </body>
 </html>

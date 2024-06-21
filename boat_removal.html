@@ -23,7 +23,7 @@
                     <a href="index.html" class="text-decoration-none ">Home</a>
                 </li>
                 <li class="menu-item services-header me-3" id="service">
-                    <a href="#" class="text-decoration-none ">Services</a>
+                    <a href="#" onclick="return false;"  class="text-decoration-none ">Services</a>
                     <div class="dropdown-content" id="dropdown-content">
                         <a href="junk_removal.html">Junk Removal</a>
                         <a href="junk_recycling.html">Junk Recycling</a>
@@ -109,7 +109,14 @@
         </div>
         <ul class="list-unstyled ">
             <li><a href="index.html" class="text-decoration-none">Home</a></li>
-            <li><a href="junk_recycling.html" class="text-decoration-none">Services</a></li>
+            <li class="services-header">
+                <a href="" onclick="return false;" class="text-decoration-none">Services</a>
+                <div class="dropdown-content" >
+                    <a href="junk_removal.html">Junk Removal</a>
+                    <a href="junk_recycling.html">Junk Recycling</a>
+                    <a href="boat_removal.html">Boat Removal</a>
+                </div>
+            </li>
             <li><a href="locations.html" class="text-decoration-none">Locations</a></li>
             <li><a href="why_us.html" class="text-decoration-none">Why Us?</a></li>
             <li><a href="blog.html" class="text-decoration-none">Blog</a></li>
@@ -119,7 +126,6 @@
         <!--        <li><a href="#" class="btn  text-white d-block text-center mt-3 custom-button">BOOK ONLINE</a></li>-->
     </div>
 </header>
-
 
 
 
@@ -252,7 +258,7 @@
 <section class="pb-lg-5 pb-sm-4 pb-md-3 pt-lg-5 pt-sm-4 pt-md-3 ps-0 pe-0 box-custom">
     <div class="container text-center">
         <h3 class="text-center  fw-bold mb-4 sub-title ">Home and Residential Services</h3>
-        <p class="text-center fs-6 mb-5">
+        <p class="text-center fs-6 mb-3">
             Removal of unwanted or discarded items and clutter from residential homes, townhomes, apartments and mobile
             homes and more. We can also help you with any odd job for your home, wherever you are.
         </p>
@@ -323,7 +329,7 @@
 <section class="pb-lg-5 pb-sm-4 pb-md-3 pt-lg-5 pt-sm-4 pt-md-3 ps-0 pe-0">
     <div class="container text-center">
         <h3 class="text-center  fw-bold mb-4 sub-title ">Business & Commercial Services</h3>
-        <p class="text-center fs-6 mb-5">
+        <p class="text-center fs-6 mb-3">
             Removal of unwanted or discarded items and clutter from warehouses, offices, retail spaces, flex spaces,
             hangars and more.
         </p>
@@ -400,7 +406,7 @@
 <section class="pb-lg-5 pb-sm-4 pb-md-3 pt-lg-5 pt-sm-4 pt-md-3 ps-0 pe-0">
     <div class="container text-center">
         <h3 class="text-center  fw-bold mb-4 sub-title ">Services for All</h3>
-        <p class="text-center fs-6 mb-5">
+        <p class="text-center fs-6 mb-3">
             Removal of unwanted or discarded items and clutter from any space regardless of purpose or location.
         </p>
 
@@ -824,7 +830,7 @@
 
                 <div>
                     <div class="row">
-                        <div class="col">
+                        <div class="col-6 col-lg-4 col-md-4 col-sm-4">
                             <div class="checkbox-container">
                                 <input type="checkbox" id="customCheckbox_1" class="custom-checkbox">
                                 <label for="customCheckbox_1" class="custom-checkbox-label">Inside</label>
@@ -839,7 +845,7 @@
                             </div>
 
                         </div>
-                        <div class="col">
+                        <div class="col-6 col-lg-4 col-md-4 col-sm-4">
                             <div class="checkbox-container">
                                 <input type="checkbox" id="customCheckbox_4" class="custom-checkbox">
                                 <label for="customCheckbox_4" class="custom-checkbox-label">Outside</label>
@@ -854,7 +860,7 @@
                             </div>
 
                         </div>
-                        <div class="col">
+                        <div class="col-6 col-lg-4 col-md-4 col-sm-4">
                             <div class="checkbox-container">
                                 <input type="checkbox" id="customCheckbox_7" class="custom-checkbox">
                                 <label for="customCheckbox_7" class="custom-checkbox-label">Garage</label>
@@ -1148,7 +1154,6 @@
                     <span class=" text-white">800-433-1094</span>
                 </div>
             </a>
-
         </div>
         <div class="col-12 col-lg-6 col-md-6 col-sm-12 d-flex align-items-center justify-content-center mt-2 mt-lg-0 mt-md-0 mt-sm-2 ">
             <div class="input-group input-group-fixed">
@@ -1156,7 +1161,9 @@
                        aria-label="Recipient's username"
                        aria-describedby="button-addon2">
                 <div class="input-group-btn ">
-                    <button class="btn text-white ps-2 ps-lg-5 ps-md-5 ps-sm-2 pe-2 pe-lg-5 pe-md-5 pe-sm-2 glow-custom-button" type="button" id="">CHECK</button>
+                    <button class="btn text-white ps-2 ps-lg-5 ps-md-5 ps-sm-2 pe-2 pe-lg-5 pe-md-5 pe-sm-2 glow-custom-button"
+                            type="button" id="check">CHECK
+                    </button>
                 </div>
             </div>
         </div>
@@ -1167,7 +1174,6 @@
         </div>
     </div>
     <div class="custom-button-arrow" id="scrollToTop" title="Go to top">
-
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="30" height="30">
             <path d="M137.4 164.3l136 136c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L128 233.9 16.5 334.3c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l136-136c9.4-9.4 24.6-9.4 33.9 0z"
                   fill="#000"/>

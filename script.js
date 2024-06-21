@@ -2,304 +2,127 @@
 
 (function () {
     document.addEventListener('DOMContentLoaded', function () {
-        // Проверяем инициализацию всех элементов
-        const initSelect = (buttonId, optionsId, arrowId, optionClass) => {
+        // Функция для инициализации элементов
+        function initSelect(buttonId, optionsId, arrowId, optionClass) {
             const selectButton = document.getElementById(buttonId);
             const selectOptions = document.getElementById(optionsId);
             const arrowIcon = document.getElementById(arrowId);
             const selectOptionsList = document.querySelectorAll(optionClass);
 
             if (selectButton && selectOptions && arrowIcon) {
-                // Добавляем обработчик событий на кнопку
                 selectButton.addEventListener('click', function () {
-                    if (selectOptions.style.display === 'block') {
-                        selectOptions.style.display = 'none';
-                        arrowIcon.classList.remove('arrow-up');
-                    } else {
-                        selectOptions.style.display = 'block';
-                        arrowIcon.classList.add('arrow-up');
-                    }
+                    const isVisible = selectOptions.style.display === 'block';
+                    selectOptions.style.display = isVisible ? 'none' : 'block';
+                    arrowIcon.classList.toggle('arrow-up', !isVisible);
                 });
 
-                // Добавляем обработчик событий на опции
                 selectOptionsList.forEach(option => {
                     option.addEventListener('click', function () {
                         selectButton.innerHTML = `${this.textContent}
-                        <svg id="${arrowId}" width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.5 1.75L10 10.25L18.5 1.75" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>`;
+                            <svg id="${arrowId}" width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 1.75L10 10.25L18.5 1.75" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>`;
                         selectOptions.style.display = 'none';
                         arrowIcon.classList.remove('arrow-up');
                     });
                 });
 
-                // Добавляем обработчик событий на документ
                 document.addEventListener('click', function (e) {
                     if (!selectButton.contains(e.target) && !selectOptions.contains(e.target)) {
                         selectOptions.style.display = 'none';
                         arrowIcon.classList.remove('arrow-up');
                     }
                 });
-            } else {
-                console.error(`Элементы с идентификаторами ${buttonId}, ${optionsId} или ${arrowId} не найдены.`);
             }
-        };
-
-        // Инициализация для каждого селекта
-        initSelect('select-button', 'select-options', 'arrow-icon', '.select-option');
-        initSelect('select-button-2', 'select-options-2', 'arrow-icon-2', '.select-option-2');
-        initSelect('select-button-3', 'select-options-3', 'arrow-icon-3', '.select-option-3');
-        initSelect('select-button-4', 'select-options-4', 'arrow-icon-4', '.select-option-4');
-
-
-    });
-
-    let scrollToTopButton = document.getElementById('scrollToTop');
-
-// Показываем или скрываем кнопку в зависимости от прокрутки
-    window.addEventListener('scroll', function () {
-        if (window.scrollY > 300) { // 300 пикселей - это примерное значение
-            scrollToTopButton.classList.add('visible');
-        } else {
-            scrollToTopButton.classList.remove('visible');
         }
-    });
 
-
-    let scrollToBackHeader = document.getElementById('header');
-
-
-// Прокрутка наверх при нажатии на кнопку
-    scrollToTopButton.addEventListener('click', function () {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
+        ['1', '2', '3', '4', '5'].forEach(num => {
+            initSelect(`select-button-${num}`, `select-options-${num}`, `arrow-icon-${num}`, `.select-option-${num}`);
         });
-    });
 
-    document.addEventListener("DOMContentLoaded", function () {
+        // Прокрутка наверх
+        const scrollToTopButton = document.getElementById('scrollToTop');
+        if (scrollToTopButton) {
+            window.addEventListener('scroll', function () {
+                scrollToTopButton.classList.toggle('visible', window.scrollY > 300);
+            });
+
+            scrollToTopButton.addEventListener('click', function () {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+
+        // Меню и последние статьи
         const menuToggle = document.getElementById("menu-toggle");
         const menuClose = document.getElementById("menu-close");
         const mobileMenu = document.getElementById("mobile-menu");
-        let recentClose = document.getElementById('recent-close');
-        const toggleButton = document.getElementById('toggleButton')
-        let recentArticles = document.getElementById('recentArticles');
+        const toggleButton = document.getElementById('toggleButton');
+        const recentArticles = document.getElementById('recentArticles');
+        const recentClose = document.getElementById('recent-close');
 
-
-        menuToggle.addEventListener("click", function () {
-            mobileMenu.style.display = "block";
-        });
-
-        menuClose.addEventListener("click", function () {
-            mobileMenu.style.display = "none";
-        });
-        menuClose.addEventListener("click", function () {
-            mobileMenu.style.display = "none";
-        });
-
-        toggleButton.addEventListener('click', function () {
-            recentArticles.style.display = 'block'
-
-        });
-
-        recentClose.addEventListener('click', function () {
-            recentArticles.style.display = 'none'
-        });
-
-
-    });
-
-
-
-    document.addEventListener('DOMContentLoaded', function () {
-        const ourServices = document.getElementById('ourServices2');
-        const ourLocations = document.getElementById('ourLocations');
-        const ourBlog = document.getElementById('ourBlog');
-
-        const serviceHeader = document.querySelector('.our_service-2');
-        const locationHeader = document.querySelector('.our_location');
-        const blogHeader = document.querySelector('.blog');
-
-        // Функция для проверки размера экрана и управления видимостью блоков
-        function checkScreenWidth() {
-            if (window.innerWidth < 430) {
-                ourServices.classList.add('hidden');
-                ourLocations.classList.add('hidden');
-                ourBlog.classList.add('hidden');
-            } else {
-                ourServices.classList.remove('hidden');
-                ourLocations.classList.remove('hidden');
-                ourBlog.classList.remove('hidden');
-            }
+        if (menuToggle && menuClose && mobileMenu) {
+            menuToggle.addEventListener("click", () => mobileMenu.style.display = "block");
+            menuClose.addEventListener("click", () => mobileMenu.style.display = "none");
         }
 
-        // Добавляем обработчики кликов на заголовки
-        serviceHeader.addEventListener('click', function () {
-            if (window.innerWidth < 430) {
-                ourServices.classList.toggle('hidden');
-            }
-        });
+        if (toggleButton && recentArticles && recentClose) {
+            toggleButton.addEventListener('click', () => recentArticles.style.display = 'block');
+            recentClose.addEventListener('click', () => recentArticles.style.display = 'none');
+        }
 
-        locationHeader.addEventListener('click', function () {
-            if (window.innerWidth < 430) {
-                ourLocations.classList.toggle('hidden');
-            }
-        });
+// Функция для управления видимостью элементов и их заголовков
+        function manageVisibility(elementId, headerSelector) {
+            const element = document.querySelector(elementId);
+            const header = document.querySelector(headerSelector);
 
-        blogHeader.addEventListener('click', function () {
-            if (window.innerWidth < 430) {
-                ourBlog.classList.toggle('hidden');
-            }
-        });
+            if (!element || !header) return;
 
-        // Добавляем обработчик изменения размера окна
-        window.addEventListener('resize', checkScreenWidth);
+            // Устанавливаем начальное состояние видимости в зависимости от ширины окна
+            element.classList.toggle('hidden', window.innerWidth < 430);
 
-        // Проверяем начальную ширину экрана
-        checkScreenWidth();
+            // Добавляем обработчик клика на заголовок
+            header.addEventListener('click', function (event) {
+                if (window.innerWidth < 430) {
+                    element.classList.toggle('hidden');
+                }
+                // Отменяем действие по умолчанию (переход по ссылке или другие действия)
+                event.preventDefault();
+            });
+
+            // Добавляем обработчик для изменения видимости при изменении размера окна
+            window.addEventListener('resize', function () {
+                if (window.innerWidth >= 430) {
+                    element.classList.remove('hidden');
+                } else {
+                    element.classList.add('hidden');
+                }
+            });
+        }
+
+// Управление первым блоком элементов
+        manageVisibility('#officeLocation', '.office');
+        manageVisibility('#ourServices', '.our_service');
+        manageVisibility('#ourLocations', '.our_location');
+        manageVisibility('#ourBlog', '.blog');
+
+// Управление вторым блоком элементов
+        manageVisibility('#ourServices2', '.our_service-2');
+        manageVisibility('#ourLocations2', '.our_location-2');
+        manageVisibility('#ourBlog2', '.blog-2');
 
 
-    });
 
-
-    document.addEventListener('DOMContentLoaded', function () {
-        // Получаем текущий URL страницы
-        let pathArray = window.location.pathname.split('/');
-        let breadcrumbs = document.getElementById('breadcrumbs');
-
-        // Создаем хлебные крошки для каждого сегмента пути
-        let crumb = '';
-        for (let i = 1; i < pathArray.length; i++) {
-            crumb += '/' + pathArray[i];
-
-            // Пропускаем часть URL, если это 'AAArouse_project'
-            if (pathArray[i] === 'AAArouse_project') {
-                continue;
-            }
-
-            let li = document.createElement('li');
-            let link = document.createElement('a');
-            let pageTitle = pathArray[i].split('.')[0]; // Извлекаем название страницы без расширения
-
-            link.textContent = pageTitle.charAt(0).toUpperCase() + pageTitle.slice(1); // Преобразуем первую букву в заглавную
-
-            // Если это последний сегмент пути, делаем ссылку неактивной
-            if (i === pathArray.length - 1) {
-                li.textContent = link.textContent; // Просто текст, без ссылки
-            } else {
-                link.href = crumb;
-                li.appendChild(link);
-            }
-
-            breadcrumbs.appendChild(li);
-
-            // Добавляем разделитель '>'
-            if (i < pathArray.length - 1 && pathArray[i + 1] !== 'AAArouse_project') {
-                let separator = document.createElement('span');
-                separator.textContent = ' > ';
-                li.appendChild(separator);
-            }
+        // Перенаправление
+        const checkButton = document.getElementById('check');
+        if (checkButton) {
+            checkButton.addEventListener('click', function () {
+                const zipCode = document.querySelector('.form-control').value;
+                if (zipCode) {
+                    window.location.href = `estimate.html?zip=${encodeURIComponent(zipCode)}`;
+                } else {
+                    alert("Please enter a ZIP code");
+                }
+            });
         }
     });
-
-    function redirectToPage() {
-        // Получаем значение из инпута
-        let zipCode = document.querySelector('.form-control').value;
-
-        // Проверяем, что значение не пустое
-        if (zipCode) {
-            // Формируем URL с параметром
-            let newUrl = 'estimate.html?zip=' + encodeURIComponent(zipCode);
-
-            // Перенаправляем на новую страницу
-            window.location.href = newUrl;
-        } else {
-            alert("Please enter a ZIP code");
-        }
-    }
-
-    const check = document.querySelector('#check')
-    check.addEventListener('click', function () {
-        redirectToPage()
-    })
-
-
-})()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// document.addEventListener('DOMContentLoaded', function () {
-//     const officeLocation = document.querySelector('#officeLocation');
-//     const officeHeader = document.querySelector('.office');
-//     const ourServices = document.querySelector('#ourServices');
-//     const ourService = document.querySelector('.our_service');
-//     const ourLocations = document.querySelector('#ourLocations');
-//     const ourLocation = document.querySelector('.our_location');
-//     const ourBlog = document.querySelector('#ourBlog');
-//     const blog = document.querySelector('.blog');
-//
-//
-// // Функция для проверки размера экрана и управления видимостью блока
-//     function checkScreenWidth() {
-//         if (window.innerWidth < 430) {
-//             officeLocation.classList.add('hidden');
-//             ourServices.classList.add('hidden');
-//             ourLocations.classList.add('hidden');
-//             ourBlog.classList.add('hidden');
-//
-//
-//         } else {
-//             officeLocation.classList.remove('hidden');
-//             ourServices.classList.remove('hidden');
-//             ourLocations.classList.remove('hidden');
-//             ourBlog.classList.remove('hidden');
-//
-//
-//         }
-//     }
-//
-// // Добавляем обработчик клика на заголовок
-//     officeHeader.addEventListener('click', function () {
-//         if (window.innerWidth < 430) {
-//             officeLocation.classList.toggle('hidden');
-//         }
-//     });
-//
-//     ourService.addEventListener('click', function () {
-//         if (window.innerWidth < 430) {
-//             ourServices.classList.toggle('hidden');
-//         }
-//     });
-//     ourLocation.addEventListener('click', function () {
-//         if (window.innerWidth < 430) {
-//             ourLocations.classList.toggle('hidden');
-//         }
-//     });
-//
-//     blog.addEventListener('click', function () {
-//         if (window.innerWidth < 430) {
-//             ourBlog.classList.toggle('hidden');
-//         }
-//     });
-//
-//
-// // Добавляем обработчик изменения размера окна
-//     window.addEventListener('resize', checkScreenWidth);
-//
-// // Проверяем начальную ширину экрана
-//     checkScreenWidth();
-// });
+})();

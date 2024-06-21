@@ -23,7 +23,7 @@
                     <a href="index.html" class="text-decoration-none ">Home</a>
                 </li>
                 <li class="menu-item services-header me-3" id="service">
-                    <a href="#" class="text-decoration-none ">Services</a>
+                    <a href="#" onclick="return false;"  class="text-decoration-none ">Services</a>
                     <div class="dropdown-content" id="dropdown-content">
                         <a href="junk_removal.html">Junk Removal</a>
                         <a href="junk_recycling.html">Junk Recycling</a>
@@ -109,7 +109,14 @@
         </div>
         <ul class="list-unstyled ">
             <li><a href="index.html" class="text-decoration-none">Home</a></li>
-            <li><a href="junk_recycling.html" class="text-decoration-none">Services</a></li>
+            <li class="services-header">
+                <a href="" onclick="return false;" class="text-decoration-none">Services</a>
+                <div class="dropdown-content" >
+                    <a href="junk_removal.html">Junk Removal</a>
+                    <a href="junk_recycling.html">Junk Recycling</a>
+                    <a href="boat_removal.html">Boat Removal</a>
+                </div>
+            </li>
             <li><a href="locations.html" class="text-decoration-none">Locations</a></li>
             <li><a href="why_us.html" class="text-decoration-none">Why Us?</a></li>
             <li><a href="blog.html" class="text-decoration-none">Blog</a></li>
@@ -744,126 +751,143 @@
 <footer class="footer-custom  ps-0 pe-0">
     <div class="container pb-5">
         <div class="row">
-            <div class="col-12 col-lg-3 col-md-6 mb-sm-4 ">
-                <h3 class="text-white fs-5 mb-3 mt-3">Office Locations</h3>
-                <p class="">
-                    <span class="fw-bold">Fort Lauderdale Office:</span>
-                    110 E Broward Blvd Suite 1700/1739,
-                    Fort Lauderdale, FL 33301
-                    (954) 248-1138
-                </p>
-                <p>
-                    <span class="fw-bold">Tampa and Brandon Office:</span>
-                    2202 N Westshore Blvd Suite 200/221,
-                    Tampa, Florida 33607
-                    9542481138
-                </p>
-                <p>
-                    <span class="fw-bold">Clearwater Office:</span>
-                    5131 95th st N,
-                    St. Petersburg, Florida 33708
-                    (727) 399-1899
-                </p>
-                <p>
-                    <span class="fw-bold">Sarasota, Bradenton, and Fort Myers Office:</span>
-                    1990 Main St Suite 750,
-                    Sarasota, Florida 34236
-                    (941) 302-2399
-                </p>
-                <p>
-                    <span class="fw-bold"> Orlando Office:</span>
-                    618 E South St, Suite 500,
-                    Orlando, FL 32901
-                    dispatch@aaarousse.com
-                </p>
+            <div class="col-12 col-lg-3 col-md-6  ">
+                <h3 class="text-white fs-5  mt-3 office" id="office">Office Locations <span
+                        class="office-span"> »</span></h3>
+                <div class="office-location" id="officeLocation">
+                    <p class="">
+                        <span class="fw-bold">Fort Lauderdale Office:</span>
+                        110 E Broward Blvd Suite 1700/1739,
+                        Fort Lauderdale, FL 33301
+                        (954) 248-1138
+                    </p>
+                    <p>
+                        <span class="fw-bold">Tampa and Brandon Office:</span>
+                        2202 N Westshore Blvd Suite 200/221,
+                        Tampa, Florida 33607
+                        9542481138
+                    </p>
+                    <p>
+                        <span class="fw-bold">Clearwater Office:</span>
+                        5131 95th st N,
+                        St. Petersburg, Florida 33708
+                        (727) 399-1899
+                    </p>
+                    <p>
+                        <span class="fw-bold">Sarasota, Bradenton, and Fort Myers Office:</span>
+                        1990 Main St Suite 750,
+                        Sarasota, Florida 34236
+                        (941) 302-2399
+                    </p>
+                    <p>
+                        <span class="fw-bold"> Orlando Office:</span>
+                        618 E South St, Suite 500,
+                        Orlando, FL 32901
+                        dispatch@aaarousse.com
+                    </p>
+                </div>
+
             </div>
             <div class="col-12 col-lg-3 col-md-6 mb-sm-4 mb-md-4 footer-hover">
-                <h3 class="text-white fs-5 mb-3 mt-3">Our Services</h3>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Frequently Asked
-                    Questions - Reviews - Glossary</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Hot Tub Removal</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Garage Cleanout
-                    Service</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Furniture
-                    Removal</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Waste/Debris
-                    Removal</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Property Clean
-                    Outs</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Garbage/Trash
-                    Removal</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Carpet Removal</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Shed Removal</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Business
-                    Merchandise Removal</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Office Furniture
-                    Removal</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Property
-                    Management</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Warehouse
-                    Cleanouts</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Hoarder Clean
-                    Up</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark mb-2 pt-1 pb-1">Storm Debris
-                    CleanUp</a>
-                <a href="" class="d-block  text-decoration-none bg-light pt-1 pb-1 ps-3 pe-3 a-custom">View All Services
-                    »</a>
+                <h3 class="text-white fs-5  mt-3 our_service">Our Services <span class="office-span"> »</span></h3>
+                <div class="our_services" id="ourServices">
+                    <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Frequently
+                        Asked
+                        Questions - Reviews - Glossary</a>
+                    <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Hot Tub
+                        Removal</a>
+                    <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Garage Cleanout
+                        Service</a>
+                    <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Furniture
+                        Removal</a>
+                    <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Waste/Debris
+                        Removal</a>
+                    <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Property Clean
+                        Outs</a>
+                    <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Garbage/Trash
+                        Removal</a>
+                    <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Carpet
+                        Removal</a>
+                    <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Shed
+                        Removal</a>
+                    <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Business
+                        Merchandise Removal</a>
+                    <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Office
+                        Furniture
+                        Removal</a>
+                    <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Property
+                        Management</a>
+                    <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Warehouse
+                        Cleanouts</a>
+                    <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Hoarder Clean
+                        Up</a>
+                    <a href="" class="d-block  text-decoration-none border-bottom border-dark mb-2 pt-1 pb-1">Storm
+                        Debris
+                        CleanUp</a>
+                    <a href="" class="d-block  text-decoration-none bg-light pt-1 pb-1 ps-3 pe-3 a-custom">View All
+                        Services
+                        »</a>
+                </div>
+
             </div>
+            <div class="col-12 col-lg-3 col-md-6  mb-md-4 footer-hover ">
 
+                <h3 class="text-white fs-5 mb-2 mt-3 our_location">Our Locations <span class="office-span"> »</span></h3>
+                <div class="our_locations" id="ourLocations">
+                    <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Florida</a>
+                    <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Tampa FL</a>
+                    <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">St. Petersburg
+                        FL</a>
+                    <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Clearwater
+                        FL</a>
+                    <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Brandon FL</a>
+                    <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Bradenton
+                        FL</a>
+                    <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Sarasota FL</a>
+                    <a href="" class="d-block  text-decoration-none border-bottom border-dark mb-2 pt-1 pb-1">Fort Myers
+                        FL</a>
+                    <a href="" class="d-block  text-decoration-none bg-light pt-1 pb-1 ps-3 pe-3 a-custom">View All
+                        Locations »</a>
+                </div>
 
-            <div class="col-12 col-lg-3 col-md-6  mb-md-4   footer-hover ">
-                <h3 class="text-white fs-5 mb-2 mt-3">Our Locations</h3>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Florida</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Tampa FL</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">St. Petersburg
-                    FL</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Clearwater FL</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Brandon FL</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Bradenton FL</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark pt-1 pb-1">Sarasota FL</a>
-                <a href="" class="d-block  text-decoration-none border-bottom border-dark mb-2 pt-1 pb-1">Fort Myers
-                    FL</a>
-                <a href="" class="d-block  text-decoration-none bg-light pt-1 pb-1 ps-3 pe-3 a-custom">View All
-                    Locations »</a>
             </div>
-
-
             <div class="col-12 col-lg-3 col-md-6  mb-md-4 mt-md-0  mt-sm-4 footer-hover">
-                <h3 class="text-white fs-5 mb-2 mt-3">Our Blog</h3>
+                <h3 class="text-white fs-5 mb-2 mt-3 blog">Our Blog <span class="office-span"> »</span></h3>
 
-                <a href="" class="d-flex align-items-center  text-decoration-none">
-                    <img src="images/img_401.png" alt="img-401" class="img-footer">
-                    <p class="ms-2">How to Stop a Self Storage Lien in LaBelle</p>
-                </a>
-                <a href="" class="d-flex align-items-center  text-decoration-none">
-                    <img src="images/img_402.png" alt="img-401" class="img-footer">
-                    <p class="ms-2">Wood Floor Removal in Venice</p>
-                </a>
-                <a href="" class="d-flex align-items-center  text-decoration-none">
-                    <img src="images/img_403.png" alt="img-401" class="img-footer">
-                    <p class="ms-2">How to Remove Sliding French Doors</p>
-                </a>
-                <a href="" class="d-flex align-items-center  text-decoration-none">
-                    <img src="images/img_404.png" alt="img-401" class="img-footer">
-                    <p class="ms-2">Wakulla Springs Wall Paneling Removal and Replacement Guide</p>
-                </a>
-                <a href="" class="d-flex align-items-center text-decoration-none">
-                    <img src="images/img_405.png" alt="img-401" class="img-footer">
-                    <p class="ms-2">Furniture Disposal in Palm Harbor</p>
-                </a>
-                <a href="" class="d-flex align-items-center  text-decoration-none">
-                    <img src="images/img_406.png" alt="img-401" class="img-footer">
-                    <p class="ms-2">Garage-Apartment Conversion DIY</p>
-                </a>
+                <div class="our_blog" id="ourBlog">
+                    <a href="" class="d-flex align-items-center  text-decoration-none">
+                        <img src="images/img_401.png" alt="img-401" class="img-footer">
+                        <p class="ms-2">How to Stop a Self Storage Lien in LaBelle</p>
+                    </a>
+                    <a href="" class="d-flex align-items-center  text-decoration-none">
+                        <img src="images/img_402.png" alt="img-401" class="img-footer">
+                        <p class="ms-2">Wood Floor Removal in Venice</p>
+                    </a>
+                    <a href="" class="d-flex align-items-center  text-decoration-none">
+                        <img src="images/img_403.png" alt="img-401" class="img-footer">
+                        <p class="ms-2">How to Remove Sliding French Doors</p>
+                    </a>
+                    <a href="" class="d-flex align-items-center  text-decoration-none">
+                        <img src="images/img_404.png" alt="img-401" class="img-footer">
+                        <p class="ms-2">Wakulla Springs Wall Paneling Removal and Replacement Guide</p>
+                    </a>
+                    <a href="" class="d-flex align-items-center text-decoration-none">
+                        <img src="images/img_405.png" alt="img-401" class="img-footer">
+                        <p class="ms-2">Furniture Disposal in Palm Harbor</p>
+                    </a>
+                    <a href="" class="d-flex align-items-center  text-decoration-none">
+                        <img src="images/img_406.png" alt="img-401" class="img-footer">
+                        <p class="ms-2">Garage-Apartment Conversion DIY</p>
+                    </a>
+                </div>
+
             </div>
         </div>
-        <div class="text-center  ">Copyright ©2024 ·<a href="" class="text-black">aaarousse.com</a> <a href=""
-                                                                                                           class="text-black">Privacy
+        <div class="text-center mt-3">Copyright ©2024 ·<a href="" class="text-black">aaarousse.com</a> <a href=""
+                                                                                                          class="text-black">Privacy
             Policy</a></div>
     </div>
-
 </footer>
-
 
 
 <section class="footer-fixed fixed-bottom pt-2 pt-lg-3 pt-md-3 pt-sm-2 pb-2 pb-lg-4 pb-md-4 pb-sm-2 p-0 z-3">
@@ -879,7 +903,6 @@
                     <span class=" text-white">800-433-1094</span>
                 </div>
             </a>
-
         </div>
         <div class="col-12 col-lg-6 col-md-6 col-sm-12 d-flex align-items-center justify-content-center mt-2 mt-lg-0 mt-md-0 mt-sm-2 ">
             <div class="input-group input-group-fixed">
@@ -887,7 +910,9 @@
                        aria-label="Recipient's username"
                        aria-describedby="button-addon2">
                 <div class="input-group-btn ">
-                    <button class="btn text-white ps-2 ps-lg-5 ps-md-5 ps-sm-2 pe-2 pe-lg-5 pe-md-5 pe-sm-2 glow-custom-button" type="button" id="">CHECK</button>
+                    <button class="btn text-white ps-2 ps-lg-5 ps-md-5 ps-sm-2 pe-2 pe-lg-5 pe-md-5 pe-sm-2 glow-custom-button"
+                            type="button" id="check">CHECK
+                    </button>
                 </div>
             </div>
         </div>
@@ -898,7 +923,6 @@
         </div>
     </div>
     <div class="custom-button-arrow" id="scrollToTop" title="Go to top">
-
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="30" height="30">
             <path d="M137.4 164.3l136 136c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L128 233.9 16.5 334.3c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l136-136c9.4-9.4 24.6-9.4 33.9 0z"
                   fill="#000"/>

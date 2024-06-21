@@ -23,7 +23,7 @@
                     <a href="index.html" class="text-decoration-none ">Home</a>
                 </li>
                 <li class="menu-item services-header me-3" id="service">
-                    <a href="#" class="text-decoration-none ">Services</a>
+                    <a href="#" onclick="return false;"  class="text-decoration-none ">Services</a>
                     <div class="dropdown-content" id="dropdown-content">
                         <a href="junk_removal.html">Junk Removal</a>
                         <a href="junk_recycling.html">Junk Recycling</a>
@@ -109,7 +109,14 @@
         </div>
         <ul class="list-unstyled ">
             <li><a href="index.html" class="text-decoration-none">Home</a></li>
-            <li><a href="junk_recycling.html" class="text-decoration-none">Services</a></li>
+            <li class="services-header">
+                <a href="" onclick="return false;" class="text-decoration-none">Services</a>
+                <div class="dropdown-content" >
+                    <a href="junk_removal.html">Junk Removal</a>
+                    <a href="junk_recycling.html">Junk Recycling</a>
+                    <a href="boat_removal.html">Boat Removal</a>
+                </div>
+            </li>
             <li><a href="locations.html" class="text-decoration-none">Locations</a></li>
             <li><a href="why_us.html" class="text-decoration-none">Why Us?</a></li>
             <li><a href="blog.html" class="text-decoration-none">Blog</a></li>
@@ -148,7 +155,7 @@
             Book your next Florida junk removal appointment the easy way and schedule online. Once you have submitted
             your request form, we will contact you to confirm your appointment.
         </p>
-        <p class="text-center fs-5 text-info mb-5" style="font-family: Montserrat,sans-serif">
+        <p class="text-center fs-5 hero-custom-text pt-2 pb-2 mb-5" style="font-family: Montserrat,sans-serif">
             NOTE: Fields with an asterisk* are required.
         </p>
         <h2 class="text-center text-black mb-4 fw-bold">Customer Information</h2>
@@ -266,7 +273,7 @@
 
                 <div>
                     <div class="row">
-                        <div class="col">
+                        <div class="col-6 col-lg-4 col-md-4 col-sm-4">
                             <div class="checkbox-container">
                                 <input type="checkbox" id="customCheckbox_1" class="custom-checkbox">
                                 <label for="customCheckbox_1" class="custom-checkbox-label">Inside</label>
@@ -281,7 +288,7 @@
                             </div>
 
                         </div>
-                        <div class="col">
+                        <div class="col-6 col-lg-4 col-md-4 col-sm-4">
                             <div class="checkbox-container">
                                 <input type="checkbox" id="customCheckbox_4" class="custom-checkbox">
                                 <label for="customCheckbox_4" class="custom-checkbox-label">Outside</label>
@@ -296,7 +303,7 @@
                             </div>
 
                         </div>
-                        <div class="col">
+                        <div class="col-6 col-lg-4 col-md-4 col-sm-4">
                             <div class="checkbox-container">
                                 <input type="checkbox" id="customCheckbox_7" class="custom-checkbox">
                                 <label for="customCheckbox_7" class="custom-checkbox-label">Garage</label>
@@ -504,6 +511,7 @@
     </div>
 </footer>
 
+
 <section class="footer-fixed fixed-bottom pt-2 pt-lg-3 pt-md-3 pt-sm-2 pb-2 pb-lg-4 pb-md-4 pb-sm-2 p-0 z-3">
     <div class="container row position-relative d-flex align-items-center justify-content-center">
         <div class="col-12 col-lg-3 col-md-3 col-sm-12">
@@ -517,7 +525,6 @@
                     <span class=" text-white">800-433-1094</span>
                 </div>
             </a>
-
         </div>
         <div class="col-12 col-lg-6 col-md-6 col-sm-12 d-flex align-items-center justify-content-center mt-2 mt-lg-0 mt-md-0 mt-sm-2 ">
             <div class="input-group input-group-fixed">
@@ -525,7 +532,9 @@
                        aria-label="Recipient's username"
                        aria-describedby="button-addon2">
                 <div class="input-group-btn ">
-                    <button class="btn text-white ps-2 ps-lg-5 ps-md-5 ps-sm-2 pe-2 pe-lg-5 pe-md-5 pe-sm-2 glow-custom-button" type="button" id="">CHECK</button>
+                    <button class="btn text-white ps-2 ps-lg-5 ps-md-5 ps-sm-2 pe-2 pe-lg-5 pe-md-5 pe-sm-2 glow-custom-button"
+                            type="button" id="check">CHECK
+                    </button>
                 </div>
             </div>
         </div>
@@ -536,14 +545,12 @@
         </div>
     </div>
     <div class="custom-button-arrow" id="scrollToTop" title="Go to top">
-
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" width="30" height="30">
             <path d="M137.4 164.3l136 136c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L128 233.9 16.5 334.3c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l136-136c9.4-9.4 24.6-9.4 33.9 0z"
                   fill="#000"/>
         </svg>
     </div>
 </section>
-
 
 </body>
 </html>
