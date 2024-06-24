@@ -633,7 +633,8 @@ body {
     padding: 10px 10px;
     background-color: #FFFFFF;
     color: black;
-    border: 2px solid #ccc;
+    border: none;
+    /*border: 2px solid #ccc;*/
     border-radius: 10px;
     text-align: left;
     outline: none;
@@ -1525,4 +1526,74 @@ body {
 
 .accordion-button::after {
     display: none !important;
+}
+
+
+.container-mini {
+    background-color: #FC9C34;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 15px;
+}
+
+.step {
+    display: none;
+}
+
+.step:not(.hidden) {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.zip-step-estimate {
+position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 12px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    /*position: absolute;*/
+    /*top: 10px;*/
+    /*left: 10px;*/
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #020201;
+    padding: 0;
+}
+
+
+
+.cursor-pointer-estimate {
+    cursor: pointer;
+    display: block;
 }
