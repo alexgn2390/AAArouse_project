@@ -1554,9 +1554,9 @@ body {
 
 .zip-step-estimate {
 position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 12px;
+    top: 15px;
+    right: 16px;
+    font-size: 10px;
 }
 
 .input-field {
