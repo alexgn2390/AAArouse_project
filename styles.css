@@ -848,7 +848,7 @@ body {
 }
 
 .locations-custom-image {
-    background-image: url("images/junk_recycling/locations.jpg");
+    background-image: url("images/locations/img_main.jpeg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1425,3 +1425,5 @@ body {
 .breadcrumb-item + .breadcrumb-item {
     padding-left: 0;
 }
+
+
