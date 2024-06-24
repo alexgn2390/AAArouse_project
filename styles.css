@@ -32,6 +32,7 @@ body {
 .img-logo-img {
     width: 100%;
 }
+
 .img-fluid {
     max-width: 220px;
     object-fit: cover;
@@ -82,9 +83,14 @@ body {
     padding-top: 10px;
     padding-right: 10px;
 }
+
 @keyframes fade {
-    0% { opacity: 0 }
-    100% { opacity: 1 }
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
 }
 
 
@@ -109,7 +115,6 @@ body {
     text-decoration: none;
     color: #000;
 }
-
 
 
 .btn-warning {
@@ -215,12 +220,69 @@ body {
 }
 
 .recycling {
-    background-image: url("images/junk_recycling/recycling.jpg");
+    width: 100%;
+    background-image: url("images/junk_recycling/recycling.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 120px;
     padding-bottom: 90px;
+    background-attachment: fixed;
+}
+.recycling2 {
+    width: 100%;
+    background-image: url("images/junk_recycling/recycling2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 90px;
+    background-attachment: fixed;
+
+}
+.recycling3 {
+    width: 100%;
+    background-image: url("images/junk_recycling/recycling3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 90px;
+    background-attachment: fixed;
+
+}
+.recycling4 {
+    width: 100%;
+    background-image: url("images/junk_recycling/recycling4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 90px;
+    background-attachment: fixed;
+
+}
+.recycling5 {
+    width: 100%;
+    background-image: url("images/junk_recycling/recycling5.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 90px;
+    /*background-attachment: fixed;*/
+
+}
+.recycling6 {
+    width: 100%;
+    background-image: url("images/junk_recycling/recycling6.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 90px;
+    background-attachment: fixed;
+
 }
 
 .why_us {
@@ -228,15 +290,16 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-padding-top: 40px;
+    padding-top: 40px;
     padding-bottom: 90px;
 }
+
 .region-custom-image {
     background-image: url("https://cdn-jcmkb.nitrocdn.com/wfCoLNSiDTjCVqzljNEFgvNUYXsOcuHc/assets/images/optimized/rev-b3a6719/www.aaarousse.com/assets/post_uploads/meta_images/35-150.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-padding-top: 90px;
+    padding-top: 90px;
     padding-bottom: 10px;
 }
 
@@ -314,10 +377,10 @@ padding-top: 90px;
 }
 
 
-
 .glow-custom-button:hover {
     background: #a45c03;
 }
+
 .custom-button:hover {
     background: #a45c03;
 }
@@ -333,7 +396,6 @@ padding-top: 90px;
 }
 
 
-
 .footer-hover a {
     color: black;
     transition: color .3s ease-in-out;
@@ -342,6 +404,7 @@ padding-top: 90px;
 .footer-hover a:hover {
     color: #f6ebe9;
 }
+
 .office-location {
     display: block;
 }
@@ -387,6 +450,7 @@ padding-top: 90px;
 .input-group-btn {
     margin-left: -1px;
 }
+
 .input-main-desc {
     display: flex;
     justify-content: center;
@@ -506,8 +570,7 @@ padding-top: 90px;
 }
 
 
-
-.select-button,.select-button-2,.select-button-3, .select-button-5 {
+.select-button, .select-button-2, .select-button-3, .select-button-5 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -747,7 +810,7 @@ padding-top: 90px;
     background-color: coral;
 }
 
-.form-button-btn{
+.form-button-btn {
     padding: 20px 15px;
 }
 
@@ -799,7 +862,7 @@ padding-top: 90px;
     text-shadow: -3px 2px 4px rgba(0, 0, 0, 1.5);
     color: #fff;
     font-weight: bold;
-font-family: Montserrat, sans-serif;
+    font-family: Montserrat, sans-serif;
 
 }
 
@@ -1059,7 +1122,6 @@ font-family: Montserrat, sans-serif;
 }
 
 
-
 #toggleButton {
     display: none;
     border: 1px solid #ee992a;
@@ -1073,6 +1135,7 @@ font-family: Montserrat, sans-serif;
     /*transition: opacity 0.4s, visibility 0.4s, box-shadow .3s ease;*/
 
 }
+
 .toggleButton:hover {
     box-shadow: 0 0 15px 2px rgb(122, 114, 103);
 }
@@ -1096,11 +1159,9 @@ font-family: Montserrat, sans-serif;
 }
 
 
-
 .reviews__cards {
     margin-bottom: 30px;
 }
-
 
 
 .review__card-1 {
@@ -1123,13 +1184,16 @@ font-family: Montserrat, sans-serif;
     margin-bottom: 15px;
     font-size: 12px;
 }
+
 .cust_name {
     font-weight: bold;
 }
+
 .star {
     color: #FFA500;
     margin-bottom: 5px;
 }
+
 /* Основные стили для стрелок */
 .slick-prev, .slick-next {
     max-width: 30px; /* Ширина контейнера для стрелки */
@@ -1158,7 +1222,6 @@ font-family: Montserrat, sans-serif;
 /* Стили для псевдоэлементов стрелок */
 
 
-
 .slick-next:before, .slick-prev:before {
     content: "";
     display: block;
@@ -1168,7 +1231,6 @@ font-family: Montserrat, sans-serif;
     transform: rotate(45deg); /* Поворот элемента */
     box-sizing: border-box; /* Учитываем границы в размерах */
 }
-
 
 
 .slick-prev:before {
@@ -1182,9 +1244,6 @@ font-family: Montserrat, sans-serif;
     border-left: 0; /* Убираем левую часть */
     /*transform: rotate(135deg); !* Поворачиваем в другую сторону *!*/
 }
-
-
-
 
 
 .breadcrumb {
@@ -1229,7 +1288,6 @@ font-family: Montserrat, sans-serif;
 }
 
 
-
 .breadcrumbs {
     list-style-type: none;
     margin: 0;
@@ -1237,6 +1295,7 @@ font-family: Montserrat, sans-serif;
     display: flex;
     align-items: center;
 }
+
 .breadcrumbs li {
     display: inline;
     margin-right: 6px;
@@ -1245,11 +1304,11 @@ font-family: Montserrat, sans-serif;
     border-radius: 10px;
     transition: all .3s ease;
 }
+
 .breadcrumbs li:hover {
 
     background: #fdd09b;
 }
-
 
 
 .breadcrumbs li:last-child::after {
@@ -1258,7 +1317,7 @@ font-family: Montserrat, sans-serif;
 
 .breadcrumbs li a {
     color: #333333;
-   text-decoration: none;
+    text-decoration: none;
 }
 
 .breadcrumbs li a::after {
@@ -1291,7 +1350,7 @@ font-family: Montserrat, sans-serif;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Тень */
     z-index: 1; /* Положение над остальным контентом */
     min-width: 160px; /* Минимальная ширина меню */
-border-radius: 5px;
+    border-radius: 5px;
     list-style-type: none; /* Убираем маркеры списка */
 }
 
@@ -1348,16 +1407,21 @@ border-radius: 5px;
 
 .breadcrumb li + li::before {
     content: '>';
-     padding: 0 ;
+    padding: 0;
     color: #333;
 }
 
 .breadcrumb li {
     margin: 0;
-    padding: 0 ;
+    padding: 0;
 }
 
-.breadcrumb-item+.breadcrumb-item::before {
-    padding-right: 0;
+.breadcrumb-item + .breadcrumb-item::before {
+    padding-right: 5px;
+    padding-left: 5px;
 
+}
+
+.breadcrumb-item + .breadcrumb-item {
+    padding-left: 0;
 }
