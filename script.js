@@ -120,7 +120,7 @@
                 if (zipCode) {
                     window.location.href = `estimate.html?zip=${encodeURIComponent(zipCode)}`;
                 } else {
-                    alert("Please enter a ZIP code");
+                    window.location.href = `JunkRemovalWesleyChapelFL.html`;
                 }
             });
         }

@@ -370,6 +370,13 @@ body {
 
 }
 
+.custom-button-estimate {
+    background: #fdeed9;
+}
+.custom-button-estimate:hover {
+    background: #f8af53;
+}
+
 .glow-custom-button {
     background: #FB8607;
     transition: box-shadow 0.3s ease;
@@ -567,6 +574,7 @@ body {
     width: 100%;
     max-width: 100%;
     flex-grow: 1;
+    font-size: 12px;
 }
 
 
@@ -576,6 +584,53 @@ body {
     align-items: center;
     width: 100%;
     padding: 17px 10px;
+    background-color: #FFFFFF;
+    color: black;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-align: left;
+    outline: none;
+
+}
+
+.select-button-estimate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: #fff;
+    color: black;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-align: left;
+    outline: none;
+
+}
+
+
+.input-zip-estimate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: #FFFFFF;
+    color: black;
+    /*border: 2px solid #ccc;*/
+    border: none;
+    border-radius: 10px;
+    text-align: left;
+    outline: none;
+}
+
+.textarea-zip-estimate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    padding: 10px 10px;
     background-color: #FFFFFF;
     color: black;
     border: 2px solid #ccc;
@@ -634,6 +689,14 @@ body {
     padding-top: 40px;
     padding-bottom: 10px;
 }
+.page404-custom-image {
+    background-image: url("images/page404aaarouse.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+
+}
 
 .main-custom-title {
     font-family: Merriweather, sans-serif;
@@ -673,7 +736,6 @@ body {
 .checkbox-container {
     display: flex;
     align-items: center;
-
     margin-bottom: 15px;
 }
 
@@ -1427,3 +1489,40 @@ body {
 }
 
 
+.call-or-book {
+    background: #f1b169;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 26px;
+}
+
+.logo-estimate {
+    max-width: 230px;
+}
+.logo-estimate img {
+   width: 100%;
+}
+
+.accordion-estimate {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+
+.accordion-body-estimate {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 15px;
+}
+
+.accordion-collapse-estimate {
+    background: #FC9C34;
+}
+
+.accordion-button::after {
+    display: none !important;
+}
