@@ -692,7 +692,7 @@ body {
 }
 .page404-custom-image {
     background-image: url("images/page404aaarouse.jpg");
-    background-position: center;
+    background-position:  bottom center ;
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 40px;
@@ -1491,6 +1491,9 @@ body {
 
 
 .call-or-book {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #f1b169;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -1596,4 +1599,11 @@ position: absolute;
 .cursor-pointer-estimate {
     cursor: pointer;
     display: block;
+}
+
+.image-hero-estimate {
+    max-width: 524px;
+}
+.image-hero-estimate-img {
+    width: 100%;
 }
