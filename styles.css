@@ -221,7 +221,7 @@ body {
 
 .recycling {
     width: 100%;
-    background-image: url("images/background1.jpg");
+    background-image: url("images/junk_recycling/img_rec.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -232,7 +232,7 @@ body {
 
 
 .why_us {
-    background-image: url("images/image_removal.png");
+    background-image: url("images/why_us/img_why_us.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1062,7 +1062,7 @@ body {
 
 
 .removal {
-    background-image: url("images/background1.jpg");
+    background-image: url("images/junk_removal/img_removal.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
