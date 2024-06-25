@@ -1637,3 +1637,22 @@ position: absolute;
 .text-warning-alturas:hover {
     color: #f8af53;
 }
+
+.text-color-estimate {
+    color: #ff8c00;
+}
+
+.img-home-palm1 {
+    max-width: 310px;
+}
+.img-home-palm2 {
+    max-width: 370px;
+}
+
+.img-home-img-palm {
+    width: 100%;
+}
+
+.img-home-person {
+    max-width: 280px;
+}
