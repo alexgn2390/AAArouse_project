@@ -221,7 +221,7 @@ body {
 
 .recycling {
     width: 100%;
-    background-image: url("images/junk_recycling/img_rec.jpeg");
+    background-image: url("images/junk_recycling/img_recycling.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -336,6 +336,14 @@ body {
 
 .custom-button:hover {
     background: #a45c03;
+}
+
+.custom-button-location {
+    background: #FB8607;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    cursor: none;
 }
 
 .img-mario {
@@ -629,7 +637,7 @@ body {
 }
 
 .boat-custom-image {
-    background-image: url("images/boat_removal/img_main.jpeg");
+    background-image: url("images/boat_removal/boat_removal_img.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1062,7 +1070,7 @@ body {
 
 
 .removal {
-    background-image: url("images/junk_removal/img_removal.jpeg");
+    background-image: url("images/junk_recycling/img_removal.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1436,15 +1444,15 @@ body {
 }
 
 
-.call-or-book {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #f1b169;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 26px;
-}
+/*.call-or-book {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    background: #f1b169;*/
+/*    padding-top: 20px;*/
+/*    padding-bottom: 20px;*/
+/*    font-size: 26px;*/
+/*}*/
 
 .logo-estimate {
     max-width: 230px;
@@ -1552,4 +1560,70 @@ position: absolute;
 }
 .image-hero-estimate-img {
     width: 100%;
+}
+
+.call-or-book-chape {
+
+}
+
+
+.call-or-book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff8c00; /* Оранжевый цвет */
+    border-radius: 5px; /* Закругленные углы */
+    overflow: hidden; /* Убирает элементы за пределами контейнера */
+    max-width: 600px; /* Максимальная ширина */
+    margin: 0 auto; /* Центрирует на странице */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+.call-or-book-btn {
+    flex: 1;
+    padding: 20px; /* Пространство внутри кнопки */
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.left-btn {
+    border-right: 2px solid #fff; /* Белая линия разделения */
+}
+
+.right-btn {
+    border-left: 2px solid #fff; /* Белая линия разделения */
+}
+
+.divider {
+    position: relative;
+    width: 50px;
+    height: 100%; /* Высота подстраивается под контейнер */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.divider span {
+    display: block;
+    background-color: #ff8c00;
+    color: #fff;
+    padding: 0 10px; /* Пробелы слева и справа от текста */
+    font-weight: bold;
+    /*border: 2px solid #fff; !* Белая рамка вокруг текста *!*/
+    /*border-radius: 50%; !* Круглый текст *!*/
+}
+
+.link-phone {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.link-phone:hover {
+    color: #ff8c00;
 }
