@@ -221,72 +221,18 @@ body {
 
 .recycling {
     width: 100%;
-    background-image: url("images/junk_recycling/recycling.png");
+    background-image: url("images/background1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 120px;
     padding-bottom: 90px;
-    background-attachment: fixed;
-}
-.recycling2 {
-    width: 100%;
-    background-image: url("images/junk_recycling/recycling2.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 120px;
-    padding-bottom: 90px;
-    background-attachment: fixed;
 
 }
-.recycling3 {
-    width: 100%;
-    background-image: url("images/junk_recycling/recycling3.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 120px;
-    padding-bottom: 90px;
-    background-attachment: fixed;
 
-}
-.recycling4 {
-    width: 100%;
-    background-image: url("images/junk_recycling/recycling4.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 120px;
-    padding-bottom: 90px;
-    background-attachment: fixed;
-
-}
-.recycling5 {
-    width: 100%;
-    background-image: url("images/junk_recycling/recycling5.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 120px;
-    padding-bottom: 90px;
-    /*background-attachment: fixed;*/
-
-}
-.recycling6 {
-    width: 100%;
-    background-image: url("images/junk_recycling/recycling6.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 120px;
-    padding-bottom: 90px;
-    background-attachment: fixed;
-
-}
 
 .why_us {
-    background-image: url("images/junk_recycling/whyus.jpg");
+    background-image: url("images/image_removal.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -304,7 +250,7 @@ body {
 }
 
 .contact_us {
-    background-image: url("images/junk_recycling/contacts.jpg");
+    background-image: url("images/contact_us/img_main.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1116,7 +1062,7 @@ body {
 
 
 .removal {
-    background-image: url("images/junk_recycling/removal.jpg");
+    background-image: url("images/background1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
