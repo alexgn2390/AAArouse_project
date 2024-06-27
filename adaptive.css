@@ -213,6 +213,14 @@
     .input-group-fixed {
         max-width: 100%;
     }
+
+    .main-title {
+        text-align: center;
+    }
+
+    .main-sub-title {
+        text-align: center;
+    }
 }
 
 
