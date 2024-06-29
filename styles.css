@@ -146,6 +146,9 @@ position: relative;
 .img-resident-main {
     max-width: 220px;
 }
+.img-card-boat {
+    max-width: 300px;
+}
 
 .img-resident-img {
     width: 100%;
@@ -426,8 +429,9 @@ position: relative;
     color: #FFFFFF;
 }
 
+
 .img-mario {
-   width: 100%;
+    max-width: 227px;
 }
 
 .footer-custom {
@@ -1122,6 +1126,9 @@ position: relative;
     width: 100%;
 }
 
+.img-mario-main {
+    max-width: 220px;
+}
 
 .removal {
     background-image: url("images/junk_removal/img_removal.jpeg");

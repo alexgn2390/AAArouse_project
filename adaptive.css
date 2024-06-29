@@ -221,6 +221,10 @@
     .main-sub-title {
         text-align: center;
     }
+
+    .img-mario-main {
+        max-width: 170px;
+    }
 }
 
 
@@ -375,10 +379,6 @@
 
 @media (max-width: 400px) {
 
-    .mario-text {
-        font-size: 10px;
-    }
-
     .img-main-2 {
         max-width: 291px;
     }
@@ -451,8 +451,17 @@
         top: 8%;
     }
 
+    .images_select {
+        padding: 70px 98px;
+    }
 
 }
 
+
+@media (max-width: 270px) {
+    .images_select {
+        padding: 70px 70px;
+    }
+}
 
 
