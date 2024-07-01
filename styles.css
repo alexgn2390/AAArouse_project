@@ -1516,9 +1516,9 @@ position: relative;
     background: #FC9C34;
 }
 
-.accordion-button::after {
-    display: none !important;
-}
+/*.accordion-button::after {*/
+/*    display: none !important;*/
+/*}*/
 
 
 .container-mini {
